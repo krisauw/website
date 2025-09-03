@@ -1,31 +1,52 @@
 [
   {
-    "objectID": "syllabus.html",
-    "href": "syllabus.html",
+    "objectID": "resume.html",
+    "href": "resume.html",
+    "title": "Schedule",
+    "section": "",
+    "text": "About schedule"
+  },
+  {
+    "objectID": "projects/manga-sentiment.html",
+    "href": "projects/manga-sentiment.html",
+    "title": "Manga Sentiment Analysis",
+    "section": "",
+    "text": "Scraped manga reviews and analyzed sentiment.\n\nTools: Python (Selenium, TextBlob, NLTK)\nVisualized sentiment trends in Power BI and Tableau\nLinks: GitHub"
+  },
+  {
+    "objectID": "projects/index.html",
+    "href": "projects/index.html",
+    "title": "Hi, I’m Hien (Emi) Bui",
+    "section": "",
+    "text": "I’m a Data Science master’s student (Drew University, expected 2026) with a background in Economics (B.A.) and minors in Mathematics & Asian Studies.\nBefore transitioning into data, I spent 6+ years managing projects in VFX/animation and client services—leading cross-functional teams, delivering for global clients, and honing communication and leadership skills.\nToday, I combine that creative and organizational background with data science, machine learning, and analytics to solve real-world problems. My work spans ML model development, coding experiments, and interactive dashboards.\n\n\n\n\nProgramming & Tools: Python · R · SQL · Jupyter Notebook · VSCode\n\nVisualization & BI: Tableau · Power BI · Plotly · Data Wrangling\n\n3D & Creative: Maya · Blender · Substance Painter\n\nOther: Google Suite · Microsoft Office\n\n\n\n\nProject Management · Data Analysis · Data Visualization · Communication\nProblem Solving · Teamwork · Critical Thinking · Research\n\n👉 Check out my Projects, view my Resume, or connect via LinkedIn / GitHub."
+  },
+  {
+    "objectID": "projects/index.html#technical-skills",
+    "href": "projects/index.html#technical-skills",
+    "title": "Hi, I’m Hien (Emi) Bui",
+    "section": "",
+    "text": "Programming & Tools: Python · R · SQL · Jupyter Notebook · VSCode\n\nVisualization & BI: Tableau · Power BI · Plotly · Data Wrangling\n\n3D & Creative: Maya · Blender · Substance Painter\n\nOther: Google Suite · Microsoft Office"
+  },
+  {
+    "objectID": "projects/index.html#professional-strengths",
+    "href": "projects/index.html#professional-strengths",
+    "title": "Hi, I’m Hien (Emi) Bui",
+    "section": "",
+    "text": "Project Management · Data Analysis · Data Visualization · Communication\nProblem Solving · Teamwork · Critical Thinking · Research\n\n👉 Check out my Projects, view my Resume, or connect via LinkedIn / GitHub."
+  },
+  {
+    "objectID": "projects/book-ratings.html",
+    "href": "projects/book-ratings.html",
+    "title": "Book Ratings Analysis",
+    "section": "",
+    "text": "Explored book rating trends using Python.\n\nCompared preferences across genres & genders\nCreated interactive visualizations (Plotly)\nSkills: Data Analysis, Visualization\nLinks: GitHub"
+  },
+  {
+    "objectID": "contact.html",
+    "href": "contact.html",
     "title": "Syllabus",
     "section": "",
     "text": "About Syllabus"
-  },
-  {
-    "objectID": "lectures/week2.html",
-    "href": "lectures/week2.html",
-    "title": "Week2",
-    "section": "",
-    "text": "About week2"
-  },
-  {
-    "objectID": "labs/lab2.html",
-    "href": "labs/lab2.html",
-    "title": "Lab2",
-    "section": "",
-    "text": "About lab2"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "my-site",
-    "section": "",
-    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
   },
   {
     "objectID": "about.html",
@@ -35,24 +56,31 @@
     "text": "About this site"
   },
   {
-    "objectID": "labs/lab1.html",
-    "href": "labs/lab1.html",
-    "title": "Lab1",
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "my-site",
     "section": "",
-    "text": "About lab1"
+    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
   },
   {
-    "objectID": "lectures/week1.html",
-    "href": "lectures/week1.html",
-    "title": "Week1",
+    "objectID": "projects/ev-adoption.html",
+    "href": "projects/ev-adoption.html",
+    "title": "Tesla EV Adoption",
     "section": "",
-    "text": "About week1"
+    "text": "Analyzed 235k+ EV records with Python (Polars, Plotly) to compare adoption trends across brands.\n\nBuilt dashboards to explore adoption by city/brand\nPublished interactive insights in a Medium article\nSkills: Python, Polars, Plotly, Data Wrangling, Visualization\nLinks: GitHub, Medium Article"
   },
   {
-    "objectID": "schedule.html",
-    "href": "schedule.html",
-    "title": "Schedule",
+    "objectID": "projects/luxury-car-price.html",
+    "href": "projects/luxury-car-price.html",
+    "title": "Luxury Car Price Prediction",
     "section": "",
-    "text": "About schedule"
+    "text": "Built a predictive model for car prices.\n\nExplored luxury car dataset\nApplied regression models to predict price ranges\nSkills: Python, Regression, EDA\nLinks: GitHub"
+  },
+  {
+    "objectID": "projects/movie-recommender.html",
+    "href": "projects/movie-recommender.html",
+    "title": "Movie Recommender System",
+    "section": "",
+    "text": "Created a recommender using multiple ML models.\n\nImplemented KNN, Decision Tree, Logistic Regression in Python/R\nAchieved ~80% accuracy in predicting highly rated movies\nSkills: ML Algorithms, Scikit-learn, R\nLinks: GitHub"
   }
 ]
