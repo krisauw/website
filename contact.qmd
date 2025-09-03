@@ -1,5 +1,9 @@
 ---
-title: "Syllabus"
+title: "Contact"
 ---
 
-About Syllabus
+I’m open to internships and collaborations.
+
+- Email: hienbui [at] example [dot] com
+- LinkedIn: https://www.linkedin.com/in/YOUR-LINKEDIN
+- GitHub: https://github.com/YOUR-USERNAME

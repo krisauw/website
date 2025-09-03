@@ -1,5 +1,130 @@
 ---
-title: "Schedule"
+title: "Resume"
 ---
 
-About schedule
+[⬇️ Download PDF Resume](resume/Resume_HienBui.pdf)
+
+# Education
+
+:::: {.grid}
+::: {.g-col-9}
+**Drew University**, Madison, NJ  
+*M.S. in Data Science (GPA: 4.0)*
+:::
+::: {.g-col-3 text-end}
+Anticipated Graduation: August 2026
+:::
+::::
+
+:::: {.grid}
+::: {.g-col-9}
+**Asian University for Women**, Chittagong, Bangladesh  
+*B.A. in Economics (Minor: Mathematics & Asian Studies, CGPA 3.63)*  
+Honors: 95% Scholarship Recipient
+:::
+::: {.g-col-3 text-end}
+September 2011 – May 2016
+:::
+::::
+
+---
+
+# Projects
+
+:::: {.grid}
+::: {.g-col-9}
+**Movie Recommender**  
+- Built ML models (KNN, Decision Tree, Logistic Regression) in Python/R  
+- Achieved ~80% accuracy in predicting highly rated movies
+:::
+::: {.g-col-3 text-end}
+November 2024 – December 2024
+:::
+::::
+
+:::: {.grid}
+::: {.g-col-9}
+**Tesla EV Adoption**  
+- Analyzed 235k+ EV records with Python (Polars, Plotly)  
+- Compared adoption trends across brands  
+- Published interactive dashboards & Medium article
+:::
+::: {.g-col-3 text-end}
+April 2025
+:::
+::::
+
+:::: {.grid}
+::: {.g-col-9}
+**Book Ratings Analysis**  
+- Explored rating trends by genre and gender using Python/Plotly  
+- Created interactive visualizations to highlight reader preferences
+:::
+::: {.g-col-3 text-end}
+April 2025
+:::
+::::
+
+:::: {.grid}
+::: {.g-col-9}
+**Manga Sentiment Analysis**  
+- Scraped manga reviews using Python (Selenium, TextBlob, NLTK)  
+- Visualized audience sentiment in Power BI & Tableau
+:::
+::: {.g-col-3 text-end}
+May 2025
+:::
+::::
+
+---
+
+# Professional Experience
+
+:::: {.grid}
+::: {.g-col-9}
+**CosmicVision Company**, Ho Chi Minh, Vietnam  
+*Lookdev/Lighting Artist*  
+- Developed 3D assets (modeling, texturing, look development)  
+- Trained new employees in workflows and Maya tools  
+- Recognized as “Most Interesting Employee of the Year 2021”
+:::
+::: {.g-col-3 text-end}
+March 2021 – July 2024
+:::
+::::
+
+:::: {.grid}
+::: {.g-col-9}
+**BadClay Studio**, Ho Chi Minh, Vietnam  
+*Project Manager*  
+- Managed cross-functional teams (asset creation, VFX, lighting, production, animation)  
+- Served as client liaison, prepared budgets, reviewed feedback  
+- Oversaw post-production for *Sweet Home* (Netflix, Korean zombie series)  
+- Awarded “Best Producer of the Year 2020”
+:::
+::: {.g-col-3 text-end}
+February 2018 – March 2021
+:::
+::::
+
+:::: {.grid}
+::: {.g-col-9}
+**Scalable Press**, Ho Chi Minh, Vietnam  
+*Customer Service Representative*  
+- Resolved customer inquiries and complaints via email  
+- Monitored workflows, tracked DHL shipping, flagged copyright issues
+:::
+::: {.g-col-3 text-end}
+September 2017 – February 2018
+:::
+::::
+
+---
+
+# Skills
+
+**Technical**  
+Python · R · SQL · Jupyter Notebook · VSCode · Tableau · Power BI · Maya · Blender · Substance Painter · Google Suite · Microsoft Office  
+
+**Professional**  
+Data Analysis · Data Visualization · Computer Vision · Project Management · Communication · Problem Solving · Teamwork · Critical Thinking · Research
