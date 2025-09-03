@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>my-site – Hien Bui</title>
+<title>Hi, I’m Hien (Emi) Bui – Hien Bui</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -92,10 +92,6 @@ ul.task-list li input[type="checkbox"] {
     <a class="nav-link active" href="./index.html" aria-current="page"> 
 <span class="menu-text">Home</span></a>
   </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./about.html"> 
-<span class="menu-text">About</span></a>
-  </li>  
   <li class="nav-item dropdown ">
     <a class="nav-link dropdown-toggle" href="#" id="nav-menu-resume" role="link" data-bs-toggle="dropdown" aria-expanded="false">
  <span class="menu-text">Resume</span>
@@ -165,15 +161,25 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul class="collapse">
+  <li><a href="#welcome" id="toc-welcome" class="nav-link active" data-scroll-target="#welcome">Welcome 👋</a>
+  <ul class="collapse">
+  <li><a href="#technical-skills" id="toc-technical-skills" class="nav-link" data-scroll-target="#technical-skills">🔧 Technical Skills</a></li>
+  <li><a href="#professional-strengths" id="toc-professional-strengths" class="nav-link" data-scroll-target="#professional-strengths">🌟 Professional Strengths</a></li>
+  </ul></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">my-site</h1>
+<h1 class="title">Hi, I’m Hien (Emi) Bui</h1>
 </div>
 
 
@@ -190,10 +196,34 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>This is a Quarto website.</p>
-<p>To learn more about Quarto websites visit <a href="https://quarto.org/docs/websites" class="uri">https://quarto.org/docs/websites</a>.</p>
+<section id="welcome" class="level1">
+<h1>Welcome 👋</h1>
+<p>I’m a <strong>Data Science master’s student (Drew University, expected 2026)</strong> with a background in <strong>Economics (B.A.) and minors in Mathematics &amp; Asian Studies</strong>.<br>
+Before transitioning into data, I spent <strong>6+ years managing projects in VFX/animation</strong> and client services—leading cross-functional teams, delivering for global clients, and honing communication and leadership skills.</p>
+<p>Today, I combine that creative and organizational background with <strong>data science, machine learning, and analytics</strong> to solve real-world problems. My work spans <strong>ML model development, coding experiments, and interactive dashboards</strong>.</p>
+<hr>
+<section id="technical-skills" class="level2">
+<h2 class="anchored" data-anchor-id="technical-skills">🔧 Technical Skills</h2>
+<ul>
+<li><strong>Programming &amp; Tools:</strong> Python · R · SQL · Jupyter Notebook · VSCode<br>
+</li>
+<li><strong>Visualization &amp; BI:</strong> Tableau · Power BI · Plotly · Data Wrangling<br>
+</li>
+<li><strong>3D &amp; Creative:</strong> Maya · Blender · Substance Painter<br>
+</li>
+<li><strong>Other:</strong> Google Suite · Microsoft Office</li>
+</ul>
+</section>
+<section id="professional-strengths" class="level2">
+<h2 class="anchored" data-anchor-id="professional-strengths">🌟 Professional Strengths</h2>
+<p>Project Management · Data Analysis · Data Visualization · Communication<br>
+Problem Solving · Teamwork · Critical Thinking · Research</p>
+<hr>
+<p>👉 Check out my <a href="./projects/index.html">Projects</a>, view my <a href="./resume.html">Resume</a>, or connect via <a href="https://www.linkedin.com/in/hien-bui-emi-6273b010a/">LinkedIn</a> / <a href="https://github.com/krisauw">GitHub</a>.</p>
 
 
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -268,7 +298,7 @@ ul.task-list li input[type="checkbox"] {
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp("https:\/\/krisauw\.github\.io\/datascience\/");
+        var filterRegex = new RegExp('/' + window.location.host + '/');
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }

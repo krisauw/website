@@ -2,9 +2,9 @@
   {
     "objectID": "resume.html",
     "href": "resume.html",
-    "title": "Schedule",
+    "title": "Resume",
     "section": "",
-    "text": "About schedule"
+    "text": "⬇️ Download PDF Resume\n\nEducation\n\n\nDrew University, Madison, NJ\nM.S. in Data Science (GPA: 4.0)\n\n::: {.g-col-3 text-end} Anticipated Graduation: August 2026\n\n::::\n\n\nAsian University for Women, Chittagong, Bangladesh\nB.A. in Economics (Minor: Mathematics & Asian Studies, CGPA 3.63)\nHonors: 95% Scholarship Recipient\n\n::: {.g-col-3 text-end} September 2011 – May 2016\n\n::::\n\n\n\nProjects\n\n\nMovie Recommender\n- Built ML models (KNN, Decision Tree, Logistic Regression) in Python/R\n- Achieved ~80% accuracy in predicting highly rated movies\n\n::: {.g-col-3 text-end} November 2024 – December 2024\n\n::::\n\n\nTesla EV Adoption\n- Analyzed 235k+ EV records with Python (Polars, Plotly)\n- Compared adoption trends across brands\n- Published interactive dashboards & Medium article\n\n::: {.g-col-3 text-end} April 2025\n\n::::\n\n\nBook Ratings Analysis\n- Explored rating trends by genre and gender using Python/Plotly\n- Created interactive visualizations to highlight reader preferences\n\n::: {.g-col-3 text-end} April 2025\n\n::::\n\n\nManga Sentiment Analysis\n- Scraped manga reviews using Python (Selenium, TextBlob, NLTK)\n- Visualized audience sentiment in Power BI & Tableau\n\n::: {.g-col-3 text-end} May 2025\n\n::::\n\n\n\nProfessional Experience\n\n\nCosmicVision Company, Ho Chi Minh, Vietnam\nLookdev/Lighting Artist\n- Developed 3D assets (modeling, texturing, look development)\n- Trained new employees in workflows and Maya tools\n- Recognized as “Most Interesting Employee of the Year 2021”\n\n::: {.g-col-3 text-end} March 2021 – July 2024\n\n::::\n\n\nBadClay Studio, Ho Chi Minh, Vietnam\nProject Manager\n- Managed cross-functional teams (asset creation, VFX, lighting, production, animation)\n- Served as client liaison, prepared budgets, reviewed feedback\n- Oversaw post-production for Sweet Home (Netflix, Korean zombie series)\n- Awarded “Best Producer of the Year 2020”\n\n::: {.g-col-3 text-end} February 2018 – March 2021\n\n::::\n\n\nScalable Press, Ho Chi Minh, Vietnam\nCustomer Service Representative\n- Resolved customer inquiries and complaints via email\n- Monitored workflows, tracked DHL shipping, flagged copyright issues\n\n::: {.g-col-3 text-end} September 2017 – February 2018\n\n::::\n\n\n\nSkills\nTechnical\nPython · R · SQL · Jupyter Notebook · VSCode · Tableau · Power BI · Maya · Blender · Substance Painter · Google Suite · Microsoft Office\nProfessional\nData Analysis · Data Visualization · Computer Vision · Project Management · Communication · Problem Solving · Teamwork · Critical Thinking · Research"
   },
   {
     "objectID": "projects/manga-sentiment.html",
@@ -44,23 +44,30 @@
   {
     "objectID": "contact.html",
     "href": "contact.html",
-    "title": "Syllabus",
+    "title": "Contact",
     "section": "",
-    "text": "About Syllabus"
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "About this site"
+    "text": "I’m open to internships and collaborations.\n\nEmail: hienbui [at] example [dot] com\nLinkedIn: https://www.linkedin.com/in/YOUR-LINKEDIN\nGitHub: https://github.com/YOUR-USERNAME"
   },
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "my-site",
+    "title": "Hi, I’m Hien (Emi) Bui",
     "section": "",
-    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
+    "text": "I’m a Data Science master’s student (Drew University, expected 2026) with a background in Economics (B.A.) and minors in Mathematics & Asian Studies.\nBefore transitioning into data, I spent 6+ years managing projects in VFX/animation and client services—leading cross-functional teams, delivering for global clients, and honing communication and leadership skills.\nToday, I combine that creative and organizational background with data science, machine learning, and analytics to solve real-world problems. My work spans ML model development, coding experiments, and interactive dashboards.\n\n\n\n\nProgramming & Tools: Python · R · SQL · Jupyter Notebook · VSCode\n\nVisualization & BI: Tableau · Power BI · Plotly · Data Wrangling\n\n3D & Creative: Maya · Blender · Substance Painter\n\nOther: Google Suite · Microsoft Office\n\n\n\n\nProject Management · Data Analysis · Data Visualization · Communication\nProblem Solving · Teamwork · Critical Thinking · Research\n\n👉 Check out my Projects, view my Resume, or connect via LinkedIn / GitHub."
+  },
+  {
+    "objectID": "index.html#technical-skills",
+    "href": "index.html#technical-skills",
+    "title": "Hi, I’m Hien (Emi) Bui",
+    "section": "",
+    "text": "Programming & Tools: Python · R · SQL · Jupyter Notebook · VSCode\n\nVisualization & BI: Tableau · Power BI · Plotly · Data Wrangling\n\n3D & Creative: Maya · Blender · Substance Painter\n\nOther: Google Suite · Microsoft Office"
+  },
+  {
+    "objectID": "index.html#professional-strengths",
+    "href": "index.html#professional-strengths",
+    "title": "Hi, I’m Hien (Emi) Bui",
+    "section": "",
+    "text": "Project Management · Data Analysis · Data Visualization · Communication\nProblem Solving · Teamwork · Critical Thinking · Research\n\n👉 Check out my Projects, view my Resume, or connect via LinkedIn / GitHub."
   },
   {
     "objectID": "projects/ev-adoption.html",
