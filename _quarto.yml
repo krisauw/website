@@ -2,30 +2,43 @@ project:
   type: website
 
 website:
-  title: "Data 505: R for Statistics"
+  title: "Hien Bui"
   navbar:
     left:
       - text: Home
         href: index.qmd
-      - text: Syllabus
-        href: syllabus.qmd
-      - text: Schedule
-        href: schedule.qmd
-      - text: Lectures
+      - text: About
+        href: about.qmd
+      - text: Resume
         menu:
-          - text: Week 1 (Aug 26)
-            href: lectures/week1.qmd
-          - text: Week 2 (Sep 2)
-            href: lectures/week2.qmd
-      - text: Labs
+          - text: View Resume
+            href: resume.qmd
+          - text: Download PDF
+            href: resume/Resume_HienBui.pdf
+      - text: Projects
         menu:
-          - text: Lab 1 (Week 1 / Aug 26)
-            href: labs/lab1.qmd
-          - text: Lab 2 (Week 2 / Sep 2)
-            href: labs/lab2.qmd
+          - text: EV Adoption
+            href: projects/ev-adoption.qmd
+          - text: Movie Recommender
+            href: projects/movie-recommender.qmd
+          - text: Book Ratings
+            href: projects/book-ratings.qmd
+          - text: Manga Sentiment
+            href: projects/manga-sentiment.qmd
+          - text: Luxury Car Price
+            href: projects/luxury-car-price.qmd
+      - text: Contact
+        href: contact.qmd
+    right:
+      - icon: github
+        href: https://github.com/krisauw
+      - icon: linkedin
+        href: https://www.linkedin.com/in/hien-bui-emi-6273b010a/
   search: true
   page-navigation: true
 
 format:
   html:
     theme: cosmo
+    toc: true
+    toc-depth: 2

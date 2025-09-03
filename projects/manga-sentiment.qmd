@@ -1,0 +1,9 @@
+---
+title: "Manga Sentiment Analysis"
+---
+
+Scraped manga reviews and analyzed sentiment.
+
+- Tools: Python (Selenium, TextBlob, NLTK)
+- Visualized sentiment trends in **Power BI** and **Tableau**
+- Links: [GitHub](https://github.com/krisauw)

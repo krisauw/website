@@ -1,0 +1,10 @@
+---
+title: "Luxury Car Price Prediction"
+---
+
+Built a predictive model for car prices.
+
+- Explored luxury car dataset
+- Applied regression models to predict price ranges
+- Skills: Python, Regression, EDA
+- Links: [GitHub](https://github.com/krisauw)

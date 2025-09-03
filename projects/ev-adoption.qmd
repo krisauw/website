@@ -1,0 +1,10 @@
+---
+title: "Tesla EV Adoption"
+---
+
+Analyzed **235k+ EV records** with Python (Polars, Plotly) to compare adoption trends across brands.
+
+- Built dashboards to explore adoption by city/brand
+- Published interactive insights in a Medium article
+- Skills: Python, Polars, Plotly, Data Wrangling, Visualization
+- Links: [GitHub](https://github.com/krisauw), [Medium Article](#)

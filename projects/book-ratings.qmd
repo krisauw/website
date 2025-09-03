@@ -1,0 +1,10 @@
+---
+title: "Book Ratings Analysis"
+---
+
+Explored book rating trends using Python.
+
+- Compared preferences across genres & genders
+- Created interactive visualizations (Plotly)
+- Skills: Data Analysis, Visualization
+- Links: [GitHub](https://github.com/krisauw)

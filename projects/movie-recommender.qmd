@@ -1,0 +1,10 @@
+---
+title: "Movie Recommender System"
+---
+
+Created a recommender using multiple ML models.
+
+- Implemented **KNN, Decision Tree, Logistic Regression** in Python/R
+- Achieved ~80% accuracy in predicting highly rated movies
+- Skills: ML Algorithms, Scikit-learn, R
+- Links: [GitHub](https://github.com/krisauw)
