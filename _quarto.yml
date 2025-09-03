@@ -8,11 +8,7 @@ website:
       - text: Home
         href: index.qmd
       - text: Resume
-        menu:
-          - text: View Resume
-            href: resume.qmd
-          - text: Download PDF
-            href: resume/Resume_HienBui.pdf
+        href: resume.qmd
       - text: Projects
         menu:
           - text: EV Adoption
