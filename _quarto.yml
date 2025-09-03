@@ -1,0 +1,31 @@
+project:
+  type: website
+
+website:
+  title: "Data 505: R for Statistics"
+  navbar:
+    left:
+      - text: Home
+        href: index.qmd
+      - text: Syllabus
+        href: syllabus.qmd
+      - text: Schedule
+        href: schedule.qmd
+      - text: Lectures
+        menu:
+          - text: Week 1 (Aug 26)
+            href: lectures/week1.qmd
+          - text: Week 2 (Sep 2)
+            href: lectures/week2.qmd
+      - text: Labs
+        menu:
+          - text: Lab 1 (Week 1 / Aug 26)
+            href: labs/lab1.qmd
+          - text: Lab 2 (Week 2 / Sep 2)
+            href: labs/lab2.qmd
+  search: true
+  page-navigation: true
+
+format:
+  html:
+    theme: cosmo
