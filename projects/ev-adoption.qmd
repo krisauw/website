@@ -1,21 +1,20 @@
-
 ---
 title: "Tesla Takes the Wheel: Brand Comparisons and EV Adoption in Washington"
 subtitle: "Tesla's rise in range, reach, and reputation — told through data"
 format:
   html:
     toc: true
+    toc-depth: 1
     number-sections: true
+    freeze: true
     theme: flatly
 ---
 
-## Executive Summary
+# Executive Summary
 
-Electric vehicles are no longer just the future — they're the present. In this project, I explore how Washington State is embracing EVs, with Tesla clearly driving the momentum. Using public registration data, I visualized four key dimensions of the EV landscape: growth over time, brand comparisons, electric range, and regional hotspots. The data tells a compelling story of how quickly things are changing, and how one brand in particular — Tesla — is helping lead that transformation.
+Electric vehicles are no longer just the future—they're the present. In this project, I explore how Washington State is embracing EVs, with Tesla clearly driving the momentum. Using public registration data, I visualized four key dimensions of the EV landscape: growth over time, brand comparisons, electric range, and regional hotspots. The data tells a compelling story of how quickly things are changing, and how one brand in particular—Tesla—is helping lead that transformation.
 
----
-
-## Background and Dataset Summary
+# Background and Dataset Summary
 
 The dataset comes from the Electric Vehicle Population Data shared by the Washington State Department of Licensing. It includes more than 235,000 EVs currently registered in the state. Each record captures model year, brand, electric range, city of registration, and even utility provider — offering rich insight into how, where, and what kinds of electric vehicles people are driving in Washington.
 
@@ -26,23 +25,21 @@ With 17 columns in total, the dataset gives us:
 - Energy + policy fields (utility provider, CAFV eligibility)  
 - Additional metadata like MSRP and census tract  
 
----
+# Why This Topic?
 
-## Why This Topic?
-
-I've always been drawn to stories hidden in data — especially when they reflect real, tangible changes happening around us. As someone who cares deeply about the environment and envisions a cleaner, more sustainable future, electric vehicles represent a hopeful shift. They're not just machines — they're milestones on our journey toward greener cities and cleaner skies.
+I've always been drawn to stories hidden in data—especially when they reflect real, tangible changes happening around us. As someone who cares deeply about the environment and envisions a cleaner, more sustainable future, electric vehicles represent a hopeful shift. They're not just machines—they're milestones on our journey toward greener cities and cleaner skies.
 
 When I found this dataset, I was immediately intrigued. It's rare to get such a comprehensive look at a state's transition toward electric mobility. And with Washington leading the charge, and Tesla front and center, I saw a story waiting to be told.
 
-That said, I don't want to stop at one state. In the future, I'd love to explore how EV adoption compares across different regions and countries — how infrastructure, policy, and culture shape the road to electrification around the world.
+That said, I don't want to stop at one state. In the future, I'd love to explore how EV adoption compares across different regions and countries—how infrastructure, policy, and culture shape the road to electrification around the world.
 
----
+# Figure-by-Figure Walkthrough
 
-## Figure-by-Figure Walkthrough
-
-### Import Libraries
+## Import Libraries
 
 ```{python}
+%pip install plotly
+%pip install polars great_tables
 import pandas as pd
 import numpy as np
 import plotly.express as px
@@ -52,13 +49,13 @@ from great_tables import (
 )
 
 # Load the dataset
-df = pd.read_csv("Electric_Vehicle_Population_Data.csv")
+df = pd.read_csv("data/projects/ev-adoption/Electric_Vehicle_Population_Data.csv")
 
 # Filter only Washington's data
 df_wa = df[df['State'] == 'WA']
 ```
 
-### 1. EV Adoption by Model Year
+### EV Adoption by Model Year
 
 This bar chart shows just how sharply EV adoption has climbed, especially in the past five years. The 2023 spike is a real eye-opener.
 
@@ -87,9 +84,9 @@ fig_bar = px.bar(
 fig_bar.show()
 ```
 
-![1](../images/projects/ev-adoption/bar_3_no_yaxis.png)
+![](../images/projects/ev-adoption/bar_3_no_yaxis.png)
 
-### 2. Top 5 Cities for EV Ownership
+### Top 5 Cities for EV Ownership
 
 Seattle is far ahead of the rest.
 
@@ -117,8 +114,9 @@ table_city = (
 table_city.show()
 ```
 
-![2](../images/projects/ev-adoption/table3.png)
-### 3. EV Brand Popularity in Major Cities
+![](../images/projects/ev-adoption/table3.png)
+
+### EV Brand Popularity in Major Cities
 
 Tesla leads in every single one, often by a huge margin.
 
@@ -157,8 +155,9 @@ fig_facet = px.bar(
 fig_facet.show()
 ```
 
-![3](../images/projects/ev-adoption/facet_h_1.png)
-### 4. Electric Range by Brand
+![](../images/projects/ev-adoption/facet_h_1.png)
+
+### Electric Range by Brand
 
 Tesla pulls far ahead in driving distance.
 
@@ -180,8 +179,8 @@ fig_box.show()
 ```
 
 
-![3](../images/projects/ev-adoption/box_h_2.png)
-## Design Choices That Made It Work
+![](../images/projects/ev-adoption/box_h_2.png)
+# Design Choices That Made It Work
 
 Simplicity first: clean labels, clear axis titles, minimal clutter
 Color with purpose: Seattle, 2023, Tesla highlighted in green; others in gray
@@ -197,7 +196,8 @@ color_palette = {
     "white": "#ECF0F1"
 }
 ```
-## Final Thoughts
+
+# Final Thoughts
 
 Originally, I planned to include a geographic heatmap, but simplifying to four strong visuals made for a clearer and more engaging story. This project helped me practice transforming raw data into something accessible and hopefully insightful.
 

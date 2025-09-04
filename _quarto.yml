@@ -1,9 +1,18 @@
 project:
   type: website
+  output-dir: docs
+  execute-dir: project
+
+# Copy assets into docs/ when publishing
+resources:
+  - data/**
+  - images/**
 
 website:
   title: "Hien Bui"
   navbar:
+    background: "#2C3E50"   # dark blue
+    foreground: light
     left:
       - text: Home
         href: index.qmd
@@ -25,14 +34,12 @@ website:
         href: contact.qmd
     right:
       - icon: github
-        href: https://krisauw.github.io/website/
+        href: https://github.com/krisauw
       - icon: linkedin
         href: https://www.linkedin.com/in/hien-bui-emi-6273b010a/
-  search: true
-  page-navigation: true
 
-format:
-  html:
-    theme: cosmo
-    toc: true
-    toc-depth: 2
+execute:
+  eval: false     # don't run any chunks
+  echo: true      # DO show the code
+  warning: false
+  error: false
