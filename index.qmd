@@ -19,5 +19,3 @@ Today, I combine that creative and organizational background with **data science
 - Project Management · Data Analysis · Data Visualization · Communication  
 - Problem Solving · Teamwork · Critical Thinking · Research  
 
-Check out my [Projects](projects/index.qmd), view my [Resume](resume.qmd), or connect via  
-[LinkedIn](https://www.linkedin.com/in/hien-bui-emi-6273b010a/) · [GitHub](https://krisauw.github.io/website/)

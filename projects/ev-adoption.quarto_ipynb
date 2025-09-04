@@ -43,7 +43,7 @@
         "\n",
         "## Import Libraries"
       ],
-      "id": "8b63f739"
+      "id": "be4f4b8d"
     },
     {
       "cell_type": "code",
@@ -65,7 +65,7 @@
         "# Filter only Washington's data\n",
         "df_wa = df[df['State'] == 'WA']"
       ],
-      "id": "c380b244",
+      "id": "d08d679a",
       "execution_count": null,
       "outputs": []
     },
@@ -77,7 +77,7 @@
         "\n",
         "This bar chart shows just how sharply EV adoption has climbed, especially in the past five years. The 2023 spike is a real eye-opener."
       ],
-      "id": "fbd179bc"
+      "id": "3de6c4f3"
     },
     {
       "cell_type": "code",
@@ -106,7 +106,7 @@
         "\n",
         "fig_bar.show()"
       ],
-      "id": "f9a01e23",
+      "id": "7de0c7f4",
       "execution_count": null,
       "outputs": []
     },
@@ -120,7 +120,7 @@
         "\n",
         "Seattle is far ahead of the rest."
       ],
-      "id": "4ed502b7"
+      "id": "1d25b97e"
     },
     {
       "cell_type": "code",
@@ -148,7 +148,7 @@
         "\n",
         "table_city.show()"
       ],
-      "id": "b39559d0",
+      "id": "8703d3e0",
       "execution_count": null,
       "outputs": []
     },
@@ -162,7 +162,7 @@
         "\n",
         "Tesla leads in every single one, often by a huge margin."
       ],
-      "id": "992e48c2"
+      "id": "9b426f94"
     },
     {
       "cell_type": "code",
@@ -201,7 +201,7 @@
         "\n",
         "fig_facet.show()"
       ],
-      "id": "14505446",
+      "id": "e881acb0",
       "execution_count": null,
       "outputs": []
     },
@@ -215,7 +215,7 @@
         "\n",
         "Tesla pulls far ahead in driving distance."
       ],
-      "id": "c8ffed2b"
+      "id": "45daa162"
     },
     {
       "cell_type": "code",
@@ -236,7 +236,7 @@
         "\n",
         "fig_box.show()"
       ],
-      "id": "0e95fc32",
+      "id": "7eca5c9a",
       "execution_count": null,
       "outputs": []
     },
@@ -254,7 +254,7 @@
         "- Layout flow: charts align vertically for a smooth flow\n",
         "- Color Palette:"
       ],
-      "id": "6278a05e"
+      "id": "b8ff62e1"
     },
     {
       "cell_type": "code",
@@ -267,7 +267,7 @@
         "    \"white\": \"#ECF0F1\"\n",
         "}"
       ],
-      "id": "a0ba73ee",
+      "id": "e8475a31",
       "execution_count": null,
       "outputs": []
     },
@@ -281,7 +281,7 @@
         "\n",
         "Whether you're a fellow data nerd or just curious about EVs, I hope this piece gives you something to think about the next time you see a Tesla on the road."
       ],
-      "id": "d6033fcc"
+      "id": "40ce3df7"
     }
   ],
   "metadata": {

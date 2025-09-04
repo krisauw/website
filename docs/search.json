@@ -74,14 +74,14 @@
     "href": "contact.html",
     "title": "Contact",
     "section": "",
-    "text": "I’m open to internships and collaborations.\n\nEmail\n\nLinkedIn\n\nGitHub"
+    "text": "I’m open to internships and collaborations.\n\nEmail\n\nLinkedIn"
   },
   {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Hi, I’m Hien (Emi) Bui",
     "section": "",
-    "text": "I’m a Data Science master’s student (Drew University, expected 2026) with a background in Economics (B.A.) and minors in Mathematics & Asian Studies.\nBefore transitioning into data, I spent 6+ years managing projects in VFX/animation and client services—leading cross-functional teams, delivering for global clients, and honing communication and leadership skills.\nToday, I combine that creative and organizational background with data science, machine learning, and analytics to solve real-world problems. My work spans ML model development, coding experiments, and interactive dashboards.\n\n\n\n\nProgramming & Tools: Python · R · SQL · Jupyter Notebook · VSCode\n\nVisualization & BI: Tableau · Power BI · Plotly · Data Wrangling\n\n3D & Creative: Maya · Blender · Substance Painter\n\nOther: Google Suite · Microsoft Office\n\n\n\n\nProject Management · Data Analysis · Data Visualization · Communication\nProblem Solving · Teamwork · Critical Thinking · Research\n\nCheck out my Projects, view my Resume, or connect via\nLinkedIn · GitHub"
+    "text": "I’m a Data Science master’s student (Drew University, expected 2026) with a background in Economics (B.A.) and minors in Mathematics & Asian Studies.\nBefore transitioning into data, I spent 6+ years managing projects in VFX/animation and client services—leading cross-functional teams, delivering for global clients, and honing communication and leadership skills.\nToday, I combine that creative and organizational background with data science, machine learning, and analytics to solve real-world problems. My work spans ML model development, coding experiments, and interactive dashboards.\n\n\n\nProgramming & Tools: Python · R · SQL · Jupyter Notebook · VSCode\n\nVisualization & BI: Tableau · Power BI · Plotly · Data Wrangling\n\n3D & Creative: Maya · Blender · Substance Painter\n\nOther: Google Suite · Microsoft Office\n\n\n\n\n\nProject Management · Data Analysis · Data Visualization · Communication\n\nProblem Solving · Teamwork · Critical Thinking · Research"
   },
   {
     "objectID": "index.html#technical-skills",
@@ -95,7 +95,7 @@
     "href": "index.html#professional-strengths",
     "title": "Hi, I’m Hien (Emi) Bui",
     "section": "",
-    "text": "Project Management · Data Analysis · Data Visualization · Communication\nProblem Solving · Teamwork · Critical Thinking · Research\n\nCheck out my Projects, view my Resume, or connect via\nLinkedIn · GitHub"
+    "text": "Project Management · Data Analysis · Data Visualization · Communication\n\nProblem Solving · Teamwork · Critical Thinking · Research"
   },
   {
     "objectID": "projects/ev-adoption.html",
@@ -138,6 +138,13 @@
     "title": "Car Price Analysis and Visualization",
     "section": "2.2 Vertical Bar Chart",
     "text": "2.2 Vertical Bar Chart\nThis vertical bar chart visualizes the ranking of car brands by average price, reinforcing Ferrari’s position as the most expensive brand, followed by Lamborghini and Rolls-Royce.\nThe labels provide precise price values, helping illustrate the steep differences among luxury brands.\nThis format effectively showcases the clear hierarchy in pricing within the high-end automobile market."
+  },
+  {
+    "objectID": "projects/luxury-car-price.html#horizontal-bar-chart",
+    "href": "projects/luxury-car-price.html#horizontal-bar-chart",
+    "title": "Car Price Analysis and Visualization",
+    "section": "2.3 Horizontal Bar Chart",
+    "text": "2.3 Horizontal Bar Chart\nThis horizontal bar chart highlights Ferrari as the most expensive car brand, with a significant price gap of $11 million above its closest competitor, Lamborghini.\nRolls-Royce, Maserati, and Porsche also rank among the higher-priced brands, while luxury SUVs such as Land Rover, Lexus, and BMW fall into a lower price range.\nThe chart emphasizes how brand reputation and performance contribute more to pricing than vehicle size or seating capacity."
   },
   {
     "objectID": "projects/luxury-car-price.html#facet-bar-chart",
@@ -229,12 +236,5 @@
     "title": "Movie Recommender System",
     "section": "3.5 Notes:",
     "text": "3.5 Notes:\np̂ / (1 - p̂): the predicted probability of High_Rating = 1\nInterpretation table\n\nThe confusion matrix\n\nBased on the confusion matrix, the accuracy and misclassification rates are described as below:\n\nOut of 61 not High_Rating movies, there are 52 correct predictions (true negatives) and 9 misclassifications (false positives). Out of 29 High_Rating movies, there are 17 correct predictions (true positives) and 12 misclassifications (false negatives). The accuracy rate is 76.7%, and the misclassification rate is 23.3%.\nAccuracy: 76.7% | Misclassification: 23.3%"
-  },
-  {
-    "objectID": "projects/luxury-car-price.html#horizontal-bar-chart",
-    "href": "projects/luxury-car-price.html#horizontal-bar-chart",
-    "title": "Car Price Analysis and Visualization",
-    "section": "2.3 Horizontal Bar Chart",
-    "text": "2.3 Horizontal Bar Chart\nThis horizontal bar chart highlights Ferrari as the most expensive car brand, with a significant price gap of $11 million above its closest competitor, Lamborghini.\nRolls-Royce, Maserati, and Porsche also rank among the higher-priced brands, while luxury SUVs such as Land Rover, Lexus, and BMW fall into a lower price range.\nThe chart emphasizes how brand reputation and performance contribute more to pricing than vehicle size or seating capacity."
   }
 ]
