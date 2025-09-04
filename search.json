@@ -11,7 +11,28 @@
     "href": "projects/manga-sentiment.html",
     "title": "Manga Sentiment Analysis",
     "section": "",
-    "text": "Scraped manga reviews and analyzed sentiment.\n\nTools: Python (Selenium, TextBlob, NLTK)\nVisualized sentiment trends in Power BI and Tableau\nLinks: GitHub"
+    "text": "Scraped manga reviews and analyzed sentiment. This work was inspired and refered to One Piece Analysis by Viet Anh.\n\nTools: Python (Selenium, TextBlob, NLTK)\nVisualized sentiment trends in Power BI and Tableau"
+  },
+  {
+    "objectID": "projects/manga-sentiment.html#overview",
+    "href": "projects/manga-sentiment.html#overview",
+    "title": "Manga Sentiment Analysis",
+    "section": "",
+    "text": "Scraped manga reviews and analyzed sentiment. This work was inspired and refered to One Piece Analysis by Viet Anh.\n\nTools: Python (Selenium, TextBlob, NLTK)\nVisualized sentiment trends in Power BI and Tableau"
+  },
+  {
+    "objectID": "projects/manga-sentiment.html#methods-brief",
+    "href": "projects/manga-sentiment.html#methods-brief",
+    "title": "Manga Sentiment Analysis",
+    "section": "Methods (brief)",
+    "text": "Methods (brief)\n\nCollection: Automated review scraping with Selenium.\nCleaning: Lowercasing, punctuation removal, stopword filtering (NLTK).\nSentiment: Polarity scoring with TextBlob; aggregate by date/title to see trends.\nVisualization: Power BI and Tableau dashboards for time trends and distributions."
+  },
+  {
+    "objectID": "projects/manga-sentiment.html#interactive-dashboard-tableau",
+    "href": "projects/manga-sentiment.html#interactive-dashboard-tableau",
+    "title": "Manga Sentiment Analysis",
+    "section": "Interactive Dashboard (Tableau)",
+    "text": "Interactive Dashboard (Tableau)\n\n \n\n\nIf the embed does not load, open it directly:  Tableau Public link ."
   },
   {
     "objectID": "projects/index.html",
@@ -37,23 +58,51 @@
   {
     "objectID": "projects/book-ratings.html",
     "href": "projects/book-ratings.html",
-    "title": "Book Ratings Analysis",
+    "title": "Book Genre Ratings Analysis",
     "section": "",
-    "text": "Explored book rating trends using Python.\n\nCompared preferences across genres & genders\nCreated interactive visualizations (Plotly)\nSkills: Data Analysis, Visualization\nLinks: GitHub"
+    "text": "This project analyzes book genres and their ratings using Pandas, Plotly, and GreatTables. It presents structured tables and different bar charts to explore how ratings vary across genres and between male and female readers.\n\n\n\nFormatted Data Tables for book genres and their ratings.\n\nStacked/Paired/Facet Charts to compare ratings between male and female readers.\n\nCustom Styling for clear and professional presentation.\n\nData Processing with Pandas to analyze genre-based ratings."
+  },
+  {
+    "objectID": "projects/book-ratings.html#project-overview",
+    "href": "projects/book-ratings.html#project-overview",
+    "title": "Book Genre Ratings Analysis",
+    "section": "",
+    "text": "This project analyzes book genres and their ratings using Pandas, Plotly, and GreatTables. It presents structured tables and different bar charts to explore how ratings vary across genres and between male and female readers.\n\n\n\nFormatted Data Tables for book genres and their ratings.\n\nStacked/Paired/Facet Charts to compare ratings between male and female readers.\n\nCustom Styling for clear and professional presentation.\n\nData Processing with Pandas to analyze genre-based ratings."
+  },
+  {
+    "objectID": "projects/book-ratings.html#visualizations",
+    "href": "projects/book-ratings.html#visualizations",
+    "title": "Book Genre Ratings Analysis",
+    "section": "Visualizations",
+    "text": "Visualizations\n\nFormatted Data Table and Horizontal Bar Chart: Genre Ratings\n\nFormatted Data Table\nA well-structured table displaying the average ratings for each book genre. The table is color-coded to highlight the highest and lowest rated genres.\n* This table provides numerical data for average reviews and ratings across different genres.\n* Sci-Fi has the highest average rating (2,023,518), followed by Thrillers (1,798,566) and Fantasy (1,561,214).\n* Action and Autobiographies have the lowest ratings in the dataset.\n\n\n\nHorizontal Bar Chart\n\nThis chart ranks genres based on their total ratings.\n\nSci-Fi leads the ratings board, followed by Thrillers and Fantasy.\n\nAction and Autobiographies receive the lowest ratings among the listed genres.\n\n\n\n\n\n\nStacked/Paired/Facet Charts: Male vs. Female Ratings\nThey compare book ratings between male and female readers for different genres.\n\nStacked Chart\n\nThis chart stacks male and female author ratings on top of each other.\n\nIt highlights the contribution of each gender to overall ratings in different genres.\n\nSci-Fi and Thrillers maintain the highest overall ratings, showing strong performance across genders.\n\n\n\n\nPaired Chart\n\nThis bar chart presents book ratings split by gender, with bars for male and female authors side by side for comparison.\n\nSci-Fi, Thrillers, and Fantasy stand out as the most highly rated genres, with Sci-Fi leading for female authors and Fantasy leading for male authors.\n\n\n\n\nFacet Chart: Male vs. Female Ratings\n\nThis chart separates book ratings by author gender, displaying ratings for various genres.\n\nSci-Fi has the highest ratings among female authors, while Fantasy dominates for male authors.\n\nThrillers and Romance are also strong performers across both genders."
+  },
+  {
+    "objectID": "projects/book-ratings.html#technologies-used",
+    "href": "projects/book-ratings.html#technologies-used",
+    "title": "Book Genre Ratings Analysis",
+    "section": "Technologies Used",
+    "text": "Technologies Used\n\nPython (for data cleaning and analysis)\n\nPandas (for processing book genre ratings)\n\nPlotly (for creating bar charts)\n\nGreatTables (for generating structured data tables)\n\nJupyter Notebook (for running and displaying results)"
+  },
+  {
+    "objectID": "projects/book-ratings.html#future-improvements",
+    "href": "projects/book-ratings.html#future-improvements",
+    "title": "Book Genre Ratings Analysis",
+    "section": "Future Improvements",
+    "text": "Future Improvements\n\nAdd more demographic insights (e.g., age-based preferences).\n\nIntroduce interactive filters for exploring ratings dynamically.\n\nEnhance styling and readability of tables and charts.\n\nExpand dataset to include more book genres and user reviews."
   },
   {
     "objectID": "contact.html",
     "href": "contact.html",
     "title": "Contact",
     "section": "",
-    "text": "I’m open to internships and collaborations.\n\nEmail: hien.bui0393@gmail.com\n\nLinkedIn: https://www.linkedin.com/in/hien-bui-emi-6273b010a/\n\nGitHub: https://krisauw.github.io/website/"
+    "text": "I’m open to internships and collaborations.\n\nEmail\n\nLinkedIn\n\nGitHub"
   },
   {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Hi, I’m Hien (Emi) Bui",
     "section": "",
-    "text": "I’m a Data Science master’s student (Drew University, expected 2026) with a background in Economics (B.A.) and minors in Mathematics & Asian Studies.\nBefore transitioning into data, I spent 6+ years managing projects in VFX/animation and client services—leading cross-functional teams, delivering for global clients, and honing communication and leadership skills.\nToday, I combine that creative and organizational background with data science, machine learning, and analytics to solve real-world problems. My work spans ML model development, coding experiments, and interactive dashboards.\n\n\n\n\nProgramming & Tools: Python · R · SQL · Jupyter Notebook · VSCode\n\nVisualization & BI: Tableau · Power BI · Plotly · Data Wrangling\n\n3D & Creative: Maya · Blender · Substance Painter\n\nOther: Google Suite · Microsoft Office\n\n\n\n\nProject Management · Data Analysis · Data Visualization · Communication\nProblem Solving · Teamwork · Critical Thinking · Research\n\n👉 Check out my Projects, view my Resume, or connect via LinkedIn / GitHub."
+    "text": "I’m a Data Science master’s student (Drew University, expected 2026) with a background in Economics (B.A.) and minors in Mathematics & Asian Studies.\nBefore transitioning into data, I spent 6+ years managing projects in VFX/animation and client services—leading cross-functional teams, delivering for global clients, and honing communication and leadership skills.\nToday, I combine that creative and organizational background with data science, machine learning, and analytics to solve real-world problems. My work spans ML model development, coding experiments, and interactive dashboards.\n\n\n\n\nProgramming & Tools: Python · R · SQL · Jupyter Notebook · VSCode\n\nVisualization & BI: Tableau · Power BI · Plotly · Data Wrangling\n\n3D & Creative: Maya · Blender · Substance Painter\n\nOther: Google Suite · Microsoft Office\n\n\n\n\nProject Management · Data Analysis · Data Visualization · Communication\nProblem Solving · Teamwork · Critical Thinking · Research\n\nCheck out my Projects, view my Resume, or connect via\nLinkedIn · GitHub"
   },
   {
     "objectID": "index.html#technical-skills",
@@ -67,27 +116,188 @@
     "href": "index.html#professional-strengths",
     "title": "Hi, I’m Hien (Emi) Bui",
     "section": "",
-    "text": "Project Management · Data Analysis · Data Visualization · Communication\nProblem Solving · Teamwork · Critical Thinking · Research\n\n👉 Check out my Projects, view my Resume, or connect via LinkedIn / GitHub."
+    "text": "Project Management · Data Analysis · Data Visualization · Communication\nProblem Solving · Teamwork · Critical Thinking · Research\n\nCheck out my Projects, view my Resume, or connect via\nLinkedIn · GitHub"
   },
   {
     "objectID": "projects/ev-adoption.html",
     "href": "projects/ev-adoption.html",
-    "title": "Tesla EV Adoption",
+    "title": "Tesla Takes the Wheel: Brand Comparisons and EV Adoption in Washington",
     "section": "",
-    "text": "Analyzed 235k+ EV records with Python (Polars, Plotly) to compare adoption trends across brands.\n\nBuilt dashboards to explore adoption by city/brand\nPublished interactive insights in a Medium article\nSkills: Python, Polars, Plotly, Data Wrangling, Visualization\nLinks: GitHub, Medium Article"
+    "text": "Electric vehicles are no longer just the future — they’re the present. In this project, I explore how Washington State is embracing EVs, with Tesla clearly driving the momentum. Using public registration data, I visualized four key dimensions of the EV landscape: growth over time, brand comparisons, electric range, and regional hotspots. The data tells a compelling story of how quickly things are changing, and how one brand in particular — Tesla — is helping lead that transformation."
+  },
+  {
+    "objectID": "projects/ev-adoption.html#executive-summary",
+    "href": "projects/ev-adoption.html#executive-summary",
+    "title": "Tesla Takes the Wheel: Brand Comparisons and EV Adoption in Washington",
+    "section": "",
+    "text": "Electric vehicles are no longer just the future — they’re the present. In this project, I explore how Washington State is embracing EVs, with Tesla clearly driving the momentum. Using public registration data, I visualized four key dimensions of the EV landscape: growth over time, brand comparisons, electric range, and regional hotspots. The data tells a compelling story of how quickly things are changing, and how one brand in particular — Tesla — is helping lead that transformation."
+  },
+  {
+    "objectID": "projects/ev-adoption.html#background-and-dataset-summary",
+    "href": "projects/ev-adoption.html#background-and-dataset-summary",
+    "title": "Tesla Takes the Wheel: Brand Comparisons and EV Adoption in Washington",
+    "section": "2 Background and Dataset Summary",
+    "text": "2 Background and Dataset Summary\nThe dataset comes from the Electric Vehicle Population Data shared by the Washington State Department of Licensing. It includes more than 235,000 EVs currently registered in the state. Each record captures model year, brand, electric range, city of registration, and even utility provider — offering rich insight into how, where, and what kinds of electric vehicles people are driving in Washington.\nWith 17 columns in total, the dataset gives us:\n\nVehicle details (make, model, model year, range)\n\nLocation data (city, county, zip)\n\nEnergy + policy fields (utility provider, CAFV eligibility)\n\nAdditional metadata like MSRP and census tract"
+  },
+  {
+    "objectID": "projects/ev-adoption.html#why-this-topic",
+    "href": "projects/ev-adoption.html#why-this-topic",
+    "title": "Tesla Takes the Wheel: Brand Comparisons and EV Adoption in Washington",
+    "section": "3 Why This Topic?",
+    "text": "3 Why This Topic?\nI’ve always been drawn to stories hidden in data — especially when they reflect real, tangible changes happening around us. As someone who cares deeply about the environment and envisions a cleaner, more sustainable future, electric vehicles represent a hopeful shift. They’re not just machines — they’re milestones on our journey toward greener cities and cleaner skies.\nWhen I found this dataset, I was immediately intrigued. It’s rare to get such a comprehensive look at a state’s transition toward electric mobility. And with Washington leading the charge, and Tesla front and center, I saw a story waiting to be told.\nThat said, I don’t want to stop at one state. In the future, I’d love to explore how EV adoption compares across different regions and countries — how infrastructure, policy, and culture shape the road to electrification around the world."
+  },
+  {
+    "objectID": "projects/ev-adoption.html#figure-by-figure-walkthrough",
+    "href": "projects/ev-adoption.html#figure-by-figure-walkthrough",
+    "title": "Tesla Takes the Wheel: Brand Comparisons and EV Adoption in Washington",
+    "section": "4 Figure-by-Figure Walkthrough",
+    "text": "4 Figure-by-Figure Walkthrough\n\n4.1 Import Libraries\n\n\nRequirement already satisfied: plotly in c:\\users\\emily\\appdata\\local\\programs\\python\\python313\\lib\\site-packages (6.3.0)\nRequirement already satisfied: narwhals&gt;=1.15.1 in c:\\users\\emily\\appdata\\local\\programs\\python\\python313\\lib\\site-packages (from plotly) (2.3.0)\nRequirement already satisfied: packaging in c:\\users\\emily\\appdata\\local\\programs\\python\\python313\\lib\\site-packages (from plotly) (24.2)\nNote: you may need to restart the kernel to use updated packages.\n\n\nRequirement already satisfied: polars in c:\\users\\emily\\appdata\\local\\programs\\python\\python313\\lib\\site-packages (1.33.0)\nRequirement already satisfied: great_tables in c:\\users\\emily\\appdata\\local\\programs\\python\\python313\\lib\\site-packages (0.18.0)\nRequirement already satisfied: commonmark&gt;=0.9.1 in c:\\users\\emily\\appdata\\local\\programs\\python\\python313\\lib\\site-packages (from great_tables) (0.9.1)\nRequirement already satisfied: faicons&gt;=0.2.2 in c:\\users\\emily\\appdata\\local\\programs\\python\\python313\\lib\\site-packages (from great_tables) (0.2.2)\nRequirement already satisfied: htmltools&gt;=0.4.1 in c:\\users\\emily\\appdata\\local\\programs\\python\\python313\\lib\\site-packages (from great_tables) (0.6.0)\nRequirement already satisfied: importlib-metadata in c:\\users\\emily\\appdata\\local\\programs\\python\\python313\\lib\\site-packages (from great_tables) (8.7.0)\nRequirement already satisfied: typing_extensions&gt;=3.10.0.0 in c:\\users\\emily\\appdata\\local\\programs\\python\\python313\\lib\\site-packages (from great_tables) (4.12.2)\nRequirement already satisfied: numpy&gt;=1.22.4 in c:\\users\\emily\\appdata\\local\\programs\\python\\python313\\lib\\site-packages (from great_tables) (2.2.1)\nRequirement already satisfied: Babel&gt;=2.13.1 in c:\\users\\emily\\appdata\\local\\programs\\python\\python313\\lib\\site-packages (from great_tables) (2.16.0)\nRequirement already satisfied: importlib-resources in c:\\users\\emily\\appdata\\local\\programs\\python\\python313\\lib\\site-packages (from great_tables) (6.5.2)\nRequirement already satisfied: packaging&gt;=20.9 in c:\\users\\emily\\appdata\\local\\programs\\python\\python313\\lib\\site-packages (from htmltools&gt;=0.4.1-&gt;great_tables) (24.2)\nRequirement already satisfied: zipp&gt;=3.20 in c:\\users\\emily\\appdata\\local\\programs\\python\\python313\\lib\\site-packages (from importlib-metadata-&gt;great_tables) (3.23.0)\nNote: you may need to restart the kernel to use updated packages.\n\n\n\n\n4.2 1. EV Adoption by Model Year\nThis bar chart shows just how sharply EV adoption has climbed, especially in the past five years. The 2023 spike is a real eye-opener.\n\n\n\n---------------------------------------------------------------------------\nKeyError                                  Traceback (most recent call last)\nCell In[2], line 3\n      1 # Filter data of EV Count by model year\n      2 df_wa_model = (\n----&gt; 3     df_wa[['model', 'model_year']]\n      4     .groupby('model_year')\n      5     .agg({\"model\": \"count\"})\n      6     .reset_index()\n      7 )\n      9 df_wa_model['model_year'] = df_wa_model['model_year'].astype(str)\n     10 df_wa_model['flag'] = df_wa_model['model_year'] == '2023'\n\nFile ~\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\pandas\\core\\frame.py:4108, in DataFrame.__getitem__(self, key)\n   4106     if is_iterator(key):\n   4107         key = list(key)\n-&gt; 4108     indexer = self.columns._get_indexer_strict(key, \"columns\")[1]\n   4110 # take() does not accept boolean indexers\n   4111 if getattr(indexer, \"dtype\", None) == bool:\n\nFile ~\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\pandas\\core\\indexes\\base.py:6200, in Index._get_indexer_strict(self, key, axis_name)\n   6197 else:\n   6198     keyarr, indexer, new_indexer = self._reindex_non_unique(keyarr)\n-&gt; 6200 self._raise_if_missing(keyarr, indexer, axis_name)\n   6202 keyarr = self.take(indexer)\n   6203 if isinstance(key, Index):\n   6204     # GH 42790 - Preserve name from an Index\n\nFile ~\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\pandas\\core\\indexes\\base.py:6249, in Index._raise_if_missing(self, key, indexer, axis_name)\n   6247 if nmissing:\n   6248     if nmissing == len(indexer):\n-&gt; 6249         raise KeyError(f\"None of [{key}] are in the [{axis_name}]\")\n   6251     not_found = list(ensure_index(key)[missing_mask.nonzero()[0]].unique())\n   6252     raise KeyError(f\"{not_found} not in index\")\n\nKeyError: \"None of [Index(['model', 'model_year'], dtype='object')] are in the [columns]\"\n\n\n\n\n\n\n1\n\n\n\n\n4.3 2. Top 5 Cities for EV Ownership\nSeattle is far ahead of the rest.\n\n\n\n---------------------------------------------------------------------------\nKeyError                                  Traceback (most recent call last)\nCell In[3], line 3\n      1 # Filter data of top 5 cities by total EV count\n      2 top_cities = (\n----&gt; 3     df_wa.groupby('city')\n      4     .agg({\"model\": \"count\"})\n      5     .sort_values(by=\"model\", ascending=False)\n      6     .head(5)\n      7     .reset_index()\n      8     .rename(columns={'city': 'City','model': 'EV Count'})\n      9 )\n     11 top_cities['Flag'] = top_cities['City'] == \"Seattle\"\n     13 # Create a styled table\n\nFile ~\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\pandas\\core\\frame.py:9183, in DataFrame.groupby(self, by, axis, level, as_index, sort, group_keys, observed, dropna)\n   9180 if level is None and by is None:\n   9181     raise TypeError(\"You have to supply one of 'by' and 'level'\")\n-&gt; 9183 return DataFrameGroupBy(\n   9184     obj=self,\n   9185     keys=by,\n   9186     axis=axis,\n   9187     level=level,\n   9188     as_index=as_index,\n   9189     sort=sort,\n   9190     group_keys=group_keys,\n   9191     observed=observed,\n   9192     dropna=dropna,\n   9193 )\n\nFile ~\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\pandas\\core\\groupby\\groupby.py:1329, in GroupBy.__init__(self, obj, keys, axis, level, grouper, exclusions, selection, as_index, sort, group_keys, observed, dropna)\n   1326 self.dropna = dropna\n   1328 if grouper is None:\n-&gt; 1329     grouper, exclusions, obj = get_grouper(\n   1330         obj,\n   1331         keys,\n   1332         axis=axis,\n   1333         level=level,\n   1334         sort=sort,\n   1335         observed=False if observed is lib.no_default else observed,\n   1336         dropna=self.dropna,\n   1337     )\n   1339 if observed is lib.no_default:\n   1340     if any(ping._passed_categorical for ping in grouper.groupings):\n\nFile ~\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\pandas\\core\\groupby\\grouper.py:1043, in get_grouper(obj, key, axis, level, sort, observed, validate, dropna)\n   1041         in_axis, level, gpr = False, gpr, None\n   1042     else:\n-&gt; 1043         raise KeyError(gpr)\n   1044 elif isinstance(gpr, Grouper) and gpr.key is not None:\n   1045     # Add key to exclusions\n   1046     exclusions.add(gpr.key)\n\nKeyError: 'city'\n\n\n\n ### 3. EV Brand Popularity in Major Cities\nTesla leads in every single one, often by a huge margin.\n\n\n\n---------------------------------------------------------------------------\nKeyError                                  Traceback (most recent call last)\nCell In[4], line 3\n      1 # Find top 5 cities\n      2 top_5_cities = (\n----&gt; 3     df_wa.groupby('city')\n      4     .agg({\"model\": \"count\"})\n      5     .sort_values(by=\"model\", ascending=False)\n      6     .head(5)\n      7     .index\n      8 )\n     10 # Filter data\n     11 df_top_cities = df_wa[df_wa['city'].isin(top_5_cities)]\n\nFile ~\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\pandas\\core\\frame.py:9183, in DataFrame.groupby(self, by, axis, level, as_index, sort, group_keys, observed, dropna)\n   9180 if level is None and by is None:\n   9181     raise TypeError(\"You have to supply one of 'by' and 'level'\")\n-&gt; 9183 return DataFrameGroupBy(\n   9184     obj=self,\n   9185     keys=by,\n   9186     axis=axis,\n   9187     level=level,\n   9188     as_index=as_index,\n   9189     sort=sort,\n   9190     group_keys=group_keys,\n   9191     observed=observed,\n   9192     dropna=dropna,\n   9193 )\n\nFile ~\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\pandas\\core\\groupby\\groupby.py:1329, in GroupBy.__init__(self, obj, keys, axis, level, grouper, exclusions, selection, as_index, sort, group_keys, observed, dropna)\n   1326 self.dropna = dropna\n   1328 if grouper is None:\n-&gt; 1329     grouper, exclusions, obj = get_grouper(\n   1330         obj,\n   1331         keys,\n   1332         axis=axis,\n   1333         level=level,\n   1334         sort=sort,\n   1335         observed=False if observed is lib.no_default else observed,\n   1336         dropna=self.dropna,\n   1337     )\n   1339 if observed is lib.no_default:\n   1340     if any(ping._passed_categorical for ping in grouper.groupings):\n\nFile ~\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\pandas\\core\\groupby\\grouper.py:1043, in get_grouper(obj, key, axis, level, sort, observed, validate, dropna)\n   1041         in_axis, level, gpr = False, gpr, None\n   1042     else:\n-&gt; 1043         raise KeyError(gpr)\n   1044 elif isinstance(gpr, Grouper) and gpr.key is not None:\n   1045     # Add key to exclusions\n   1046     exclusions.add(gpr.key)\n\nKeyError: 'city'\n\n\n\n ### 4. Electric Range by Brand\nTesla pulls far ahead in driving distance.\n\n\n\n---------------------------------------------------------------------------\nKeyError                                  Traceback (most recent call last)\nFile ~\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\pandas\\core\\indexes\\base.py:3805, in Index.get_loc(self, key)\n   3804 try:\n-&gt; 3805     return self._engine.get_loc(casted_key)\n   3806 except KeyError as err:\n\nFile index.pyx:167, in pandas._libs.index.IndexEngine.get_loc()\n\nFile index.pyx:196, in pandas._libs.index.IndexEngine.get_loc()\n\nFile pandas\\\\_libs\\\\hashtable_class_helper.pxi:7081, in pandas._libs.hashtable.PyObjectHashTable.get_item()\n\nFile pandas\\\\_libs\\\\hashtable_class_helper.pxi:7089, in pandas._libs.hashtable.PyObjectHashTable.get_item()\n\nKeyError: 'make'\n\nThe above exception was the direct cause of the following exception:\n\nKeyError                                  Traceback (most recent call last)\nCell In[5], line 3\n      1 top_brands = ['TESLA','CHEVROLET','NISSAN','FORD','KIA','TOYOTA','BMW','HYUNDAI','JEEP','VOLKSWAGEN']\n----&gt; 3 df_elec_range = df_wa[df_wa['make'].isin(top_brands)]\n      4 df_elec_range['flag'] = df_elec_range['make'] == \"TESLA\"\n      6 fig_box = px.box(\n      7     df_elec_range, \n      8     x='electric_range', \n   (...)\n     11     color='flag'\n     12 )\n\nFile ~\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\pandas\\core\\frame.py:4102, in DataFrame.__getitem__(self, key)\n   4100 if self.columns.nlevels &gt; 1:\n   4101     return self._getitem_multilevel(key)\n-&gt; 4102 indexer = self.columns.get_loc(key)\n   4103 if is_integer(indexer):\n   4104     indexer = [indexer]\n\nFile ~\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\pandas\\core\\indexes\\base.py:3812, in Index.get_loc(self, key)\n   3807     if isinstance(casted_key, slice) or (\n   3808         isinstance(casted_key, abc.Iterable)\n   3809         and any(isinstance(x, slice) for x in casted_key)\n   3810     ):\n   3811         raise InvalidIndexError(key)\n-&gt; 3812     raise KeyError(key) from err\n   3813 except TypeError:\n   3814     # If we have a listlike key, _check_indexing_error will raise\n   3815     #  InvalidIndexError. Otherwise we fall through and re-raise\n   3816     #  the TypeError.\n   3817     self._check_indexing_error(key)\n\nKeyError: 'make'\n\n\n\n ## Design Choices That Made It Work\nSimplicity first: clean labels, clear axis titles, minimal clutter Color with purpose: Seattle, 2023, Tesla highlighted in green; others in gray Consistent type: Spectral (serif) for titles, Poppins (sans-serif) for data Layout flow: charts align vertically for a smooth flow Color Palette:"
+  },
+  {
+    "objectID": "projects/ev-adoption.html#final-thoughts",
+    "href": "projects/ev-adoption.html#final-thoughts",
+    "title": "Tesla Takes the Wheel: Brand Comparisons and EV Adoption in Washington",
+    "section": "5 Final Thoughts",
+    "text": "5 Final Thoughts\nOriginally, I planned to include a geographic heatmap, but simplifying to four strong visuals made for a clearer and more engaging story. This project helped me practice transforming raw data into something accessible and hopefully insightful.\nWhether you’re a fellow data nerd or just curious about EVs, I hope this piece gives you something to think about the next time you see a Tesla on the road."
   },
   {
     "objectID": "projects/luxury-car-price.html",
     "href": "projects/luxury-car-price.html",
-    "title": "Luxury Car Price Prediction",
+    "title": "Car Price Analysis and Visualization",
     "section": "",
-    "text": "Built a predictive model for car prices.\n\nExplored luxury car dataset\nApplied regression models to predict price ranges\nSkills: Python, Regression, EDA\nLinks: GitHub"
+    "text": "This project analyzes the average price of luxury car brands using Python, Pandas, and Plotly.\nIt provides insightful visualizations to compare car prices across different brands.\n\n\n\nVertical & horizontal bar charts for data comparison.\n\nFormatted tables with well-structured insights.\n\nCustom styling for better visual appeal.\n\nNumber formatting to improve readability."
+  },
+  {
+    "objectID": "projects/luxury-car-price.html#project-overview",
+    "href": "projects/luxury-car-price.html#project-overview",
+    "title": "Car Price Analysis and Visualization",
+    "section": "",
+    "text": "This project analyzes the average price of luxury car brands using Python, Pandas, and Plotly.\nIt provides insightful visualizations to compare car prices across different brands.\n\n\n\nVertical & horizontal bar charts for data comparison.\n\nFormatted tables with well-structured insights.\n\nCustom styling for better visual appeal.\n\nNumber formatting to improve readability."
+  },
+  {
+    "objectID": "projects/luxury-car-price.html#example-visualizations",
+    "href": "projects/luxury-car-price.html#example-visualizations",
+    "title": "Car Price Analysis and Visualization",
+    "section": "2 Example Visualizations",
+    "text": "2 Example Visualizations\n\n2.1 Formatted Data Table\nThis table presents key specifications of luxury car brands, including their average price, mileage, and seating capacity.\nThe color-coded price column visually highlights the most expensive brands, reinforcing Ferrari and Lamborghini’s dominance.\nInterestingly, the data also reveals that sports cars tend to have lower mileage, further suggesting that they are driven less compared to larger, more practical luxury vehicles.\n ### Vertical Bar Chart This vertical bar chart visualizes the ranking of car brands by average price, reinforcing Ferrari’s position as the most expensive brand, followed by Lamborghini and Rolls-Royce.\nThe labels provide precise price values, helping illustrate the steep differences among luxury brands.\nThis format effectively showcases the clear hierarchy in pricing within the high-end automobile market.\n ### Horizontal Bar Chart This horizontal bar chart highlights Ferrari as the most expensive car brand, with a significant price gap of $11 million above its closest competitor, Lamborghini.\nRolls-Royce, Maserati, and Porsche also rank among the higher-priced brands, while luxury SUVs such as Land Rover, Lexus, and BMW fall into a lower price range.\nThe chart emphasizes how brand reputation and performance contribute more to pricing than vehicle size or seating capacity.\n ### Facet Bar Chart This chart segments car prices based on seating capacity, revealing that higher seating capacities do not necessarily lead to higher prices.\nWhile 2-seater luxury brands like Ferrari and Lamborghini dominate in price, some 4- and 5-seaters—such as Rolls-Royce and Maserati—also command premium prices.\nHowever, vehicles with 6-7 seats tend to have lower prices, indicating that exclusivity and performance may play a greater role in pricing than seating capacity."
+  },
+  {
+    "objectID": "projects/luxury-car-price.html#facet-bar-chart",
+    "href": "projects/luxury-car-price.html#facet-bar-chart",
+    "title": "Car Price Analysis and Visualization",
+    "section": "3 ",
+    "text": "3"
+  },
+  {
+    "objectID": "projects/luxury-car-price.html#technologies-used",
+    "href": "projects/luxury-car-price.html#technologies-used",
+    "title": "Car Price Analysis and Visualization",
+    "section": "4 Technologies Used",
+    "text": "4 Technologies Used\n\nPython (for analysis)\n\nPandas (for data processing)\n\nPlotly (for interactive visualizations)\n\nGreat Tables (for table formatting)\n\nJupyter Notebook (for running the analysis)"
+  },
+  {
+    "objectID": "projects/luxury-car-price.html#future-improvements",
+    "href": "projects/luxury-car-price.html#future-improvements",
+    "title": "Car Price Analysis and Visualization",
+    "section": "5 Future Improvements",
+    "text": "5 Future Improvements\n\nAdd interactive tooltips to the bar charts.\n\nImprove color schemes for better data visualization.\n\nExpand dataset to include more car brands and features."
   },
   {
     "objectID": "projects/movie-recommender.html",
     "href": "projects/movie-recommender.html",
     "title": "Movie Recommender System",
     "section": "",
-    "text": "Created a recommender using multiple ML models.\n\nImplemented KNN, Decision Tree, Logistic Regression in Python/R\nAchieved ~80% accuracy in predicting highly rated movies\nSkills: ML Algorithms, Scikit-learn, R\nLinks: GitHub"
+    "text": "This project is a Chinese movie recommendation system that suggests movies based on genres, famous actors, endings, voting, and ratings.\nThe dataset consists of 90 Chinese movies from IMDb, and multiple machine learning techniques are used to analyze and predict movie popularity."
+  },
+  {
+    "objectID": "projects/movie-recommender.html#project-overview",
+    "href": "projects/movie-recommender.html#project-overview",
+    "title": "Movie Recommender System",
+    "section": "",
+    "text": "This project is a Chinese movie recommendation system that suggests movies based on genres, famous actors, endings, voting, and ratings.\nThe dataset consists of 90 Chinese movies from IMDb, and multiple machine learning techniques are used to analyze and predict movie popularity."
+  },
+  {
+    "objectID": "projects/movie-recommender.html#technologies-and-methods-used",
+    "href": "projects/movie-recommender.html#technologies-and-methods-used",
+    "title": "Movie Recommender System",
+    "section": "Technologies and Methods Used",
+    "text": "Technologies and Methods Used\n\nTechnologies\n\nPython (for data cleaning)\nPandas (for data processing)\nPlotly (for interactive visualizations)\nR (for modeling and evaluation)\n\n\n\nMethods\n\nCalculate similarity using Euclidean and Manhattan distances to recommend the top 5 movies based on a list of 5 watched titles.\nClassify movie groups using k-means with different feature sets and k values.\nUse KNN to predict popular movies based on selected features with train/test splits.\nApply a Decision Tree to predict high-rating movies using selected features.\nFit a Logistic Regression to estimate the probability of high rating."
+  },
+  {
+    "objectID": "projects/movie-recommender.html#key-findings",
+    "href": "projects/movie-recommender.html#key-findings",
+    "title": "Movie Recommender System",
+    "section": "Key Findings",
+    "text": "Key Findings\nFor recommendations, both Euclidean and Manhattan distances work effectively.\nFor unsupervised methods like K-Means, groupings can be inconsistent on this small dataset.\nFamous leads may influence ratings, but the sample size limits strong conclusions.\nFor supervised methods (KNN, Decision Tree, Logistic Regression), accuracy rates are relatively high and similar; Decision Tree achieved the best accuracy in this study."
+  },
+  {
+    "objectID": "projects/movie-recommender.html#movie-recommendation",
+    "href": "projects/movie-recommender.html#movie-recommendation",
+    "title": "Movie Recommender System",
+    "section": "Movie Recommendation",
+    "text": "Movie Recommendation\n\nBased on Euclidean and Manhattan distance: 5 similar movies\nExample recommendations: - Kill Me Love Me - Love Me, Love My Voice - Here We Meet Again - The Imperial Coroner - Bohe zhi xia\n\n\nBest Predictive Model\n\nDecision Tree achieved the highest accuracy (about 80% in this run).\nHigh voting count was the most important factor in predicting high-rated movies.\n\n\n\nClustering Insights\n\nMovies with high voting tend to have higher ratings.\nHappy-ending movies generally receive lower ratings than sad or open-ended movies."
+  },
+  {
+    "objectID": "projects/movie-recommender.html#dataset",
+    "href": "projects/movie-recommender.html#dataset",
+    "title": "Movie Recommender System",
+    "section": "Dataset",
+    "text": "Dataset\n\nKey Features\n\nMovies: 90 Chinese series (1998–2024)\nGenres: Comedy, Drama, Crime, Romance, Action, Adventure, Mystery, Fantasy\nRuntime: 40–90 minutes\nIMDb Ratings: 6.4–8.6\nFamous actors present in many titles\nEnding types: Happy, Sad, Open\nVoting data: 14–5,669 votes\n\n\n\n\nDataset Variables\nThis dataset contains information on 90 Chinese movie series (1998–2024). Below is a detailed breakdown of variables:\n\n\n\n#\nVariable Name\nDescription\n\n\n\n\n1\nID\nIndex number.\n\n\n2\nTitle\nEnglish title.\n\n\n3\nOriginal_Title\nChinese title.\n\n\n4\nRuntime\nMinutes per episode.\n\n\n5\nEnding\nhappy, sad, or open.\n\n\n6\nEnding_Happy\n1 if Ending is happy, else 0.\n\n\n7\nEnding_Sad\n1 if Ending is sad, else 0.\n\n\n8\nEnding_Open\n1 if Ending is open, else 0.\n\n\n9\nGenres\nMain genre.\n\n\n10\nGenre_Comedy\nOne-hot for Comedy.\n\n\n11\nGenre_Drama\nOne-hot for Drama.\n\n\n12\nGenre_Crime\nOne-hot for Crime.\n\n\n13\nGenre_Romance\nOne-hot for Romance.\n\n\n14\nGenre_Action\nOne-hot for Action.\n\n\n15\nGenre_Adventure\nOne-hot for Adventure.\n\n\n16\nGenre_Mystery\nOne-hot for Mystery.\n\n\n17\nGenre_Fantasy\nOne-hot for Fantasy.\n\n\n18\nMale_Lead\nName of male lead.\n\n\n19\nMale_Famous\n1 if male lead is famous, else 0.\n\n\n20\nFemale_Lead\nName of female lead.\n\n\n21\nFemale_Famous\n1 if female lead is famous, else 0.\n\n\n22\nMain_Famous\n1 if any main lead is famous.\n\n\n23\nRelease_Date\nDate of release.\n\n\n24\nIs_Summer\n1 if released in Jul–Sep.\n\n\n25\nYear\nRelease year.\n\n\n26\nNum_Votes\nNumber of votes.\n\n\n27\nHigh_Voting\n1 if Num_Votes ≥ 1000.\n\n\n28\nIMDB_Rating\nIMDb rating.\n\n\n29\nHigh_Rating\n1 if IMDb_Rating ≥ 8.\n\n\n30\nViet_Title\nVietnamese title (personal reference).\n\n\n\nNotes: - Ending_* are derived from Ending. - Genre_* are one-hot encodings of Genres. - *Famous indicators are based on a predefined list. - High_Voting and High_Rating are binary thresholds."
+  },
+  {
+    "objectID": "projects/movie-recommender.html#results-and-visualizations",
+    "href": "projects/movie-recommender.html#results-and-visualizations",
+    "title": "Movie Recommender System",
+    "section": "Results and Visualizations",
+    "text": "Results and Visualizations\n\nGeneral Data Distribution\nTreemap summary of top-rated movies:\n\nPie chart of genre distribution (Drama is most dominant):\n\n\n\n\nMovie Recommendation via Distance Metrics - Euclidean & Manhattan distance\nFirstly, 5 titles which are ‘Yuan lai wo hen ai ni’, ‘Lost You Forever’, ‘Mischievous Kiss’, ‘Amidst a Snowstorm of Love’, and ‘My Fair Princess’ are selected randomly in R from the list of 90 movie dataset as a list of watched movies.\nSecondly, distances of all movies are calculated including 5 watched movies using Euclidean and Manhattan. There are 15 features to find similarities between movies, which are ‘Title’, ‘Ending_Happy’, ‘Ending_Sad’, ‘Ending_Open’, ‘Genre_Comedy’, ‘Genre_Drama’, ‘Genre_Crime’, ‘Genre_Romance’, ‘Genre_Action’, ‘Genre_Adventure’, ‘Genre_Mystery’, ‘Genre_Fantasy’, ‘Female_Famous’, ‘Male_Famous’, ‘Main_Famous’, ‘Is_Summer’, ‘High_Voting’, and ‘High_Rating’. Except for Title, others are binary variables.\nThirdly, there are 5 sub steps to get the list of 5 movie recommendations: * Step 1: Find distances for 5 watched movies - ‘’Yuan lai wo hen ai ni’, ‘Lost You Forever’, ‘Mischievous Kiss’, ‘Amidst a Snowstorm of Love’, and ‘My Fair Princess’ to every other movies from the calculated distance matric results. * Step 2: Average the distances of 5 watched movies to every other movies * Step 3: Order the distances to find the closest movies * Step 4: Get the top 5 recommendations excluding 5 watched movies\nFinally, the list of 5 movie suggestions is: * “Kill Me Love Me”\n* “Love Me, Love My Voice” * “Here We Meet Again”\n* “The Imperial Coroner”\n* “Bohe zhi xia”"
+  },
+  {
+    "objectID": "projects/movie-recommender.html#k-means-clustering-for-classification",
+    "href": "projects/movie-recommender.html#k-means-clustering-for-classification",
+    "title": "Movie Recommender System",
+    "section": "K-Means Clustering for Classification",
+    "text": "K-Means Clustering for Classification\nThe genre grouping uses features as Genre_Comedy, Genre_Drama, Genre_Crime, Genre_Romance, Genre_Action, Genre_Adventure, Genre_Mystery, Genre_Fantasy, and High_Rating, with k = 12. The cluster sometimes does not make sense, for example, Cluster 3 - Genre_Romance has both high and not high ratings."
+  },
+  {
+    "objectID": "projects/movie-recommender.html#group-movies-according-to-main_famous-high_rating",
+    "href": "projects/movie-recommender.html#group-movies-according-to-main_famous-high_rating",
+    "title": "Movie Recommender System",
+    "section": "Group movies according to Main_Famous, High_Rating",
+    "text": "Group movies according to Main_Famous, High_Rating\nThe genre grouping uses features such as Main_Famous and High_Rating, with k = 4. Movies with famous leads tend to influence ratings more than those without. However, in this small dataset, the percentage of high-rated and not-high-rated movies is almost equal. Therefore, it is unclear whether movies with famous actors or actresses are highly rated."
+  },
+  {
+    "objectID": "projects/movie-recommender.html#group-movies-according-to-ending-high_rating",
+    "href": "projects/movie-recommender.html#group-movies-according-to-ending-high_rating",
+    "title": "Movie Recommender System",
+    "section": "Group movies according to Ending, High_Rating",
+    "text": "Group movies according to Ending, High_Rating\nThe genre grouping uses features such as Ending_Happy, Ending_Sad, Ending_Open, and High_Rating, with k = 6. It is evident that movies with happy endings tend to have lower ratings. However, sad and open endings show no significant difference in their high-rating percentages."
+  },
+  {
+    "objectID": "projects/movie-recommender.html#group-movies-according-to-high_voting-high_rating",
+    "href": "projects/movie-recommender.html#group-movies-according-to-high_voting-high_rating",
+    "title": "Movie Recommender System",
+    "section": "Group movies according to High_Voting, High_Rating*",
+    "text": "Group movies according to High_Voting, High_Rating*\nThe genre grouping uses features such as High_Voting, High_Rating, with k = 4. There is consistent evidence that movies with high voting tend to have high ratings and vice versa. However, low voting seems to impact ratings more than high voting."
+  },
+  {
+    "objectID": "projects/movie-recommender.html#machine-learning-models-for-popularity-prediction",
+    "href": "projects/movie-recommender.html#machine-learning-models-for-popularity-prediction",
+    "title": "Movie Recommender System",
+    "section": "Machine Learning Models for Popularity Prediction",
+    "text": "Machine Learning Models for Popularity Prediction\n\nDecision Tree\nThis algorithm has features as Ending_Happy, Ending_Sad, Ending_Open, Main_Famous, and High_Voting to predict High_Rating. At first, the dataset is labeled as train and test dataset, which is done in KNN. Using R to run the tree model, we have the image as below:\n\nThe prediction result\n\n\nAccuracy: 80% | Misclassification: 20%\n\n\nLogistic Regression\nThis algorithm has features as Ending_Happy, Ending_Open, Ending_Sad, Male_Famous, Female_Famous, and High_Voting to predict High_Rating. The model is built in R and the result is as below:\n\nlog( p̂ / (1 - p̂) ) = -1.1550 - 0.5719 × Ending_Happy + 0.5185 × Ending_Open + 0.5650 × Male_Famous - 0.1104 × Female_Famous + 2.2302 × High_Voting\n\n\nNotes:\np̂ / (1 - p̂): the predicted probability of High_Rating = 1\nInterpretation table\n\nThe confusion matrix\n\nBased on the confusion matrix, the accuracy and misclassification rates are described as below:\n\nOut of 61 not High_Rating movies, there are 52 correct predictions (true negatives) and 9 misclassifications (false positives). Out of 29 High_Rating movies, there are 17 correct predictions (true positives) and 12 misclassifications (false negatives). The accuracy rate is 76.7%, and the misclassification rate is 23.3%.\nAccuracy: 76.7% | Misclassification: 23.3%"
+  },
+  {
+    "objectID": "projects/movie-recommender.html#ethics-privacy-considerations",
+    "href": "projects/movie-recommender.html#ethics-privacy-considerations",
+    "title": "Movie Recommender System",
+    "section": "Ethics & Privacy Considerations",
+    "text": "Ethics & Privacy Considerations\n\nThe dataset is limited to 90 movies, which may introduce biases.\nCultural bias exists as only Chinese movies are considered.\nThe “Famous Actor” category is subjective and may change over time.\nRatings are sourced from IMDb, but additional sources could strengthen the analysis."
+  },
+  {
+    "objectID": "projects/movie-recommender.html#future-improvements",
+    "href": "projects/movie-recommender.html#future-improvements",
+    "title": "Movie Recommender System",
+    "section": "Future Improvements",
+    "text": "Future Improvements\n\nExpanding the dataset for better clustering results.\nAnalyzing additional factors like critic reviews, audience comments, and streaming data.\nExploring budget, revenue, and profit analysis to predict a movie’s success.\nInvestigating seasonal movie trends and how audience preferences shift over time."
   }
 ]

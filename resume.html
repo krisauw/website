@@ -67,6 +67,7 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<style>html{ scroll-behavior: smooth; }</style>
 
 
 </head>
@@ -103,7 +104,7 @@ ul.task-list li input[type="checkbox"] {
     <ul class="dropdown-menu" aria-labelledby="nav-menu-projects">    
         <li>
     <a class="dropdown-item" href="./projects/ev-adoption.html">
- <span class="dropdown-text">EV Adoption</span></a>
+ <span class="dropdown-text">EV Adoption in WA</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="./projects/movie-recommender.html">
@@ -130,12 +131,12 @@ ul.task-list li input[type="checkbox"] {
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item compact">
-    <a class="nav-link" href="https://github.com/krisauw"> <i class="bi bi-github" role="img">
+    <a class="nav-link" href="https://github.com/krisauw"> <i class="bi bi-github" role="img" aria-label="GitHub">
 </i> 
 <span class="menu-text"></span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="https://www.linkedin.com/in/hien-bui-emi-6273b010a/"> <i class="bi bi-linkedin" role="img">
+    <a class="nav-link" href="https://www.linkedin.com/in/hien-bui-emi-6273b010a/"> <i class="bi bi-linkedin" role="img" aria-label="LinkedIn">
 </i> 
 <span class="menu-text"></span></a>
   </li>  
@@ -274,6 +275,11 @@ Your browser can’t display PDFs here. <a href="resume/Resume_HienBui.pdf" targ
           if (link.dataset.originalHref !== undefined) {
             link.href = link.dataset.originalHref;
           }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
         }
       }
     function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
@@ -592,4 +598,5 @@ Your browser can’t display PDFs here. <a href="resume/Resume_HienBui.pdf" targ
 
 
 
+<script src="site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>

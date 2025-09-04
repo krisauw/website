@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Tesla EV Adoption – Hien Bui</title>
+<title>Tesla Takes the Wheel: Brand Comparisons and EV Adoption in Washington – Hien Bui</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -39,7 +39,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-ea385d0e468b0dd5ea5bf0780b1290d9.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-dfb324f25d9b1687192fa8be62ac8f9c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-cc63fce9873912f1bbbccf05079cc9ea.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -67,6 +67,7 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<style>html{ scroll-behavior: smooth; }</style>
 
 
 </head>
@@ -103,7 +104,7 @@ ul.task-list li input[type="checkbox"] {
     <ul class="dropdown-menu" aria-labelledby="nav-menu-projects">    
         <li>
     <a class="dropdown-item" href="../projects/ev-adoption.html">
- <span class="dropdown-text">EV Adoption</span></a>
+ <span class="dropdown-text">EV Adoption in WA</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="../projects/movie-recommender.html">
@@ -130,12 +131,12 @@ ul.task-list li input[type="checkbox"] {
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item compact">
-    <a class="nav-link" href="https://github.com/krisauw"> <i class="bi bi-github" role="img">
+    <a class="nav-link" href="https://github.com/krisauw"> <i class="bi bi-github" role="img" aria-label="GitHub">
 </i> 
 <span class="menu-text"></span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="https://www.linkedin.com/in/hien-bui-emi-6273b010a/"> <i class="bi bi-linkedin" role="img">
+    <a class="nav-link" href="https://www.linkedin.com/in/hien-bui-emi-6273b010a/"> <i class="bi bi-linkedin" role="img" aria-label="LinkedIn">
 </i> 
 <span class="menu-text"></span></a>
   </li>  
@@ -150,15 +151,26 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul class="collapse">
+  <li><a href="#executive-summary" id="toc-executive-summary" class="nav-link active" data-scroll-target="#executive-summary"><span class="header-section-number">1</span> Executive Summary</a></li>
+  <li><a href="#background-and-dataset-summary" id="toc-background-and-dataset-summary" class="nav-link" data-scroll-target="#background-and-dataset-summary"><span class="header-section-number">2</span> Background and Dataset Summary</a></li>
+  <li><a href="#why-this-topic" id="toc-why-this-topic" class="nav-link" data-scroll-target="#why-this-topic"><span class="header-section-number">3</span> Why This Topic?</a></li>
+  <li><a href="#figure-by-figure-walkthrough" id="toc-figure-by-figure-walkthrough" class="nav-link" data-scroll-target="#figure-by-figure-walkthrough"><span class="header-section-number">4</span> Figure-by-Figure Walkthrough</a></li>
+  <li><a href="#final-thoughts" id="toc-final-thoughts" class="nav-link" data-scroll-target="#final-thoughts"><span class="header-section-number">5</span> Final Thoughts</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Tesla EV Adoption</h1>
+<h1 class="title">Tesla Takes the Wheel: Brand Comparisons and EV Adoption in Washington</h1>
+<p class="subtitle lead">Tesla’s rise in range, reach, and reputation — told through data</p>
 </div>
 
 
@@ -175,15 +187,308 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Analyzed <strong>235k+ EV records</strong> with Python (Polars, Plotly) to compare adoption trends across brands.</p>
+<section id="executive-summary" class="level2" data-number="1">
+<h2 data-number="1" class="anchored" data-anchor-id="executive-summary"><span class="header-section-number">1</span> Executive Summary</h2>
+<p>Electric vehicles are no longer just the future — they’re the present. In this project, I explore how Washington State is embracing EVs, with Tesla clearly driving the momentum. Using public registration data, I visualized four key dimensions of the EV landscape: growth over time, brand comparisons, electric range, and regional hotspots. The data tells a compelling story of how quickly things are changing, and how one brand in particular — Tesla — is helping lead that transformation.</p>
+<hr>
+</section>
+<section id="background-and-dataset-summary" class="level2" data-number="2">
+<h2 data-number="2" class="anchored" data-anchor-id="background-and-dataset-summary"><span class="header-section-number">2</span> Background and Dataset Summary</h2>
+<p>The dataset comes from the Electric Vehicle Population Data shared by the Washington State Department of Licensing. It includes more than 235,000 EVs currently registered in the state. Each record captures model year, brand, electric range, city of registration, and even utility provider — offering rich insight into how, where, and what kinds of electric vehicles people are driving in Washington.</p>
+<p>With 17 columns in total, the dataset gives us:</p>
 <ul>
-<li>Built dashboards to explore adoption by city/brand</li>
-<li>Published interactive insights in a Medium article</li>
-<li>Skills: Python, Polars, Plotly, Data Wrangling, Visualization</li>
-<li>Links: <a href="https://github.com/krisauw">GitHub</a>, <a href="#">Medium Article</a></li>
+<li>Vehicle details (make, model, model year, range)<br>
+</li>
+<li>Location data (city, county, zip)<br>
+</li>
+<li>Energy + policy fields (utility provider, CAFV eligibility)<br>
+</li>
+<li>Additional metadata like MSRP and census tract</li>
 </ul>
+<hr>
+</section>
+<section id="why-this-topic" class="level2" data-number="3">
+<h2 data-number="3" class="anchored" data-anchor-id="why-this-topic"><span class="header-section-number">3</span> Why This Topic?</h2>
+<p>I’ve always been drawn to stories hidden in data — especially when they reflect real, tangible changes happening around us. As someone who cares deeply about the environment and envisions a cleaner, more sustainable future, electric vehicles represent a hopeful shift. They’re not just machines — they’re milestones on our journey toward greener cities and cleaner skies.</p>
+<p>When I found this dataset, I was immediately intrigued. It’s rare to get such a comprehensive look at a state’s transition toward electric mobility. And with Washington leading the charge, and Tesla front and center, I saw a story waiting to be told.</p>
+<p>That said, I don’t want to stop at one state. In the future, I’d love to explore how EV adoption compares across different regions and countries — how infrastructure, policy, and culture shape the road to electrification around the world.</p>
+<hr>
+</section>
+<section id="figure-by-figure-walkthrough" class="level2" data-number="4">
+<h2 data-number="4" class="anchored" data-anchor-id="figure-by-figure-walkthrough"><span class="header-section-number">4</span> Figure-by-Figure Walkthrough</h2>
+<section id="import-libraries" class="level3" data-number="4.1">
+<h3 data-number="4.1" class="anchored" data-anchor-id="import-libraries"><span class="header-section-number">4.1</span> Import Libraries</h3>
+<div id="d41bffc6" class="cell" data-execution_count="1">
+<div class="cell-output cell-output-stdout">
+<pre><code>Requirement already satisfied: plotly in c:\users\emily\appdata\local\programs\python\python313\lib\site-packages (6.3.0)
+Requirement already satisfied: narwhals&gt;=1.15.1 in c:\users\emily\appdata\local\programs\python\python313\lib\site-packages (from plotly) (2.3.0)
+Requirement already satisfied: packaging in c:\users\emily\appdata\local\programs\python\python313\lib\site-packages (from plotly) (24.2)
+Note: you may need to restart the kernel to use updated packages.</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Requirement already satisfied: polars in c:\users\emily\appdata\local\programs\python\python313\lib\site-packages (1.33.0)
+Requirement already satisfied: great_tables in c:\users\emily\appdata\local\programs\python\python313\lib\site-packages (0.18.0)
+Requirement already satisfied: commonmark&gt;=0.9.1 in c:\users\emily\appdata\local\programs\python\python313\lib\site-packages (from great_tables) (0.9.1)
+Requirement already satisfied: faicons&gt;=0.2.2 in c:\users\emily\appdata\local\programs\python\python313\lib\site-packages (from great_tables) (0.2.2)
+Requirement already satisfied: htmltools&gt;=0.4.1 in c:\users\emily\appdata\local\programs\python\python313\lib\site-packages (from great_tables) (0.6.0)
+Requirement already satisfied: importlib-metadata in c:\users\emily\appdata\local\programs\python\python313\lib\site-packages (from great_tables) (8.7.0)
+Requirement already satisfied: typing_extensions&gt;=3.10.0.0 in c:\users\emily\appdata\local\programs\python\python313\lib\site-packages (from great_tables) (4.12.2)
+Requirement already satisfied: numpy&gt;=1.22.4 in c:\users\emily\appdata\local\programs\python\python313\lib\site-packages (from great_tables) (2.2.1)
+Requirement already satisfied: Babel&gt;=2.13.1 in c:\users\emily\appdata\local\programs\python\python313\lib\site-packages (from great_tables) (2.16.0)
+Requirement already satisfied: importlib-resources in c:\users\emily\appdata\local\programs\python\python313\lib\site-packages (from great_tables) (6.5.2)
+Requirement already satisfied: packaging&gt;=20.9 in c:\users\emily\appdata\local\programs\python\python313\lib\site-packages (from htmltools&gt;=0.4.1-&gt;great_tables) (24.2)
+Requirement already satisfied: zipp&gt;=3.20 in c:\users\emily\appdata\local\programs\python\python313\lib\site-packages (from importlib-metadata-&gt;great_tables) (3.23.0)
+Note: you may need to restart the kernel to use updated packages.</code></pre>
+</div>
+</div>
+</section>
+<section id="ev-adoption-by-model-year" class="level3" data-number="4.2">
+<h3 data-number="4.2" class="anchored" data-anchor-id="ev-adoption-by-model-year"><span class="header-section-number">4.2</span> 1. EV Adoption by Model Year</h3>
+<p>This bar chart shows just how sharply EV adoption has climbed, especially in the past five years. The 2023 spike is a real eye-opener.</p>
+<div id="2c5c55ed" class="cell" data-execution_count="2">
+<div class="cell-output cell-output-error">
+<div class="ansi-escaped-output">
+<pre><span class="ansi-red-fg ansi-bold">---------------------------------------------------------------------------</span>
+<span class="ansi-red-fg ansi-bold">KeyError</span>                                  Traceback (most recent call last)
+Cell <span class="ansi-green-fg ansi-bold">In[2], line 3</span>
+<span class="ansi-green-fg">      1</span> <span style="font-style:italic;color:rgb(95,135,135)"># Filter data of EV Count by model year</span>
+<span class="ansi-green-fg">      2</span> df_wa_model <span style="color:rgb(98,98,98)">=</span> (
+<span class="ansi-green-fg ansi-bold">----&gt; 3</span>     <span class="ansi-yellow-bg">df_wa</span><span class="ansi-yellow-bg">[</span><span class="ansi-yellow-bg">[</span><span style="color:rgb(175,0,0)" class="ansi-yellow-bg">'</span><span style="color:rgb(175,0,0)" class="ansi-yellow-bg">model</span><span style="color:rgb(175,0,0)" class="ansi-yellow-bg">'</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span style="color:rgb(175,0,0)" class="ansi-yellow-bg">'</span><span style="color:rgb(175,0,0)" class="ansi-yellow-bg">model_year</span><span style="color:rgb(175,0,0)" class="ansi-yellow-bg">'</span><span class="ansi-yellow-bg">]</span><span class="ansi-yellow-bg">]</span>
+<span class="ansi-green-fg">      4</span>     <span style="color:rgb(98,98,98)">.</span>groupby(<span style="color:rgb(175,0,0)">'</span><span style="color:rgb(175,0,0)">model_year</span><span style="color:rgb(175,0,0)">'</span>)
+<span class="ansi-green-fg">      5</span>     <span style="color:rgb(98,98,98)">.</span>agg({<span style="color:rgb(175,0,0)">"</span><span style="color:rgb(175,0,0)">model</span><span style="color:rgb(175,0,0)">"</span>: <span style="color:rgb(175,0,0)">"</span><span style="color:rgb(175,0,0)">count</span><span style="color:rgb(175,0,0)">"</span>})
+<span class="ansi-green-fg">      6</span>     <span style="color:rgb(98,98,98)">.</span>reset_index()
+<span class="ansi-green-fg">      7</span> )
+<span class="ansi-green-fg">      9</span> df_wa_model[<span style="color:rgb(175,0,0)">'</span><span style="color:rgb(175,0,0)">model_year</span><span style="color:rgb(175,0,0)">'</span>] <span style="color:rgb(98,98,98)">=</span> df_wa_model[<span style="color:rgb(175,0,0)">'</span><span style="color:rgb(175,0,0)">model_year</span><span style="color:rgb(175,0,0)">'</span>]<span style="color:rgb(98,98,98)">.</span>astype(<span style="color:rgb(0,135,0)">str</span>)
+<span class="ansi-green-fg">     10</span> df_wa_model[<span style="color:rgb(175,0,0)">'</span><span style="color:rgb(175,0,0)">flag</span><span style="color:rgb(175,0,0)">'</span>] <span style="color:rgb(98,98,98)">=</span> df_wa_model[<span style="color:rgb(175,0,0)">'</span><span style="color:rgb(175,0,0)">model_year</span><span style="color:rgb(175,0,0)">'</span>] <span style="color:rgb(98,98,98)">==</span> <span style="color:rgb(175,0,0)">'</span><span style="color:rgb(175,0,0)">2023</span><span style="color:rgb(175,0,0)">'</span>
+
+File <span class="ansi-green-fg ansi-bold">~\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\core\frame.py:4108</span>, in <span class="ansi-cyan-fg">DataFrame.__getitem__</span><span class="ansi-blue-fg ansi-bold">(self, key)</span>
+<span class="ansi-green-fg">   4106</span>     <span style="font-weight:bold;color:rgb(0,135,0)">if</span> is_iterator(key):
+<span class="ansi-green-fg">   4107</span>         key <span style="color:rgb(98,98,98)">=</span> <span style="color:rgb(0,135,0)">list</span>(key)
+<span class="ansi-green-fg ansi-bold">-&gt; 4108</span>     indexer <span style="color:rgb(98,98,98)">=</span> <span style="color:rgb(0,135,0)" class="ansi-yellow-bg">self</span><span style="color:rgb(98,98,98)" class="ansi-yellow-bg">.</span><span class="ansi-yellow-bg">columns</span><span style="color:rgb(98,98,98)" class="ansi-yellow-bg">.</span><span class="ansi-yellow-bg">_get_indexer_strict</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg">key</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span style="color:rgb(175,0,0)" class="ansi-yellow-bg">"</span><span style="color:rgb(175,0,0)" class="ansi-yellow-bg">columns</span><span style="color:rgb(175,0,0)" class="ansi-yellow-bg">"</span><span class="ansi-yellow-bg">)</span>[<span style="color:rgb(98,98,98)">1</span>]
+<span class="ansi-green-fg">   4110</span> <span style="font-style:italic;color:rgb(95,135,135)"># take() does not accept boolean indexers</span>
+<span class="ansi-green-fg">   4111</span> <span style="font-weight:bold;color:rgb(0,135,0)">if</span> <span style="color:rgb(0,135,0)">getattr</span>(indexer, <span style="color:rgb(175,0,0)">"</span><span style="color:rgb(175,0,0)">dtype</span><span style="color:rgb(175,0,0)">"</span>, <span style="font-weight:bold;color:rgb(0,135,0)">None</span>) <span style="color:rgb(98,98,98)">==</span> <span style="color:rgb(0,135,0)">bool</span>:
+
+File <span class="ansi-green-fg ansi-bold">~\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\core\indexes\base.py:6200</span>, in <span class="ansi-cyan-fg">Index._get_indexer_strict</span><span class="ansi-blue-fg ansi-bold">(self, key, axis_name)</span>
+<span class="ansi-green-fg">   6197</span> <span style="font-weight:bold;color:rgb(0,135,0)">else</span>:
+<span class="ansi-green-fg">   6198</span>     keyarr, indexer, new_indexer <span style="color:rgb(98,98,98)">=</span> <span style="color:rgb(0,135,0)">self</span><span style="color:rgb(98,98,98)">.</span>_reindex_non_unique(keyarr)
+<span class="ansi-green-fg ansi-bold">-&gt; 6200</span> <span style="color:rgb(0,135,0)" class="ansi-yellow-bg">self</span><span style="color:rgb(98,98,98)" class="ansi-yellow-bg">.</span><span class="ansi-yellow-bg">_raise_if_missing</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg">keyarr</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">indexer</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">axis_name</span><span class="ansi-yellow-bg">)</span>
+<span class="ansi-green-fg">   6202</span> keyarr <span style="color:rgb(98,98,98)">=</span> <span style="color:rgb(0,135,0)">self</span><span style="color:rgb(98,98,98)">.</span>take(indexer)
+<span class="ansi-green-fg">   6203</span> <span style="font-weight:bold;color:rgb(0,135,0)">if</span> <span style="color:rgb(0,135,0)">isinstance</span>(key, Index):
+<span class="ansi-green-fg">   6204</span>     <span style="font-style:italic;color:rgb(95,135,135)"># GH 42790 - Preserve name from an Index</span>
+
+File <span class="ansi-green-fg ansi-bold">~\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\core\indexes\base.py:6249</span>, in <span class="ansi-cyan-fg">Index._raise_if_missing</span><span class="ansi-blue-fg ansi-bold">(self, key, indexer, axis_name)</span>
+<span class="ansi-green-fg">   6247</span> <span style="font-weight:bold;color:rgb(0,135,0)">if</span> nmissing:
+<span class="ansi-green-fg">   6248</span>     <span style="font-weight:bold;color:rgb(0,135,0)">if</span> nmissing <span style="color:rgb(98,98,98)">==</span> <span style="color:rgb(0,135,0)">len</span>(indexer):
+<span class="ansi-green-fg ansi-bold">-&gt; 6249</span>         <span style="font-weight:bold;color:rgb(0,135,0)">raise</span> <span style="font-weight:bold;color:rgb(215,95,95)">KeyError</span>(<span style="color:rgb(175,0,0)">f</span><span style="color:rgb(175,0,0)">"</span><span style="color:rgb(175,0,0)">None of [</span><span style="font-weight:bold;color:rgb(175,95,135)">{</span>key<span style="font-weight:bold;color:rgb(175,95,135)">}</span><span style="color:rgb(175,0,0)">] are in the [</span><span style="font-weight:bold;color:rgb(175,95,135)">{</span>axis_name<span style="font-weight:bold;color:rgb(175,95,135)">}</span><span style="color:rgb(175,0,0)">]</span><span style="color:rgb(175,0,0)">"</span>)
+<span class="ansi-green-fg">   6251</span>     not_found <span style="color:rgb(98,98,98)">=</span> <span style="color:rgb(0,135,0)">list</span>(ensure_index(key)[missing_mask<span style="color:rgb(98,98,98)">.</span>nonzero()[<span style="color:rgb(98,98,98)">0</span>]]<span style="color:rgb(98,98,98)">.</span>unique())
+<span class="ansi-green-fg">   6252</span>     <span style="font-weight:bold;color:rgb(0,135,0)">raise</span> <span style="font-weight:bold;color:rgb(215,95,95)">KeyError</span>(<span style="color:rgb(175,0,0)">f</span><span style="color:rgb(175,0,0)">"</span><span style="font-weight:bold;color:rgb(175,95,135)">{</span>not_found<span style="font-weight:bold;color:rgb(175,95,135)">}</span><span style="color:rgb(175,0,0)"> not in index</span><span style="color:rgb(175,0,0)">"</span>)
+
+<span class="ansi-red-fg ansi-bold">KeyError</span>: "None of [Index(['model', 'model_year'], dtype='object')] are in the [columns]"</pre>
+</div>
+</div>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../images/projects/ev-adoption/bar_3_no_yaxis.png" class="img-fluid figure-img"></p>
+<figcaption>1</figcaption>
+</figure>
+</div>
+</section>
+<section id="top-5-cities-for-ev-ownership" class="level3" data-number="4.3">
+<h3 data-number="4.3" class="anchored" data-anchor-id="top-5-cities-for-ev-ownership"><span class="header-section-number">4.3</span> 2. Top 5 Cities for EV Ownership</h3>
+<p>Seattle is far ahead of the rest.</p>
+<div id="acf4d215" class="cell" data-execution_count="3">
+<div class="cell-output cell-output-error">
+<div class="ansi-escaped-output">
+<pre><span class="ansi-red-fg ansi-bold">---------------------------------------------------------------------------</span>
+<span class="ansi-red-fg ansi-bold">KeyError</span>                                  Traceback (most recent call last)
+Cell <span class="ansi-green-fg ansi-bold">In[3], line 3</span>
+<span class="ansi-green-fg">      1</span> <span style="font-style:italic;color:rgb(95,135,135)"># Filter data of top 5 cities by total EV count</span>
+<span class="ansi-green-fg">      2</span> top_cities <span style="color:rgb(98,98,98)">=</span> (
+<span class="ansi-green-fg ansi-bold">----&gt; 3</span>     <span class="ansi-yellow-bg">df_wa</span><span style="color:rgb(98,98,98)" class="ansi-yellow-bg">.</span><span class="ansi-yellow-bg">groupby</span><span class="ansi-yellow-bg">(</span><span style="color:rgb(175,0,0)" class="ansi-yellow-bg">'</span><span style="color:rgb(175,0,0)" class="ansi-yellow-bg">city</span><span style="color:rgb(175,0,0)" class="ansi-yellow-bg">'</span><span class="ansi-yellow-bg">)</span>
+<span class="ansi-green-fg">      4</span>     <span style="color:rgb(98,98,98)">.</span>agg({<span style="color:rgb(175,0,0)">"</span><span style="color:rgb(175,0,0)">model</span><span style="color:rgb(175,0,0)">"</span>: <span style="color:rgb(175,0,0)">"</span><span style="color:rgb(175,0,0)">count</span><span style="color:rgb(175,0,0)">"</span>})
+<span class="ansi-green-fg">      5</span>     <span style="color:rgb(98,98,98)">.</span>sort_values(by<span style="color:rgb(98,98,98)">=</span><span style="color:rgb(175,0,0)">"</span><span style="color:rgb(175,0,0)">model</span><span style="color:rgb(175,0,0)">"</span>, ascending<span style="color:rgb(98,98,98)">=</span><span style="font-weight:bold;color:rgb(0,135,0)">False</span>)
+<span class="ansi-green-fg">      6</span>     <span style="color:rgb(98,98,98)">.</span>head(<span style="color:rgb(98,98,98)">5</span>)
+<span class="ansi-green-fg">      7</span>     <span style="color:rgb(98,98,98)">.</span>reset_index()
+<span class="ansi-green-fg">      8</span>     <span style="color:rgb(98,98,98)">.</span>rename(columns<span style="color:rgb(98,98,98)">=</span>{<span style="color:rgb(175,0,0)">'</span><span style="color:rgb(175,0,0)">city</span><span style="color:rgb(175,0,0)">'</span>: <span style="color:rgb(175,0,0)">'</span><span style="color:rgb(175,0,0)">City</span><span style="color:rgb(175,0,0)">'</span>,<span style="color:rgb(175,0,0)">'</span><span style="color:rgb(175,0,0)">model</span><span style="color:rgb(175,0,0)">'</span>: <span style="color:rgb(175,0,0)">'</span><span style="color:rgb(175,0,0)">EV Count</span><span style="color:rgb(175,0,0)">'</span>})
+<span class="ansi-green-fg">      9</span> )
+<span class="ansi-green-fg">     11</span> top_cities[<span style="color:rgb(175,0,0)">'</span><span style="color:rgb(175,0,0)">Flag</span><span style="color:rgb(175,0,0)">'</span>] <span style="color:rgb(98,98,98)">=</span> top_cities[<span style="color:rgb(175,0,0)">'</span><span style="color:rgb(175,0,0)">City</span><span style="color:rgb(175,0,0)">'</span>] <span style="color:rgb(98,98,98)">==</span> <span style="color:rgb(175,0,0)">"</span><span style="color:rgb(175,0,0)">Seattle</span><span style="color:rgb(175,0,0)">"</span>
+<span class="ansi-green-fg">     13</span> <span style="font-style:italic;color:rgb(95,135,135)"># Create a styled table</span>
+
+File <span class="ansi-green-fg ansi-bold">~\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\core\frame.py:9183</span>, in <span class="ansi-cyan-fg">DataFrame.groupby</span><span class="ansi-blue-fg ansi-bold">(self, by, axis, level, as_index, sort, group_keys, observed, dropna)</span>
+<span class="ansi-green-fg">   9180</span> <span style="font-weight:bold;color:rgb(0,135,0)">if</span> level <span style="font-weight:bold;color:rgb(175,0,255)">is</span> <span style="font-weight:bold;color:rgb(0,135,0)">None</span> <span style="font-weight:bold;color:rgb(175,0,255)">and</span> by <span style="font-weight:bold;color:rgb(175,0,255)">is</span> <span style="font-weight:bold;color:rgb(0,135,0)">None</span>:
+<span class="ansi-green-fg">   9181</span>     <span style="font-weight:bold;color:rgb(0,135,0)">raise</span> <span style="font-weight:bold;color:rgb(215,95,95)">TypeError</span>(<span style="color:rgb(175,0,0)">"</span><span style="color:rgb(175,0,0)">You have to supply one of </span><span style="color:rgb(175,0,0)">'</span><span style="color:rgb(175,0,0)">by</span><span style="color:rgb(175,0,0)">'</span><span style="color:rgb(175,0,0)"> and </span><span style="color:rgb(175,0,0)">'</span><span style="color:rgb(175,0,0)">level</span><span style="color:rgb(175,0,0)">'</span><span style="color:rgb(175,0,0)">"</span>)
+<span class="ansi-green-fg ansi-bold">-&gt; 9183</span> <span style="font-weight:bold;color:rgb(0,135,0)">return</span> <span class="ansi-yellow-bg">DataFrameGroupBy</span><span class="ansi-yellow-bg">(</span>
+<span class="ansi-green-fg">   9184</span> <span class="ansi-yellow-bg">    </span><span class="ansi-yellow-bg">obj</span><span style="color:rgb(98,98,98)" class="ansi-yellow-bg">=</span><span style="color:rgb(0,135,0)" class="ansi-yellow-bg">self</span><span class="ansi-yellow-bg">,</span>
+<span class="ansi-green-fg">   9185</span> <span class="ansi-yellow-bg">    </span><span class="ansi-yellow-bg">keys</span><span style="color:rgb(98,98,98)" class="ansi-yellow-bg">=</span><span class="ansi-yellow-bg">by</span><span class="ansi-yellow-bg">,</span>
+<span class="ansi-green-fg">   9186</span> <span class="ansi-yellow-bg">    </span><span class="ansi-yellow-bg">axis</span><span style="color:rgb(98,98,98)" class="ansi-yellow-bg">=</span><span class="ansi-yellow-bg">axis</span><span class="ansi-yellow-bg">,</span>
+<span class="ansi-green-fg">   9187</span> <span class="ansi-yellow-bg">    </span><span class="ansi-yellow-bg">level</span><span style="color:rgb(98,98,98)" class="ansi-yellow-bg">=</span><span class="ansi-yellow-bg">level</span><span class="ansi-yellow-bg">,</span>
+<span class="ansi-green-fg">   9188</span> <span class="ansi-yellow-bg">    </span><span class="ansi-yellow-bg">as_index</span><span style="color:rgb(98,98,98)" class="ansi-yellow-bg">=</span><span class="ansi-yellow-bg">as_index</span><span class="ansi-yellow-bg">,</span>
+<span class="ansi-green-fg">   9189</span> <span class="ansi-yellow-bg">    </span><span class="ansi-yellow-bg">sort</span><span style="color:rgb(98,98,98)" class="ansi-yellow-bg">=</span><span class="ansi-yellow-bg">sort</span><span class="ansi-yellow-bg">,</span>
+<span class="ansi-green-fg">   9190</span> <span class="ansi-yellow-bg">    </span><span class="ansi-yellow-bg">group_keys</span><span style="color:rgb(98,98,98)" class="ansi-yellow-bg">=</span><span class="ansi-yellow-bg">group_keys</span><span class="ansi-yellow-bg">,</span>
+<span class="ansi-green-fg">   9191</span> <span class="ansi-yellow-bg">    </span><span class="ansi-yellow-bg">observed</span><span style="color:rgb(98,98,98)" class="ansi-yellow-bg">=</span><span class="ansi-yellow-bg">observed</span><span class="ansi-yellow-bg">,</span>
+<span class="ansi-green-fg">   9192</span> <span class="ansi-yellow-bg">    </span><span class="ansi-yellow-bg">dropna</span><span style="color:rgb(98,98,98)" class="ansi-yellow-bg">=</span><span class="ansi-yellow-bg">dropna</span><span class="ansi-yellow-bg">,</span>
+<span class="ansi-green-fg">   9193</span> <span class="ansi-yellow-bg">)</span>
+
+File <span class="ansi-green-fg ansi-bold">~\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\core\groupby\groupby.py:1329</span>, in <span class="ansi-cyan-fg">GroupBy.__init__</span><span class="ansi-blue-fg ansi-bold">(self, obj, keys, axis, level, grouper, exclusions, selection, as_index, sort, group_keys, observed, dropna)</span>
+<span class="ansi-green-fg">   1326</span> <span style="color:rgb(0,135,0)">self</span><span style="color:rgb(98,98,98)">.</span>dropna <span style="color:rgb(98,98,98)">=</span> dropna
+<span class="ansi-green-fg">   1328</span> <span style="font-weight:bold;color:rgb(0,135,0)">if</span> grouper <span style="font-weight:bold;color:rgb(175,0,255)">is</span> <span style="font-weight:bold;color:rgb(0,135,0)">None</span>:
+<span class="ansi-green-fg ansi-bold">-&gt; 1329</span>     grouper, exclusions, obj <span style="color:rgb(98,98,98)">=</span> <span class="ansi-yellow-bg">get_grouper</span><span class="ansi-yellow-bg">(</span>
+<span class="ansi-green-fg">   1330</span> <span class="ansi-yellow-bg">        </span><span class="ansi-yellow-bg">obj</span><span class="ansi-yellow-bg">,</span>
+<span class="ansi-green-fg">   1331</span> <span class="ansi-yellow-bg">        </span><span class="ansi-yellow-bg">keys</span><span class="ansi-yellow-bg">,</span>
+<span class="ansi-green-fg">   1332</span> <span class="ansi-yellow-bg">        </span><span class="ansi-yellow-bg">axis</span><span style="color:rgb(98,98,98)" class="ansi-yellow-bg">=</span><span class="ansi-yellow-bg">axis</span><span class="ansi-yellow-bg">,</span>
+<span class="ansi-green-fg">   1333</span> <span class="ansi-yellow-bg">        </span><span class="ansi-yellow-bg">level</span><span style="color:rgb(98,98,98)" class="ansi-yellow-bg">=</span><span class="ansi-yellow-bg">level</span><span class="ansi-yellow-bg">,</span>
+<span class="ansi-green-fg">   1334</span> <span class="ansi-yellow-bg">        </span><span class="ansi-yellow-bg">sort</span><span style="color:rgb(98,98,98)" class="ansi-yellow-bg">=</span><span class="ansi-yellow-bg">sort</span><span class="ansi-yellow-bg">,</span>
+<span class="ansi-green-fg">   1335</span> <span class="ansi-yellow-bg">        </span><span class="ansi-yellow-bg">observed</span><span style="color:rgb(98,98,98)" class="ansi-yellow-bg">=</span><span style="font-weight:bold;color:rgb(0,135,0)" class="ansi-yellow-bg">False</span><span class="ansi-yellow-bg"> </span><span style="font-weight:bold;color:rgb(0,135,0)" class="ansi-yellow-bg">if</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">observed</span><span class="ansi-yellow-bg"> </span><span style="font-weight:bold;color:rgb(175,0,255)" class="ansi-yellow-bg">is</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">lib</span><span style="color:rgb(98,98,98)" class="ansi-yellow-bg">.</span><span class="ansi-yellow-bg">no_default</span><span class="ansi-yellow-bg"> </span><span style="font-weight:bold;color:rgb(0,135,0)" class="ansi-yellow-bg">else</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">observed</span><span class="ansi-yellow-bg">,</span>
+<span class="ansi-green-fg">   1336</span> <span class="ansi-yellow-bg">        </span><span class="ansi-yellow-bg">dropna</span><span style="color:rgb(98,98,98)" class="ansi-yellow-bg">=</span><span style="color:rgb(0,135,0)" class="ansi-yellow-bg">self</span><span style="color:rgb(98,98,98)" class="ansi-yellow-bg">.</span><span class="ansi-yellow-bg">dropna</span><span class="ansi-yellow-bg">,</span>
+<span class="ansi-green-fg">   1337</span> <span class="ansi-yellow-bg">    </span><span class="ansi-yellow-bg">)</span>
+<span class="ansi-green-fg">   1339</span> <span style="font-weight:bold;color:rgb(0,135,0)">if</span> observed <span style="font-weight:bold;color:rgb(175,0,255)">is</span> lib<span style="color:rgb(98,98,98)">.</span>no_default:
+<span class="ansi-green-fg">   1340</span>     <span style="font-weight:bold;color:rgb(0,135,0)">if</span> <span style="color:rgb(0,135,0)">any</span>(ping<span style="color:rgb(98,98,98)">.</span>_passed_categorical <span style="font-weight:bold;color:rgb(0,135,0)">for</span> ping <span style="font-weight:bold;color:rgb(175,0,255)">in</span> grouper<span style="color:rgb(98,98,98)">.</span>groupings):
+
+File <span class="ansi-green-fg ansi-bold">~\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\core\groupby\grouper.py:1043</span>, in <span class="ansi-cyan-fg">get_grouper</span><span class="ansi-blue-fg ansi-bold">(obj, key, axis, level, sort, observed, validate, dropna)</span>
+<span class="ansi-green-fg">   1041</span>         in_axis, level, gpr <span style="color:rgb(98,98,98)">=</span> <span style="font-weight:bold;color:rgb(0,135,0)">False</span>, gpr, <span style="font-weight:bold;color:rgb(0,135,0)">None</span>
+<span class="ansi-green-fg">   1042</span>     <span style="font-weight:bold;color:rgb(0,135,0)">else</span>:
+<span class="ansi-green-fg ansi-bold">-&gt; 1043</span>         <span style="font-weight:bold;color:rgb(0,135,0)">raise</span> <span style="font-weight:bold;color:rgb(215,95,95)">KeyError</span>(gpr)
+<span class="ansi-green-fg">   1044</span> <span style="font-weight:bold;color:rgb(0,135,0)">elif</span> <span style="color:rgb(0,135,0)">isinstance</span>(gpr, Grouper) <span style="font-weight:bold;color:rgb(175,0,255)">and</span> gpr<span style="color:rgb(98,98,98)">.</span>key <span style="font-weight:bold;color:rgb(175,0,255)">is</span> <span style="font-weight:bold;color:rgb(175,0,255)">not</span> <span style="font-weight:bold;color:rgb(0,135,0)">None</span>:
+<span class="ansi-green-fg">   1045</span>     <span style="font-style:italic;color:rgb(95,135,135)"># Add key to exclusions</span>
+<span class="ansi-green-fg">   1046</span>     exclusions<span style="color:rgb(98,98,98)">.</span>add(gpr<span style="color:rgb(98,98,98)">.</span>key)
+
+<span class="ansi-red-fg ansi-bold">KeyError</span>: 'city'</pre>
+</div>
+</div>
+</div>
+<p><img src="../images/projects/ev-adoption/table3.png" class="img-fluid" alt="2"> ### 3. EV Brand Popularity in Major Cities</p>
+<p>Tesla leads in every single one, often by a huge margin.</p>
+<div id="586845df" class="cell" data-execution_count="4">
+<div class="cell-output cell-output-error">
+<div class="ansi-escaped-output">
+<pre><span class="ansi-red-fg ansi-bold">---------------------------------------------------------------------------</span>
+<span class="ansi-red-fg ansi-bold">KeyError</span>                                  Traceback (most recent call last)
+Cell <span class="ansi-green-fg ansi-bold">In[4], line 3</span>
+<span class="ansi-green-fg">      1</span> <span style="font-style:italic;color:rgb(95,135,135)"># Find top 5 cities</span>
+<span class="ansi-green-fg">      2</span> top_5_cities <span style="color:rgb(98,98,98)">=</span> (
+<span class="ansi-green-fg ansi-bold">----&gt; 3</span>     <span class="ansi-yellow-bg">df_wa</span><span style="color:rgb(98,98,98)" class="ansi-yellow-bg">.</span><span class="ansi-yellow-bg">groupby</span><span class="ansi-yellow-bg">(</span><span style="color:rgb(175,0,0)" class="ansi-yellow-bg">'</span><span style="color:rgb(175,0,0)" class="ansi-yellow-bg">city</span><span style="color:rgb(175,0,0)" class="ansi-yellow-bg">'</span><span class="ansi-yellow-bg">)</span>
+<span class="ansi-green-fg">      4</span>     <span style="color:rgb(98,98,98)">.</span>agg({<span style="color:rgb(175,0,0)">"</span><span style="color:rgb(175,0,0)">model</span><span style="color:rgb(175,0,0)">"</span>: <span style="color:rgb(175,0,0)">"</span><span style="color:rgb(175,0,0)">count</span><span style="color:rgb(175,0,0)">"</span>})
+<span class="ansi-green-fg">      5</span>     <span style="color:rgb(98,98,98)">.</span>sort_values(by<span style="color:rgb(98,98,98)">=</span><span style="color:rgb(175,0,0)">"</span><span style="color:rgb(175,0,0)">model</span><span style="color:rgb(175,0,0)">"</span>, ascending<span style="color:rgb(98,98,98)">=</span><span style="font-weight:bold;color:rgb(0,135,0)">False</span>)
+<span class="ansi-green-fg">      6</span>     <span style="color:rgb(98,98,98)">.</span>head(<span style="color:rgb(98,98,98)">5</span>)
+<span class="ansi-green-fg">      7</span>     <span style="color:rgb(98,98,98)">.</span>index
+<span class="ansi-green-fg">      8</span> )
+<span class="ansi-green-fg">     10</span> <span style="font-style:italic;color:rgb(95,135,135)"># Filter data</span>
+<span class="ansi-green-fg">     11</span> df_top_cities <span style="color:rgb(98,98,98)">=</span> df_wa[df_wa[<span style="color:rgb(175,0,0)">'</span><span style="color:rgb(175,0,0)">city</span><span style="color:rgb(175,0,0)">'</span>]<span style="color:rgb(98,98,98)">.</span>isin(top_5_cities)]
+
+File <span class="ansi-green-fg ansi-bold">~\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\core\frame.py:9183</span>, in <span class="ansi-cyan-fg">DataFrame.groupby</span><span class="ansi-blue-fg ansi-bold">(self, by, axis, level, as_index, sort, group_keys, observed, dropna)</span>
+<span class="ansi-green-fg">   9180</span> <span style="font-weight:bold;color:rgb(0,135,0)">if</span> level <span style="font-weight:bold;color:rgb(175,0,255)">is</span> <span style="font-weight:bold;color:rgb(0,135,0)">None</span> <span style="font-weight:bold;color:rgb(175,0,255)">and</span> by <span style="font-weight:bold;color:rgb(175,0,255)">is</span> <span style="font-weight:bold;color:rgb(0,135,0)">None</span>:
+<span class="ansi-green-fg">   9181</span>     <span style="font-weight:bold;color:rgb(0,135,0)">raise</span> <span style="font-weight:bold;color:rgb(215,95,95)">TypeError</span>(<span style="color:rgb(175,0,0)">"</span><span style="color:rgb(175,0,0)">You have to supply one of </span><span style="color:rgb(175,0,0)">'</span><span style="color:rgb(175,0,0)">by</span><span style="color:rgb(175,0,0)">'</span><span style="color:rgb(175,0,0)"> and </span><span style="color:rgb(175,0,0)">'</span><span style="color:rgb(175,0,0)">level</span><span style="color:rgb(175,0,0)">'</span><span style="color:rgb(175,0,0)">"</span>)
+<span class="ansi-green-fg ansi-bold">-&gt; 9183</span> <span style="font-weight:bold;color:rgb(0,135,0)">return</span> <span class="ansi-yellow-bg">DataFrameGroupBy</span><span class="ansi-yellow-bg">(</span>
+<span class="ansi-green-fg">   9184</span> <span class="ansi-yellow-bg">    </span><span class="ansi-yellow-bg">obj</span><span style="color:rgb(98,98,98)" class="ansi-yellow-bg">=</span><span style="color:rgb(0,135,0)" class="ansi-yellow-bg">self</span><span class="ansi-yellow-bg">,</span>
+<span class="ansi-green-fg">   9185</span> <span class="ansi-yellow-bg">    </span><span class="ansi-yellow-bg">keys</span><span style="color:rgb(98,98,98)" class="ansi-yellow-bg">=</span><span class="ansi-yellow-bg">by</span><span class="ansi-yellow-bg">,</span>
+<span class="ansi-green-fg">   9186</span> <span class="ansi-yellow-bg">    </span><span class="ansi-yellow-bg">axis</span><span style="color:rgb(98,98,98)" class="ansi-yellow-bg">=</span><span class="ansi-yellow-bg">axis</span><span class="ansi-yellow-bg">,</span>
+<span class="ansi-green-fg">   9187</span> <span class="ansi-yellow-bg">    </span><span class="ansi-yellow-bg">level</span><span style="color:rgb(98,98,98)" class="ansi-yellow-bg">=</span><span class="ansi-yellow-bg">level</span><span class="ansi-yellow-bg">,</span>
+<span class="ansi-green-fg">   9188</span> <span class="ansi-yellow-bg">    </span><span class="ansi-yellow-bg">as_index</span><span style="color:rgb(98,98,98)" class="ansi-yellow-bg">=</span><span class="ansi-yellow-bg">as_index</span><span class="ansi-yellow-bg">,</span>
+<span class="ansi-green-fg">   9189</span> <span class="ansi-yellow-bg">    </span><span class="ansi-yellow-bg">sort</span><span style="color:rgb(98,98,98)" class="ansi-yellow-bg">=</span><span class="ansi-yellow-bg">sort</span><span class="ansi-yellow-bg">,</span>
+<span class="ansi-green-fg">   9190</span> <span class="ansi-yellow-bg">    </span><span class="ansi-yellow-bg">group_keys</span><span style="color:rgb(98,98,98)" class="ansi-yellow-bg">=</span><span class="ansi-yellow-bg">group_keys</span><span class="ansi-yellow-bg">,</span>
+<span class="ansi-green-fg">   9191</span> <span class="ansi-yellow-bg">    </span><span class="ansi-yellow-bg">observed</span><span style="color:rgb(98,98,98)" class="ansi-yellow-bg">=</span><span class="ansi-yellow-bg">observed</span><span class="ansi-yellow-bg">,</span>
+<span class="ansi-green-fg">   9192</span> <span class="ansi-yellow-bg">    </span><span class="ansi-yellow-bg">dropna</span><span style="color:rgb(98,98,98)" class="ansi-yellow-bg">=</span><span class="ansi-yellow-bg">dropna</span><span class="ansi-yellow-bg">,</span>
+<span class="ansi-green-fg">   9193</span> <span class="ansi-yellow-bg">)</span>
+
+File <span class="ansi-green-fg ansi-bold">~\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\core\groupby\groupby.py:1329</span>, in <span class="ansi-cyan-fg">GroupBy.__init__</span><span class="ansi-blue-fg ansi-bold">(self, obj, keys, axis, level, grouper, exclusions, selection, as_index, sort, group_keys, observed, dropna)</span>
+<span class="ansi-green-fg">   1326</span> <span style="color:rgb(0,135,0)">self</span><span style="color:rgb(98,98,98)">.</span>dropna <span style="color:rgb(98,98,98)">=</span> dropna
+<span class="ansi-green-fg">   1328</span> <span style="font-weight:bold;color:rgb(0,135,0)">if</span> grouper <span style="font-weight:bold;color:rgb(175,0,255)">is</span> <span style="font-weight:bold;color:rgb(0,135,0)">None</span>:
+<span class="ansi-green-fg ansi-bold">-&gt; 1329</span>     grouper, exclusions, obj <span style="color:rgb(98,98,98)">=</span> <span class="ansi-yellow-bg">get_grouper</span><span class="ansi-yellow-bg">(</span>
+<span class="ansi-green-fg">   1330</span> <span class="ansi-yellow-bg">        </span><span class="ansi-yellow-bg">obj</span><span class="ansi-yellow-bg">,</span>
+<span class="ansi-green-fg">   1331</span> <span class="ansi-yellow-bg">        </span><span class="ansi-yellow-bg">keys</span><span class="ansi-yellow-bg">,</span>
+<span class="ansi-green-fg">   1332</span> <span class="ansi-yellow-bg">        </span><span class="ansi-yellow-bg">axis</span><span style="color:rgb(98,98,98)" class="ansi-yellow-bg">=</span><span class="ansi-yellow-bg">axis</span><span class="ansi-yellow-bg">,</span>
+<span class="ansi-green-fg">   1333</span> <span class="ansi-yellow-bg">        </span><span class="ansi-yellow-bg">level</span><span style="color:rgb(98,98,98)" class="ansi-yellow-bg">=</span><span class="ansi-yellow-bg">level</span><span class="ansi-yellow-bg">,</span>
+<span class="ansi-green-fg">   1334</span> <span class="ansi-yellow-bg">        </span><span class="ansi-yellow-bg">sort</span><span style="color:rgb(98,98,98)" class="ansi-yellow-bg">=</span><span class="ansi-yellow-bg">sort</span><span class="ansi-yellow-bg">,</span>
+<span class="ansi-green-fg">   1335</span> <span class="ansi-yellow-bg">        </span><span class="ansi-yellow-bg">observed</span><span style="color:rgb(98,98,98)" class="ansi-yellow-bg">=</span><span style="font-weight:bold;color:rgb(0,135,0)" class="ansi-yellow-bg">False</span><span class="ansi-yellow-bg"> </span><span style="font-weight:bold;color:rgb(0,135,0)" class="ansi-yellow-bg">if</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">observed</span><span class="ansi-yellow-bg"> </span><span style="font-weight:bold;color:rgb(175,0,255)" class="ansi-yellow-bg">is</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">lib</span><span style="color:rgb(98,98,98)" class="ansi-yellow-bg">.</span><span class="ansi-yellow-bg">no_default</span><span class="ansi-yellow-bg"> </span><span style="font-weight:bold;color:rgb(0,135,0)" class="ansi-yellow-bg">else</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">observed</span><span class="ansi-yellow-bg">,</span>
+<span class="ansi-green-fg">   1336</span> <span class="ansi-yellow-bg">        </span><span class="ansi-yellow-bg">dropna</span><span style="color:rgb(98,98,98)" class="ansi-yellow-bg">=</span><span style="color:rgb(0,135,0)" class="ansi-yellow-bg">self</span><span style="color:rgb(98,98,98)" class="ansi-yellow-bg">.</span><span class="ansi-yellow-bg">dropna</span><span class="ansi-yellow-bg">,</span>
+<span class="ansi-green-fg">   1337</span> <span class="ansi-yellow-bg">    </span><span class="ansi-yellow-bg">)</span>
+<span class="ansi-green-fg">   1339</span> <span style="font-weight:bold;color:rgb(0,135,0)">if</span> observed <span style="font-weight:bold;color:rgb(175,0,255)">is</span> lib<span style="color:rgb(98,98,98)">.</span>no_default:
+<span class="ansi-green-fg">   1340</span>     <span style="font-weight:bold;color:rgb(0,135,0)">if</span> <span style="color:rgb(0,135,0)">any</span>(ping<span style="color:rgb(98,98,98)">.</span>_passed_categorical <span style="font-weight:bold;color:rgb(0,135,0)">for</span> ping <span style="font-weight:bold;color:rgb(175,0,255)">in</span> grouper<span style="color:rgb(98,98,98)">.</span>groupings):
+
+File <span class="ansi-green-fg ansi-bold">~\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\core\groupby\grouper.py:1043</span>, in <span class="ansi-cyan-fg">get_grouper</span><span class="ansi-blue-fg ansi-bold">(obj, key, axis, level, sort, observed, validate, dropna)</span>
+<span class="ansi-green-fg">   1041</span>         in_axis, level, gpr <span style="color:rgb(98,98,98)">=</span> <span style="font-weight:bold;color:rgb(0,135,0)">False</span>, gpr, <span style="font-weight:bold;color:rgb(0,135,0)">None</span>
+<span class="ansi-green-fg">   1042</span>     <span style="font-weight:bold;color:rgb(0,135,0)">else</span>:
+<span class="ansi-green-fg ansi-bold">-&gt; 1043</span>         <span style="font-weight:bold;color:rgb(0,135,0)">raise</span> <span style="font-weight:bold;color:rgb(215,95,95)">KeyError</span>(gpr)
+<span class="ansi-green-fg">   1044</span> <span style="font-weight:bold;color:rgb(0,135,0)">elif</span> <span style="color:rgb(0,135,0)">isinstance</span>(gpr, Grouper) <span style="font-weight:bold;color:rgb(175,0,255)">and</span> gpr<span style="color:rgb(98,98,98)">.</span>key <span style="font-weight:bold;color:rgb(175,0,255)">is</span> <span style="font-weight:bold;color:rgb(175,0,255)">not</span> <span style="font-weight:bold;color:rgb(0,135,0)">None</span>:
+<span class="ansi-green-fg">   1045</span>     <span style="font-style:italic;color:rgb(95,135,135)"># Add key to exclusions</span>
+<span class="ansi-green-fg">   1046</span>     exclusions<span style="color:rgb(98,98,98)">.</span>add(gpr<span style="color:rgb(98,98,98)">.</span>key)
+
+<span class="ansi-red-fg ansi-bold">KeyError</span>: 'city'</pre>
+</div>
+</div>
+</div>
+<p><img src="../images/projects/ev-adoption/facet_h_1.png" class="img-fluid" alt="3"> ### 4. Electric Range by Brand</p>
+<p>Tesla pulls far ahead in driving distance.</p>
+<div id="999bec4d" class="cell" data-execution_count="5">
+<div class="cell-output cell-output-error">
+<div class="ansi-escaped-output">
+<pre><span class="ansi-red-fg ansi-bold">---------------------------------------------------------------------------</span>
+<span class="ansi-red-fg ansi-bold">KeyError</span>                                  Traceback (most recent call last)
+File <span class="ansi-green-fg ansi-bold">~\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\core\indexes\base.py:3805</span>, in <span class="ansi-cyan-fg">Index.get_loc</span><span class="ansi-blue-fg ansi-bold">(self, key)</span>
+<span class="ansi-green-fg">   3804</span> <span style="font-weight:bold;color:rgb(0,135,0)">try</span>:
+<span class="ansi-green-fg ansi-bold">-&gt; 3805</span>     <span style="font-weight:bold;color:rgb(0,135,0)">return</span> <span style="color:rgb(0,135,0)" class="ansi-yellow-bg">self</span><span style="color:rgb(98,98,98)" class="ansi-yellow-bg">.</span><span class="ansi-yellow-bg">_engine</span><span style="color:rgb(98,98,98)" class="ansi-yellow-bg">.</span><span class="ansi-yellow-bg">get_loc</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg">casted_key</span><span class="ansi-yellow-bg">)</span>
+<span class="ansi-green-fg">   3806</span> <span style="font-weight:bold;color:rgb(0,135,0)">except</span> <span style="font-weight:bold;color:rgb(215,95,95)">KeyError</span> <span style="font-weight:bold;color:rgb(0,135,0)">as</span> err:
+
+File <span class="ansi-green-fg ansi-bold">index.pyx:167</span>, in <span class="ansi-cyan-fg">pandas._libs.index.IndexEngine.get_loc</span><span class="ansi-blue-fg ansi-bold">()</span>
+
+File <span class="ansi-green-fg ansi-bold">index.pyx:196</span>, in <span class="ansi-cyan-fg">pandas._libs.index.IndexEngine.get_loc</span><span class="ansi-blue-fg ansi-bold">()</span>
+
+File <span class="ansi-green-fg ansi-bold">pandas\\_libs\\hashtable_class_helper.pxi:7081</span>, in <span class="ansi-cyan-fg">pandas._libs.hashtable.PyObjectHashTable.get_item</span><span class="ansi-blue-fg ansi-bold">()</span>
+
+File <span class="ansi-green-fg ansi-bold">pandas\\_libs\\hashtable_class_helper.pxi:7089</span>, in <span class="ansi-cyan-fg">pandas._libs.hashtable.PyObjectHashTable.get_item</span><span class="ansi-blue-fg ansi-bold">()</span>
+
+<span class="ansi-red-fg ansi-bold">KeyError</span>: 'make'
+
+The above exception was the direct cause of the following exception:
+
+<span class="ansi-red-fg ansi-bold">KeyError</span>                                  Traceback (most recent call last)
+Cell <span class="ansi-green-fg ansi-bold">In[5], line 3</span>
+<span class="ansi-green-fg">      1</span> top_brands <span style="color:rgb(98,98,98)">=</span> [<span style="color:rgb(175,0,0)">'</span><span style="color:rgb(175,0,0)">TESLA</span><span style="color:rgb(175,0,0)">'</span>,<span style="color:rgb(175,0,0)">'</span><span style="color:rgb(175,0,0)">CHEVROLET</span><span style="color:rgb(175,0,0)">'</span>,<span style="color:rgb(175,0,0)">'</span><span style="color:rgb(175,0,0)">NISSAN</span><span style="color:rgb(175,0,0)">'</span>,<span style="color:rgb(175,0,0)">'</span><span style="color:rgb(175,0,0)">FORD</span><span style="color:rgb(175,0,0)">'</span>,<span style="color:rgb(175,0,0)">'</span><span style="color:rgb(175,0,0)">KIA</span><span style="color:rgb(175,0,0)">'</span>,<span style="color:rgb(175,0,0)">'</span><span style="color:rgb(175,0,0)">TOYOTA</span><span style="color:rgb(175,0,0)">'</span>,<span style="color:rgb(175,0,0)">'</span><span style="color:rgb(175,0,0)">BMW</span><span style="color:rgb(175,0,0)">'</span>,<span style="color:rgb(175,0,0)">'</span><span style="color:rgb(175,0,0)">HYUNDAI</span><span style="color:rgb(175,0,0)">'</span>,<span style="color:rgb(175,0,0)">'</span><span style="color:rgb(175,0,0)">JEEP</span><span style="color:rgb(175,0,0)">'</span>,<span style="color:rgb(175,0,0)">'</span><span style="color:rgb(175,0,0)">VOLKSWAGEN</span><span style="color:rgb(175,0,0)">'</span>]
+<span class="ansi-green-fg ansi-bold">----&gt; 3</span> df_elec_range <span style="color:rgb(98,98,98)">=</span> df_wa[<span class="ansi-yellow-bg">df_wa</span><span class="ansi-yellow-bg">[</span><span style="color:rgb(175,0,0)" class="ansi-yellow-bg">'</span><span style="color:rgb(175,0,0)" class="ansi-yellow-bg">make</span><span style="color:rgb(175,0,0)" class="ansi-yellow-bg">'</span><span class="ansi-yellow-bg">]</span><span style="color:rgb(98,98,98)">.</span>isin(top_brands)]
+<span class="ansi-green-fg">      4</span> df_elec_range[<span style="color:rgb(175,0,0)">'</span><span style="color:rgb(175,0,0)">flag</span><span style="color:rgb(175,0,0)">'</span>] <span style="color:rgb(98,98,98)">=</span> df_elec_range[<span style="color:rgb(175,0,0)">'</span><span style="color:rgb(175,0,0)">make</span><span style="color:rgb(175,0,0)">'</span>] <span style="color:rgb(98,98,98)">==</span> <span style="color:rgb(175,0,0)">"</span><span style="color:rgb(175,0,0)">TESLA</span><span style="color:rgb(175,0,0)">"</span>
+<span class="ansi-green-fg">      6</span> fig_box <span style="color:rgb(98,98,98)">=</span> px<span style="color:rgb(98,98,98)">.</span>box(
+<span class="ansi-green-fg">      7</span>     df_elec_range, 
+<span class="ansi-green-fg">      8</span>     x<span style="color:rgb(98,98,98)">=</span><span style="color:rgb(175,0,0)">'</span><span style="color:rgb(175,0,0)">electric_range</span><span style="color:rgb(175,0,0)">'</span>, 
+<span class="ansi-green-fg ansi-bold">   (...)</span>
+<span class="ansi-green-fg">     11</span>     color<span style="color:rgb(98,98,98)">=</span><span style="color:rgb(175,0,0)">'</span><span style="color:rgb(175,0,0)">flag</span><span style="color:rgb(175,0,0)">'</span>
+<span class="ansi-green-fg">     12</span> )
+
+File <span class="ansi-green-fg ansi-bold">~\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\core\frame.py:4102</span>, in <span class="ansi-cyan-fg">DataFrame.__getitem__</span><span class="ansi-blue-fg ansi-bold">(self, key)</span>
+<span class="ansi-green-fg">   4100</span> <span style="font-weight:bold;color:rgb(0,135,0)">if</span> <span style="color:rgb(0,135,0)">self</span><span style="color:rgb(98,98,98)">.</span>columns<span style="color:rgb(98,98,98)">.</span>nlevels <span style="color:rgb(98,98,98)">&gt;</span> <span style="color:rgb(98,98,98)">1</span>:
+<span class="ansi-green-fg">   4101</span>     <span style="font-weight:bold;color:rgb(0,135,0)">return</span> <span style="color:rgb(0,135,0)">self</span><span style="color:rgb(98,98,98)">.</span>_getitem_multilevel(key)
+<span class="ansi-green-fg ansi-bold">-&gt; 4102</span> indexer <span style="color:rgb(98,98,98)">=</span> <span style="color:rgb(0,135,0)" class="ansi-yellow-bg">self</span><span style="color:rgb(98,98,98)" class="ansi-yellow-bg">.</span><span class="ansi-yellow-bg">columns</span><span style="color:rgb(98,98,98)" class="ansi-yellow-bg">.</span><span class="ansi-yellow-bg">get_loc</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg">key</span><span class="ansi-yellow-bg">)</span>
+<span class="ansi-green-fg">   4103</span> <span style="font-weight:bold;color:rgb(0,135,0)">if</span> is_integer(indexer):
+<span class="ansi-green-fg">   4104</span>     indexer <span style="color:rgb(98,98,98)">=</span> [indexer]
+
+File <span class="ansi-green-fg ansi-bold">~\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\core\indexes\base.py:3812</span>, in <span class="ansi-cyan-fg">Index.get_loc</span><span class="ansi-blue-fg ansi-bold">(self, key)</span>
+<span class="ansi-green-fg">   3807</span>     <span style="font-weight:bold;color:rgb(0,135,0)">if</span> <span style="color:rgb(0,135,0)">isinstance</span>(casted_key, <span style="color:rgb(0,135,0)">slice</span>) <span style="font-weight:bold;color:rgb(175,0,255)">or</span> (
+<span class="ansi-green-fg">   3808</span>         <span style="color:rgb(0,135,0)">isinstance</span>(casted_key, abc<span style="color:rgb(98,98,98)">.</span>Iterable)
+<span class="ansi-green-fg">   3809</span>         <span style="font-weight:bold;color:rgb(175,0,255)">and</span> <span style="color:rgb(0,135,0)">any</span>(<span style="color:rgb(0,135,0)">isinstance</span>(x, <span style="color:rgb(0,135,0)">slice</span>) <span style="font-weight:bold;color:rgb(0,135,0)">for</span> x <span style="font-weight:bold;color:rgb(175,0,255)">in</span> casted_key)
+<span class="ansi-green-fg">   3810</span>     ):
+<span class="ansi-green-fg">   3811</span>         <span style="font-weight:bold;color:rgb(0,135,0)">raise</span> InvalidIndexError(key)
+<span class="ansi-green-fg ansi-bold">-&gt; 3812</span>     <span style="font-weight:bold;color:rgb(0,135,0)">raise</span> <span style="font-weight:bold;color:rgb(215,95,95)">KeyError</span>(key) <span style="font-weight:bold;color:rgb(0,135,0)">from</span><span style="color:rgb(188,188,188)"> </span><span style="font-weight:bold;color:rgb(0,0,255)">err</span>
+<span class="ansi-green-fg">   3813</span> <span style="font-weight:bold;color:rgb(0,135,0)">except</span> <span style="font-weight:bold;color:rgb(215,95,95)">TypeError</span>:
+<span class="ansi-green-fg">   3814</span>     <span style="font-style:italic;color:rgb(95,135,135)"># If we have a listlike key, _check_indexing_error will raise</span>
+<span class="ansi-green-fg">   3815</span>     <span style="font-style:italic;color:rgb(95,135,135)">#  InvalidIndexError. Otherwise we fall through and re-raise</span>
+<span class="ansi-green-fg">   3816</span>     <span style="font-style:italic;color:rgb(95,135,135)">#  the TypeError.</span>
+<span class="ansi-green-fg">   3817</span>     <span style="color:rgb(0,135,0)">self</span><span style="color:rgb(98,98,98)">.</span>_check_indexing_error(key)
+
+<span class="ansi-red-fg ansi-bold">KeyError</span>: 'make'</pre>
+</div>
+</div>
+</div>
+<p><img src="../images/projects/ev-adoption/box_h_2.png" class="img-fluid" alt="3"> ## Design Choices That Made It Work</p>
+<p>Simplicity first: clean labels, clear axis titles, minimal clutter Color with purpose: Seattle, 2023, Tesla highlighted in green; others in gray Consistent type: Spectral (serif) for titles, Poppins (sans-serif) for data Layout flow: charts align vertically for a smooth flow Color Palette:</p>
+</section>
+</section>
+<section id="final-thoughts" class="level2" data-number="5">
+<h2 data-number="5" class="anchored" data-anchor-id="final-thoughts"><span class="header-section-number">5</span> Final Thoughts</h2>
+<p>Originally, I planned to include a geographic heatmap, but simplifying to four strong visuals made for a clearer and more engaging story. This project helped me practice transforming raw data into something accessible and hopefully insightful.</p>
+<p>Whether you’re a fellow data nerd or just curious about EVs, I hope this piece gives you something to think about the next time you see a Tesla on the road.</p>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -272,6 +577,11 @@ ul.task-list li input[type="checkbox"] {
           if (link.dataset.originalHref !== undefined) {
             link.href = link.dataset.originalHref;
           }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
         }
       }
     function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
@@ -590,4 +900,5 @@ ul.task-list li input[type="checkbox"] {
 
 
 
+<script src="../site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>

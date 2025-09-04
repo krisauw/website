@@ -39,7 +39,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-ea385d0e468b0dd5ea5bf0780b1290d9.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-dfb324f25d9b1687192fa8be62ac8f9c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-cc63fce9873912f1bbbccf05079cc9ea.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -67,6 +67,7 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<style>html{ scroll-behavior: smooth; }</style>
 
 
 </head>
@@ -103,7 +104,7 @@ ul.task-list li input[type="checkbox"] {
     <ul class="dropdown-menu" aria-labelledby="nav-menu-projects">    
         <li>
     <a class="dropdown-item" href="../projects/ev-adoption.html">
- <span class="dropdown-text">EV Adoption</span></a>
+ <span class="dropdown-text">EV Adoption in WA</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="../projects/movie-recommender.html">
@@ -130,12 +131,12 @@ ul.task-list li input[type="checkbox"] {
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item compact">
-    <a class="nav-link" href="https://github.com/krisauw"> <i class="bi bi-github" role="img">
+    <a class="nav-link" href="https://github.com/krisauw"> <i class="bi bi-github" role="img" aria-label="GitHub">
 </i> 
 <span class="menu-text"></span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="https://www.linkedin.com/in/hien-bui-emi-6273b010a/"> <i class="bi bi-linkedin" role="img">
+    <a class="nav-link" href="https://www.linkedin.com/in/hien-bui-emi-6273b010a/"> <i class="bi bi-linkedin" role="img" aria-label="LinkedIn">
 </i> 
 <span class="menu-text"></span></a>
   </li>  
@@ -150,8 +151,16 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul class="collapse">
+  <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
+  <li><a href="#methods-brief" id="toc-methods-brief" class="nav-link" data-scroll-target="#methods-brief">Methods (brief)</a></li>
+  <li><a href="#interactive-dashboard-tableau" id="toc-interactive-dashboard-tableau" class="nav-link" data-scroll-target="#interactive-dashboard-tableau">Interactive Dashboard (Tableau)</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -159,6 +168,7 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
 <h1 class="title">Manga Sentiment Analysis</h1>
+<p class="subtitle lead">Scraped manga reviews and analyzed sentiment</p>
 </div>
 
 
@@ -175,14 +185,36 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Scraped manga reviews and analyzed sentiment.</p>
+<section id="overview" class="level2">
+<h2 class="anchored" data-anchor-id="overview">Overview</h2>
+<p>Scraped manga reviews and analyzed sentiment. This work was inspired and refered to <strong>One Piece Analysis by Viet Anh</strong>.</p>
 <ul>
 <li>Tools: Python (Selenium, TextBlob, NLTK)</li>
-<li>Visualized sentiment trends in <strong>Power BI</strong> and <strong>Tableau</strong></li>
-<li>Links: <a href="https://github.com/krisauw">GitHub</a></li>
+<li>Visualized sentiment trends in Power BI and Tableau</li>
 </ul>
+<hr>
+</section>
+<section id="methods-brief" class="level2">
+<h2 class="anchored" data-anchor-id="methods-brief">Methods (brief)</h2>
+<ul>
+<li><strong>Collection</strong>: Automated review scraping with Selenium.</li>
+<li><strong>Cleaning</strong>: Lowercasing, punctuation removal, stopword filtering (NLTK).</li>
+<li><strong>Sentiment</strong>: Polarity scoring with TextBlob; aggregate by date/title to see trends.</li>
+<li><strong>Visualization</strong>: Power BI and Tableau dashboards for time trends and distributions.</li>
+</ul>
+<hr>
+</section>
+<section id="interactive-dashboard-tableau" class="level2">
+<h2 class="anchored" data-anchor-id="interactive-dashboard-tableau">Interactive Dashboard (Tableau)</h2>
+<div class="tableau-wrapper" style="position:relative;padding-bottom:68%;height:0;overflow:hidden;">
+<p><iframe src="https://public.tableau.com/views/mashle_review_analysis/Dashboard1?:showVizHome=no&amp;:embed=true&amp;:toolbar=no" style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;" frameborder="0" scrolling="no" allowfullscreen="" title="Manga Sentiment Dashboard"> </iframe></p>
+</div>
+<p style="margin-top:0.75rem;">
+If the embed does not load, open it directly: <a href="https://public.tableau.com/app/profile/thi.thanh.hien.bui/viz/mashle_review_analysis/Dashboard1" target="_blank" rel="noopener"> Tableau Public link </a>.
+</p>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -271,6 +303,11 @@ ul.task-list li input[type="checkbox"] {
           if (link.dataset.originalHref !== undefined) {
             link.href = link.dataset.originalHref;
           }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
         }
       }
     function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
@@ -589,4 +626,5 @@ ul.task-list li input[type="checkbox"] {
 
 
 
+<script src="../site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>

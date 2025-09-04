@@ -6,8 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Hien Bui">
 
-<title>Luxury Car Price Prediction – Hien Bui</title>
+<title>Car Price Analysis and Visualization – Hien Bui</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -39,7 +40,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-ea385d0e468b0dd5ea5bf0780b1290d9.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-dfb324f25d9b1687192fa8be62ac8f9c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-cc63fce9873912f1bbbccf05079cc9ea.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -67,6 +68,7 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<style>html{ scroll-behavior: smooth; }</style>
 
 
 </head>
@@ -103,7 +105,7 @@ ul.task-list li input[type="checkbox"] {
     <ul class="dropdown-menu" aria-labelledby="nav-menu-projects">    
         <li>
     <a class="dropdown-item" href="../projects/ev-adoption.html">
- <span class="dropdown-text">EV Adoption</span></a>
+ <span class="dropdown-text">EV Adoption in WA</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="../projects/movie-recommender.html">
@@ -130,12 +132,12 @@ ul.task-list li input[type="checkbox"] {
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item compact">
-    <a class="nav-link" href="https://github.com/krisauw"> <i class="bi bi-github" role="img">
+    <a class="nav-link" href="https://github.com/krisauw"> <i class="bi bi-github" role="img" aria-label="GitHub">
 </i> 
 <span class="menu-text"></span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="https://www.linkedin.com/in/hien-bui-emi-6273b010a/"> <i class="bi bi-linkedin" role="img">
+    <a class="nav-link" href="https://www.linkedin.com/in/hien-bui-emi-6273b010a/"> <i class="bi bi-linkedin" role="img" aria-label="LinkedIn">
 </i> 
 <span class="menu-text"></span></a>
   </li>  
@@ -150,21 +152,37 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul class="collapse">
+  <li><a href="#project-overview" id="toc-project-overview" class="nav-link active" data-scroll-target="#project-overview"><span class="header-section-number">1</span> Project Overview</a></li>
+  <li><a href="#example-visualizations" id="toc-example-visualizations" class="nav-link" data-scroll-target="#example-visualizations"><span class="header-section-number">2</span> Example Visualizations</a></li>
+  <li><a href="#facet-bar-chart" id="toc-facet-bar-chart" class="nav-link" data-scroll-target="#facet-bar-chart"><span class="header-section-number">3</span> <img src="../images/projects/luxury-car-price/facet.png" class="img-fluid" alt="Facet Bar Chart"></a></li>
+  <li><a href="#technologies-used" id="toc-technologies-used" class="nav-link" data-scroll-target="#technologies-used"><span class="header-section-number">4</span> Technologies Used</a></li>
+  <li><a href="#future-improvements" id="toc-future-improvements" class="nav-link" data-scroll-target="#future-improvements"><span class="header-section-number">5</span> Future Improvements</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Luxury Car Price Prediction</h1>
+<h1 class="title">Car Price Analysis and Visualization</h1>
 </div>
 
 
 
 <div class="quarto-title-meta">
 
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Hien Bui </p>
+          </div>
+  </div>
     
   
     
@@ -175,15 +193,72 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Built a predictive model for car prices.</p>
+<section id="project-overview" class="level2" data-number="1">
+<h2 data-number="1" class="anchored" data-anchor-id="project-overview"><span class="header-section-number">1</span> Project Overview</h2>
+<p>This project analyzes the <strong>average price of luxury car brands</strong> using <strong>Python, Pandas, and Plotly</strong>.<br>
+It provides <strong>insightful visualizations</strong> to compare car prices across different brands.</p>
+<section id="key-features" class="level3" data-number="1.1">
+<h3 data-number="1.1" class="anchored" data-anchor-id="key-features"><span class="header-section-number">1.1</span> Key Features</h3>
 <ul>
-<li>Explored luxury car dataset</li>
-<li>Applied regression models to predict price ranges</li>
-<li>Skills: Python, Regression, EDA</li>
-<li>Links: <a href="https://github.com/krisauw">GitHub</a></li>
+<li>Vertical &amp; horizontal bar charts for data comparison.<br>
+</li>
+<li>Formatted tables with well-structured insights.<br>
+</li>
+<li>Custom styling for better visual appeal.<br>
+</li>
+<li>Number formatting to improve readability.</li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="example-visualizations" class="level2" data-number="2">
+<h2 data-number="2" class="anchored" data-anchor-id="example-visualizations"><span class="header-section-number">2</span> Example Visualizations</h2>
+<section id="formatted-data-table" class="level3" data-number="2.1">
+<h3 data-number="2.1" class="anchored" data-anchor-id="formatted-data-table"><span class="header-section-number">2.1</span> Formatted Data Table</h3>
+<p>This table presents key specifications of luxury car brands, including their average price, mileage, and seating capacity.</p>
+<p>The color-coded price column visually highlights the most expensive brands, reinforcing Ferrari and Lamborghini’s dominance.<br>
+Interestingly, the data also reveals that sports cars tend to have lower mileage, further suggesting that they are driven less compared to larger, more practical luxury vehicles.</p>
+<p><img src="../images/projects/luxury-car-price/table_car.png" class="img-fluid" alt="Data Table"> ### Vertical Bar Chart This vertical bar chart visualizes the ranking of car brands by average price, reinforcing Ferrari’s position as the most expensive brand, followed by Lamborghini and Rolls-Royce.</p>
+<p>The labels provide precise price values, helping illustrate the steep differences among luxury brands.<br>
+This format effectively showcases the clear hierarchy in pricing within the high-end automobile market.</p>
+<p><img src="../images/projects/luxury-car-price/ver_cleaned.png" class="img-fluid" alt="Vertical Bar Chart"> ### Horizontal Bar Chart This horizontal bar chart highlights Ferrari as the most expensive car brand, with a significant price gap of $11 million above its closest competitor, Lamborghini.</p>
+<p>Rolls-Royce, Maserati, and Porsche also rank among the higher-priced brands, while luxury SUVs such as Land Rover, Lexus, and BMW fall into a lower price range.</p>
+<p>The chart emphasizes how brand reputation and performance contribute more to pricing than vehicle size or seating capacity.</p>
+<p><img src="../images/projects/luxury-car-price/hor.png" class="img-fluid" alt="Horizontal Bar Chart"> ### Facet Bar Chart This chart segments car prices based on seating capacity, revealing that higher seating capacities do not necessarily lead to higher prices.</p>
+<p>While 2-seater luxury brands like Ferrari and Lamborghini dominate in price, some 4- and 5-seaters—such as Rolls-Royce and Maserati—also command premium prices.</p>
+<p>However, vehicles with 6-7 seats tend to have lower prices, indicating that exclusivity and performance may play a greater role in pricing than seating capacity.</p>
+</section>
+</section>
+<section id="facet-bar-chart" class="level2" data-number="3">
+<h2 data-number="3" class="anchored" data-anchor-id="facet-bar-chart"><span class="header-section-number">3</span> <img src="../images/projects/luxury-car-price/facet.png" class="img-fluid" alt="Facet Bar Chart"></h2>
+</section>
+<section id="technologies-used" class="level2" data-number="4">
+<h2 data-number="4" class="anchored" data-anchor-id="technologies-used"><span class="header-section-number">4</span> Technologies Used</h2>
+<ul>
+<li>Python (for analysis)<br>
+</li>
+<li>Pandas (for data processing)<br>
+</li>
+<li>Plotly (for interactive visualizations)<br>
+</li>
+<li>Great Tables (for table formatting)<br>
+</li>
+<li>Jupyter Notebook (for running the analysis)</li>
+</ul>
+<hr>
+</section>
+<section id="future-improvements" class="level2" data-number="5">
+<h2 data-number="5" class="anchored" data-anchor-id="future-improvements"><span class="header-section-number">5</span> Future Improvements</h2>
+<ul>
+<li>Add interactive tooltips to the bar charts.<br>
+</li>
+<li>Improve color schemes for better data visualization.<br>
+</li>
+<li>Expand dataset to include more car brands and features.</li>
 </ul>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -272,6 +347,11 @@ ul.task-list li input[type="checkbox"] {
           if (link.dataset.originalHref !== undefined) {
             link.href = link.dataset.originalHref;
           }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
         }
       }
     function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
@@ -590,4 +670,5 @@ ul.task-list li input[type="checkbox"] {
 
 
 
+<script src="../site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>

@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Book Ratings Analysis – Hien Bui</title>
+<title>Book Genre Ratings Analysis – Hien Bui</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -39,7 +39,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-ea385d0e468b0dd5ea5bf0780b1290d9.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-dfb324f25d9b1687192fa8be62ac8f9c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-cc63fce9873912f1bbbccf05079cc9ea.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -67,6 +67,7 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<style>html{ scroll-behavior: smooth; }</style>
 
 
 </head>
@@ -103,7 +104,7 @@ ul.task-list li input[type="checkbox"] {
     <ul class="dropdown-menu" aria-labelledby="nav-menu-projects">    
         <li>
     <a class="dropdown-item" href="../projects/ev-adoption.html">
- <span class="dropdown-text">EV Adoption</span></a>
+ <span class="dropdown-text">EV Adoption in WA</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="../projects/movie-recommender.html">
@@ -130,12 +131,12 @@ ul.task-list li input[type="checkbox"] {
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item compact">
-    <a class="nav-link" href="https://github.com/krisauw"> <i class="bi bi-github" role="img">
+    <a class="nav-link" href="https://github.com/krisauw"> <i class="bi bi-github" role="img" aria-label="GitHub">
 </i> 
 <span class="menu-text"></span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="https://www.linkedin.com/in/hien-bui-emi-6273b010a/"> <i class="bi bi-linkedin" role="img">
+    <a class="nav-link" href="https://www.linkedin.com/in/hien-bui-emi-6273b010a/"> <i class="bi bi-linkedin" role="img" aria-label="LinkedIn">
 </i> 
 <span class="menu-text"></span></a>
   </li>  
@@ -150,15 +151,24 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul class="collapse">
+  <li><a href="#project-overview" id="toc-project-overview" class="nav-link active" data-scroll-target="#project-overview">Project Overview</a></li>
+  <li><a href="#visualizations" id="toc-visualizations" class="nav-link" data-scroll-target="#visualizations">Visualizations</a></li>
+  <li><a href="#technologies-used" id="toc-technologies-used" class="nav-link" data-scroll-target="#technologies-used">Technologies Used</a></li>
+  <li><a href="#future-improvements" id="toc-future-improvements" class="nav-link" data-scroll-target="#future-improvements">Future Improvements</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Book Ratings Analysis</h1>
+<h1 class="title">Book Genre Ratings Analysis</h1>
 </div>
 
 
@@ -175,15 +185,114 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Explored book rating trends using Python.</p>
+<section id="project-overview" class="level2">
+<h2 class="anchored" data-anchor-id="project-overview">Project Overview</h2>
+<p>This project analyzes <strong>book genres and their ratings</strong> using <strong>Pandas, Plotly, and GreatTables</strong>. It presents <strong>structured tables and different bar charts</strong> to explore how <strong>ratings vary across genres and between male and female readers</strong>.</p>
+<section id="key-features" class="level3">
+<h3 class="anchored" data-anchor-id="key-features">Key Features</h3>
 <ul>
-<li>Compared preferences across genres &amp; genders</li>
-<li>Created interactive visualizations (Plotly)</li>
-<li>Skills: Data Analysis, Visualization</li>
-<li>Links: <a href="https://github.com/krisauw">GitHub</a></li>
+<li>Formatted Data Tables for book genres and their ratings.<br>
+</li>
+<li>Stacked/Paired/Facet Charts to compare ratings between male and female readers.<br>
+</li>
+<li>Custom Styling for clear and professional presentation.<br>
+</li>
+<li>Data Processing with Pandas to analyze genre-based ratings.</li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="visualizations" class="level2">
+<h2 class="anchored" data-anchor-id="visualizations">Visualizations</h2>
+<section id="formatted-data-table-and-horizontal-bar-chart-genre-ratings" class="level3">
+<h3 class="anchored" data-anchor-id="formatted-data-table-and-horizontal-bar-chart-genre-ratings">Formatted Data Table and Horizontal Bar Chart: Genre Ratings</h3>
+<section id="formatted-data-table" class="level4">
+<h4 class="anchored" data-anchor-id="formatted-data-table">Formatted Data Table</h4>
+<p>A well-structured table displaying the <strong>average ratings</strong> for each book genre. The table is color-coded to highlight the highest and lowest rated genres.<br>
+* This table provides numerical data for average reviews and ratings across different genres.<br>
+* Sci-Fi has the highest average rating (2,023,518), followed by Thrillers (1,798,566) and Fantasy (1,561,214).<br>
+* Action and Autobiographies have the lowest ratings in the dataset.</p>
+<p><img src="images/projects/book-ratings/table.png" class="img-fluid"></p>
+</section>
+<section id="horizontal-bar-chart" class="level4">
+<h4 class="anchored" data-anchor-id="horizontal-bar-chart">Horizontal Bar Chart</h4>
+<ul>
+<li>This chart ranks genres based on their total ratings.<br>
+</li>
+<li>Sci-Fi leads the ratings board, followed by Thrillers and Fantasy.<br>
+</li>
+<li>Action and Autobiographies receive the lowest ratings among the listed genres.</li>
+</ul>
+<p><img src="../images/projects/book-ratings/genre_bar_hor.png" class="img-fluid"></p>
+<hr>
+</section>
+</section>
+<section id="stackedpairedfacet-charts-male-vs.-female-ratings" class="level3">
+<h3 class="anchored" data-anchor-id="stackedpairedfacet-charts-male-vs.-female-ratings">Stacked/Paired/Facet Charts: Male vs.&nbsp;Female Ratings</h3>
+<p>They compare book ratings between male and female readers for different genres.</p>
+<section id="stacked-chart" class="level4">
+<h4 class="anchored" data-anchor-id="stacked-chart">Stacked Chart</h4>
+<ul>
+<li>This chart stacks male and female author ratings on top of each other.<br>
+</li>
+<li>It highlights the contribution of each gender to overall ratings in different genres.<br>
+</li>
+<li>Sci-Fi and Thrillers maintain the highest overall ratings, showing strong performance across genders.</li>
+</ul>
+<p><img src="../images/projects/book-ratings/gender_stack.png" class="img-fluid"></p>
+</section>
+<section id="paired-chart" class="level4">
+<h4 class="anchored" data-anchor-id="paired-chart">Paired Chart</h4>
+<ul>
+<li>This bar chart presents book ratings split by gender, with bars for male and female authors side by side for comparison.<br>
+</li>
+<li>Sci-Fi, Thrillers, and Fantasy stand out as the most highly rated genres, with Sci-Fi leading for female authors and Fantasy leading for male authors.</li>
+</ul>
+<p><img src="images/projects/book-ratings/gender_pair.png" class="img-fluid"></p>
+</section>
+<section id="facet-chart-male-vs.-female-ratings" class="level4">
+<h4 class="anchored" data-anchor-id="facet-chart-male-vs.-female-ratings">Facet Chart: Male vs.&nbsp;Female Ratings</h4>
+<ul>
+<li>This chart separates book ratings by author gender, displaying ratings for various genres.<br>
+</li>
+<li>Sci-Fi has the highest ratings among female authors, while Fantasy dominates for male authors.<br>
+</li>
+<li>Thrillers and Romance are also strong performers across both genders.</li>
+</ul>
+<p><img src="../images/projects/book-ratings/gender_facet.png" class="img-fluid"></p>
+<hr>
+</section>
+</section>
+</section>
+<section id="technologies-used" class="level2">
+<h2 class="anchored" data-anchor-id="technologies-used">Technologies Used</h2>
+<ul>
+<li>Python (for data cleaning and analysis)<br>
+</li>
+<li>Pandas (for processing book genre ratings)<br>
+</li>
+<li>Plotly (for creating bar charts)<br>
+</li>
+<li>GreatTables (for generating structured data tables)<br>
+</li>
+<li>Jupyter Notebook (for running and displaying results)</li>
+</ul>
+<hr>
+</section>
+<section id="future-improvements" class="level2">
+<h2 class="anchored" data-anchor-id="future-improvements">Future Improvements</h2>
+<ul>
+<li>Add more demographic insights (e.g., age-based preferences).<br>
+</li>
+<li>Introduce interactive filters for exploring ratings dynamically.<br>
+</li>
+<li>Enhance styling and readability of tables and charts.<br>
+</li>
+<li>Expand dataset to include more book genres and user reviews.</li>
 </ul>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -272,6 +381,11 @@ ul.task-list li input[type="checkbox"] {
           if (link.dataset.originalHref !== undefined) {
             link.href = link.dataset.originalHref;
           }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
         }
       }
     function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
@@ -590,4 +704,5 @@ ul.task-list li input[type="checkbox"] {
 
 
 
+<script src="../site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>

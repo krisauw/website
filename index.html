@@ -67,6 +67,7 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<style>html{ scroll-behavior: smooth; }</style>
 
 
 </head>
@@ -103,7 +104,7 @@ ul.task-list li input[type="checkbox"] {
     <ul class="dropdown-menu" aria-labelledby="nav-menu-projects">    
         <li>
     <a class="dropdown-item" href="./projects/ev-adoption.html">
- <span class="dropdown-text">EV Adoption</span></a>
+ <span class="dropdown-text">EV Adoption in WA</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="./projects/movie-recommender.html">
@@ -130,12 +131,12 @@ ul.task-list li input[type="checkbox"] {
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item compact">
-    <a class="nav-link" href="https://github.com/krisauw"> <i class="bi bi-github" role="img">
+    <a class="nav-link" href="https://github.com/krisauw"> <i class="bi bi-github" role="img" aria-label="GitHub">
 </i> 
 <span class="menu-text"></span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="https://www.linkedin.com/in/hien-bui-emi-6273b010a/"> <i class="bi bi-linkedin" role="img">
+    <a class="nav-link" href="https://www.linkedin.com/in/hien-bui-emi-6273b010a/"> <i class="bi bi-linkedin" role="img" aria-label="LinkedIn">
 </i> 
 <span class="menu-text"></span></a>
   </li>  
@@ -155,10 +156,10 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul class="collapse">
-  <li><a href="#welcome" id="toc-welcome" class="nav-link active" data-scroll-target="#welcome">Welcome 👋</a>
+  <li><a href="#welcome" id="toc-welcome" class="nav-link active" data-scroll-target="#welcome">Welcome</a>
   <ul class="collapse">
-  <li><a href="#technical-skills" id="toc-technical-skills" class="nav-link" data-scroll-target="#technical-skills">🔧 Technical Skills</a></li>
-  <li><a href="#professional-strengths" id="toc-professional-strengths" class="nav-link" data-scroll-target="#professional-strengths">🌟 Professional Strengths</a></li>
+  <li><a href="#technical-skills" id="toc-technical-skills" class="nav-link" data-scroll-target="#technical-skills">Technical Skills</a></li>
+  <li><a href="#professional-strengths" id="toc-professional-strengths" class="nav-link" data-scroll-target="#professional-strengths">Professional Strengths</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -186,13 +187,13 @@ ul.task-list li input[type="checkbox"] {
 
 
 <section id="welcome" class="level1">
-<h1>Welcome 👋</h1>
+<h1>Welcome</h1>
 <p>I’m a <strong>Data Science master’s student (Drew University, expected 2026)</strong> with a background in <strong>Economics (B.A.) and minors in Mathematics &amp; Asian Studies</strong>.<br>
 Before transitioning into data, I spent <strong>6+ years managing projects in VFX/animation</strong> and client services—leading cross-functional teams, delivering for global clients, and honing communication and leadership skills.</p>
 <p>Today, I combine that creative and organizational background with <strong>data science, machine learning, and analytics</strong> to solve real-world problems. My work spans <strong>ML model development, coding experiments, and interactive dashboards</strong>.</p>
 <hr>
 <section id="technical-skills" class="level2">
-<h2 class="anchored" data-anchor-id="technical-skills">🔧 Technical Skills</h2>
+<h2 class="anchored" data-anchor-id="technical-skills">Technical Skills</h2>
 <ul>
 <li><strong>Programming &amp; Tools:</strong> Python · R · SQL · Jupyter Notebook · VSCode<br>
 </li>
@@ -204,11 +205,12 @@ Before transitioning into data, I spent <strong>6+ years managing projects in VF
 </ul>
 </section>
 <section id="professional-strengths" class="level2">
-<h2 class="anchored" data-anchor-id="professional-strengths">🌟 Professional Strengths</h2>
+<h2 class="anchored" data-anchor-id="professional-strengths">Professional Strengths</h2>
 <p>Project Management · Data Analysis · Data Visualization · Communication<br>
 Problem Solving · Teamwork · Critical Thinking · Research</p>
 <hr>
-<p>👉 Check out my <a href="./projects/index.html">Projects</a>, view my <a href="./resume.html">Resume</a>, or connect via <a href="https://www.linkedin.com/in/hien-bui-emi-6273b010a/">LinkedIn</a> / <a href="https://github.com/krisauw">GitHub</a>.</p>
+<p>Check out my <a href="./projects/index.html">Projects</a>, view my <a href="./resume.html">Resume</a>, or connect via<br>
+<a href="https://www.linkedin.com/in/hien-bui-emi-6273b010a/">LinkedIn</a> · <a href="https://krisauw.github.io/website/">GitHub</a></p>
 
 
 </section>
@@ -301,6 +303,11 @@ Problem Solving · Teamwork · Critical Thinking · Research</p>
           if (link.dataset.originalHref !== undefined) {
             link.href = link.dataset.originalHref;
           }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
         }
       }
     function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
@@ -619,4 +626,5 @@ Problem Solving · Teamwork · Critical Thinking · Research</p>
 
 
 
+<script src="site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>
