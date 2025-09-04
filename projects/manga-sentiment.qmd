@@ -1,9 +1,47 @@
 ---
 title: "Manga Sentiment Analysis"
+subtitle: "Scraped manga reviews and analyzed sentiment"
+format:
+  html:
+    toc: true
+    theme: flatly
+page-layout: article
 ---
 
-Scraped manga reviews and analyzed sentiment.
+## Overview
+Scraped manga reviews and analyzed sentiment. This work was inspired and refered to **One Piece Analysis by Viet Anh**.
 
 - Tools: Python (Selenium, TextBlob, NLTK)
-- Visualized sentiment trends in **Power BI** and **Tableau**
-- Links: [GitHub](https://github.com/krisauw)
+- Visualized sentiment trends in Power BI and Tableau
+
+---
+
+## Methods (brief)
+- **Collection**: Automated review scraping with Selenium.
+- **Cleaning**: Lowercasing, punctuation removal, stopword filtering (NLTK).
+- **Sentiment**: Polarity scoring with TextBlob; aggregate by date/title to see trends.
+- **Visualization**: Power BI and Tableau dashboards for time trends and distributions.
+
+---
+
+## Interactive Dashboard (Tableau)
+
+<div class="tableau-wrapper" style="position:relative;padding-bottom:68%;height:0;overflow:hidden;">
+  <iframe
+    src="https://public.tableau.com/views/mashle_review_analysis/Dashboard1?:showVizHome=no&:embed=true&:toolbar=no"
+    style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;"
+    frameborder="0"
+    scrolling="no"
+    allowfullscreen
+    title="Manga Sentiment Dashboard">
+  </iframe>
+</div>
+
+<p style="margin-top:0.75rem;">
+  If the embed does not load, open it directly:
+  <a href="https://public.tableau.com/app/profile/thi.thanh.hien.bui/viz/mashle_review_analysis/Dashboard1" target="_blank" rel="noopener">
+    Tableau Public link
+  </a>.
+</p>
+
+

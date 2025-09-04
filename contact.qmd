@@ -4,6 +4,6 @@ title: "Contact"
 
 I’m open to internships and collaborations.
 
-- Email: [hien.bui0393@gmail.com](mailto:hien.bui0393@gmail.com)  
-- LinkedIn: [https://www.linkedin.com/in/hien-bui-emi-6273b010a/](https://www.linkedin.com/in/hien-bui-emi-6273b010a/)  
-- GitHub: [https://krisauw.github.io/website/](https://krisauw.github.io/website/)
+- [Email](mailto:hien.bui0393@gmail.com)  
+- [LinkedIn](https://www.linkedin.com/in/hien-bui-emi-6273b010a/)  
+- [GitHub](https://krisauw.github.io/website/)
