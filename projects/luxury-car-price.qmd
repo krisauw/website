@@ -37,6 +37,7 @@ The labels provide precise price values, helping illustrate the steep difference
 This format effectively showcases the clear hierarchy in pricing within the high-end automobile market.
 
 ![](../images/projects/luxury-car-price/ver_cleaned.png)
+
 ## Horizontal Bar Chart
 This horizontal bar chart highlights Ferrari as the most expensive car brand, with a significant price gap of $11 million above its closest competitor, Lamborghini.  
 

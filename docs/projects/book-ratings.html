@@ -39,7 +39,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-ea385d0e468b0dd5ea5bf0780b1290d9.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-f8db6a82dd2955c552cccf3544dccdd0.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-950fb53b3922a3f7ce53f108ebb10a5d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -67,8 +67,10 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<style>html{ scroll-behavior: smooth; }</style>
 
 
+<link rel="stylesheet" href="styles.css">
 </head>
 
 <body class="nav-fixed quarto-light">
@@ -207,9 +209,9 @@ ul.task-list li input[type="checkbox"] {
 <section id="formatted-data-table" class="level3" data-number="2.1.1">
 <h3 data-number="2.1.1" class="anchored" data-anchor-id="formatted-data-table"><span class="header-section-number">2.1.1</span> Formatted Data Table</h3>
 <p>A well-structured table displaying the <strong>average ratings</strong> for each book genre. The table is color-coded to highlight the highest and lowest rated genres.<br>
-* This table provides numerical data for average reviews and ratings across different genres.<br>
-* Sci-Fi has the highest average rating (2,023,518), followed by Thrillers (1,798,566) and Fantasy (1,561,214).<br>
-* Action and Autobiographies have the lowest ratings in the dataset.</p>
+- This table provides numerical data for average reviews and ratings across different genres.<br>
+- Sci-Fi has the highest average rating (2,023,518), followed by Thrillers (1,798,566) and Fantasy (1,561,214).<br>
+- Action and Autobiographies have the lowest ratings in the dataset.</p>
 <p><img src="../images/projects/book-ratings/table.png" class="img-fluid"></p>
 </section>
 <section id="horizontal-bar-chart" class="level3" data-number="2.1.2">
@@ -245,7 +247,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
 <li>Sci-Fi, Thrillers, and Fantasy stand out as the most highly rated genres, with Sci-Fi leading for female authors and Fantasy leading for male authors.</li>
 </ul>
-<p><img src="images/projects/book-ratings/gender_pair.png" class="img-fluid"></p>
+<p><img src="../images/projects/book-ratings/gender_pair.png" class="img-fluid"></p>
 </section>
 </section>
 <section id="facet-chart-male-vs.-female-ratings" class="level2" data-number="2.3">
@@ -376,6 +378,11 @@ ul.task-list li input[type="checkbox"] {
           if (link.dataset.originalHref !== undefined) {
             link.href = link.dataset.originalHref;
           }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
         }
       }
     function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
@@ -694,4 +701,5 @@ ul.task-list li input[type="checkbox"] {
 
 
 
+<script src="../site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>

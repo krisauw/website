@@ -4,12 +4,10 @@ title: "Hi, I'm Hien (Emi) Bui"
 
 # Welcome 
 
-I’m a **Data Science master’s student (Drew University, expected 2026)** with a background in **Economics (B.A.) and minors in Mathematics & Asian Studies**.  
-Before transitioning into data, I spent **6+ years managing projects in VFX/animation** and client services—leading cross-functional teams, delivering for global clients, and honing communication and leadership skills.  
+I’m a **Data Science** master’s student (Drew University, expected 2026) with a background in **Economics (B.A.)** and minors in **Mathematics & Asian Studies**.  
+Before transitioning into data, I spent 6+ years managing projects in VFX/animation and client services—leading cross-functional teams, delivering for global clients, and honing communication and leadership skills.  
 
 Today, I combine that creative and organizational background with **data science, machine learning, and analytics** to solve real-world problems. My work spans **ML model development, coding experiments, and interactive dashboards**.  
-
----
 
 ## Technical Skills
 - **Programming & Tools:** Python · R · SQL · Jupyter Notebook · VSCode  
@@ -18,10 +16,8 @@ Today, I combine that creative and organizational background with **data science
 - **Other:** Google Suite · Microsoft Office  
 
 ## Professional Strengths
-Project Management · Data Analysis · Data Visualization · Communication  
-Problem Solving · Teamwork · Critical Thinking · Research  
-
----
+- Project Management · Data Analysis · Data Visualization · Communication  
+- Problem Solving · Teamwork · Critical Thinking · Research  
 
 Check out my [Projects](projects/index.qmd), view my [Resume](resume.qmd), or connect via  
 [LinkedIn](https://www.linkedin.com/in/hien-bui-emi-6273b010a/) · [GitHub](https://krisauw.github.io/website/)

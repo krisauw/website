@@ -39,7 +39,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-ea385d0e468b0dd5ea5bf0780b1290d9.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-f8db6a82dd2955c552cccf3544dccdd0.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-950fb53b3922a3f7ce53f108ebb10a5d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -67,8 +67,10 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<style>html{ scroll-behavior: smooth; }</style>
 
 
+<link rel="stylesheet" href="styles.css">
 </head>
 
 <body class="nav-fixed quarto-light">
@@ -215,13 +217,17 @@ Interestingly, the data also reveals that sports cars tend to have lower mileage
 <p>This vertical bar chart visualizes the ranking of car brands by average price, reinforcing Ferrari’s position as the most expensive brand, followed by Lamborghini and Rolls-Royce.</p>
 <p>The labels provide precise price values, helping illustrate the steep differences among luxury brands.<br>
 This format effectively showcases the clear hierarchy in pricing within the high-end automobile market.</p>
-<p><img src="../images/projects/luxury-car-price/ver_cleaned.png" class="img-fluid"> ## Horizontal Bar Chart This horizontal bar chart highlights Ferrari as the most expensive car brand, with a significant price gap of $11 million above its closest competitor, Lamborghini.</p>
+<p><img src="../images/projects/luxury-car-price/ver_cleaned.png" class="img-fluid"></p>
+</section>
+<section id="horizontal-bar-chart" class="level2" data-number="2.3">
+<h2 data-number="2.3" class="anchored" data-anchor-id="horizontal-bar-chart"><span class="header-section-number">2.3</span> Horizontal Bar Chart</h2>
+<p>This horizontal bar chart highlights Ferrari as the most expensive car brand, with a significant price gap of $11 million above its closest competitor, Lamborghini.</p>
 <p>Rolls-Royce, Maserati, and Porsche also rank among the higher-priced brands, while luxury SUVs such as Land Rover, Lexus, and BMW fall into a lower price range.</p>
 <p>The chart emphasizes how brand reputation and performance contribute more to pricing than vehicle size or seating capacity.</p>
 <p><img src="../images/projects/luxury-car-price/hor.png" class="img-fluid"></p>
 </section>
-<section id="facet-bar-chart" class="level2" data-number="2.3">
-<h2 data-number="2.3" class="anchored" data-anchor-id="facet-bar-chart"><span class="header-section-number">2.3</span> Facet Bar Chart</h2>
+<section id="facet-bar-chart" class="level2" data-number="2.4">
+<h2 data-number="2.4" class="anchored" data-anchor-id="facet-bar-chart"><span class="header-section-number">2.4</span> Facet Bar Chart</h2>
 <p>This chart segments car prices based on seating capacity, revealing that higher seating capacities do not necessarily lead to higher prices.</p>
 <p>While 2-seater luxury brands like Ferrari and Lamborghini dominate in price, some 4- and 5-seaters—such as Rolls-Royce and Maserati—also command premium prices.</p>
 <p>However, vehicles with 6-7 seats tend to have lower prices, indicating that exclusivity and performance may play a greater role in pricing than seating capacity.</p>
@@ -342,6 +348,11 @@ This format effectively showcases the clear hierarchy in pricing within the high
           if (link.dataset.originalHref !== undefined) {
             link.href = link.dataset.originalHref;
           }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
         }
       }
     function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
@@ -660,4 +671,5 @@ This format effectively showcases the clear hierarchy in pricing within the high
 
 
 
+<script src="../site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>

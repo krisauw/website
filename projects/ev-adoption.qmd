@@ -180,13 +180,14 @@ fig_box.show()
 
 
 ![](../images/projects/ev-adoption/box_h_2.png)
+
 # Design Choices That Made It Work
 
-Simplicity first: clean labels, clear axis titles, minimal clutter
-Color with purpose: Seattle, 2023, Tesla highlighted in green; others in gray
-Consistent type: Spectral (serif) for titles, Poppins (sans-serif) for data
-Layout flow: charts align vertically for a smooth flow
-Color Palette:
+- Simplicity first: clean labels, clear axis titles, minimal clutter
+- Color with purpose: Seattle, 2023, Tesla highlighted in green; others in gray
+- Consistent type: Spectral (serif) for titles, Poppins (sans-serif) for data
+- Layout flow: charts align vertically for a smooth flow
+- Color Palette:
 
 ```{python}
 color_palette = {

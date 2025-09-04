@@ -3,16 +3,19 @@ project:
   output-dir: docs
   execute-dir: project
 
-# Copy assets into docs/ when publishing
+# Publish these folders to docs/ so links work online
 resources:
   - data/**
   - images/**
+  - resume/**
 
 website:
   title: "Hien Bui"
+  search: true
+  page-navigation: true
   navbar:
     background: "#2C3E50"   # dark blue
-    foreground: light
+    foreground: light        # white text/icons
     left:
       - text: Home
         href: index.qmd
@@ -38,8 +41,21 @@ website:
       - icon: linkedin
         href: https://www.linkedin.com/in/hien-bui-emi-6273b010a/
 
+format:
+  html:
+    theme: flatly 
+    toc: true
+    toc-depth: 2
+    link-external-newwindow: true
+    smooth-scroll: true
+    code-fold: false
+    code-copy: true
+    code-overflow: wrap
+    css: styles.css          # site-wide CSS (TOC + buttons color)
+
+# Show code, don't execute, suppress messages
 execute:
-  eval: false     # don't run any chunks
-  echo: true      # DO show the code
+  eval: false
+  echo: true
   warning: false
   error: false

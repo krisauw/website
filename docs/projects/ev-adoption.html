@@ -74,7 +74,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-ea385d0e468b0dd5ea5bf0780b1290d9.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-f8db6a82dd2955c552cccf3544dccdd0.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-950fb53b3922a3f7ce53f108ebb10a5d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -102,8 +102,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     "search-label": "Search"
   }
 }</script>
+<style>html{ scroll-behavior: smooth; }</style>
 
 
+<link rel="stylesheet" href="styles.css">
 </head>
 
 <body class="nav-fixed quarto-light">
@@ -194,7 +196,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#background-and-dataset-summary" id="toc-background-and-dataset-summary" class="nav-link" data-scroll-target="#background-and-dataset-summary"><span class="header-section-number">2</span> Background and Dataset Summary</a></li>
   <li><a href="#why-this-topic" id="toc-why-this-topic" class="nav-link" data-scroll-target="#why-this-topic"><span class="header-section-number">3</span> Why This Topic?</a></li>
   <li><a href="#figure-by-figure-walkthrough" id="toc-figure-by-figure-walkthrough" class="nav-link" data-scroll-target="#figure-by-figure-walkthrough"><span class="header-section-number">4</span> Figure-by-Figure Walkthrough</a></li>
-  <li><a href="#final-thoughts" id="toc-final-thoughts" class="nav-link" data-scroll-target="#final-thoughts"><span class="header-section-number">5</span> Final Thoughts</a></li>
+  <li><a href="#design-choices-that-made-it-work" id="toc-design-choices-that-made-it-work" class="nav-link" data-scroll-target="#design-choices-that-made-it-work"><span class="header-section-number">5</span> Design Choices That Made It Work</a></li>
+  <li><a href="#final-thoughts" id="toc-final-thoughts" class="nav-link" data-scroll-target="#final-thoughts"><span class="header-section-number">6</span> Final Thoughts</a></li>
   </ul>
 </nav>
     </div>
@@ -249,7 +252,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h1 data-number="4"><span class="header-section-number">4</span> Figure-by-Figure Walkthrough</h1>
 <section id="import-libraries" class="level2" data-number="4.1">
 <h2 data-number="4.1" class="anchored" data-anchor-id="import-libraries"><span class="header-section-number">4.1</span> Import Libraries</h2>
-<div id="52a0368a" class="cell" data-execution_count="1">
+<div id="09dc6a56" class="cell" data-execution_count="1">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="op">%</span>pip install plotly</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="op">%</span>pip install polars great_tables</span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
@@ -269,7 +272,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="ev-adoption-by-model-year" class="level3" data-number="4.1.1">
 <h3 data-number="4.1.1" class="anchored" data-anchor-id="ev-adoption-by-model-year"><span class="header-section-number">4.1.1</span> EV Adoption by Model Year</h3>
 <p>This bar chart shows just how sharply EV adoption has climbed, especially in the past five years. The 2023 spike is a real eye-opener.</p>
-<div id="e5d75fde" class="cell" data-execution_count="2">
+<div id="8bc5eee4" class="cell" data-execution_count="2">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Filter data of EV Count by model year</span></span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>df_wa_model <span class="op">=</span> (</span>
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>    df_wa[[<span class="st">'model'</span>, <span class="st">'model_year'</span>]]</span>
@@ -298,7 +301,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="top-5-cities-for-ev-ownership" class="level3" data-number="4.1.2">
 <h3 data-number="4.1.2" class="anchored" data-anchor-id="top-5-cities-for-ev-ownership"><span class="header-section-number">4.1.2</span> Top 5 Cities for EV Ownership</h3>
 <p>Seattle is far ahead of the rest.</p>
-<div id="22cdc7a1" class="cell" data-execution_count="3">
+<div id="1bdafb3f" class="cell" data-execution_count="3">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Filter data of top 5 cities by total EV count</span></span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>top_cities <span class="op">=</span> (</span>
 <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>    df_wa.groupby(<span class="st">'city'</span>)</span>
@@ -326,7 +329,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="ev-brand-popularity-in-major-cities" class="level3" data-number="4.1.3">
 <h3 data-number="4.1.3" class="anchored" data-anchor-id="ev-brand-popularity-in-major-cities"><span class="header-section-number">4.1.3</span> EV Brand Popularity in Major Cities</h3>
 <p>Tesla leads in every single one, often by a huge margin.</p>
-<div id="59bccea4" class="cell" data-execution_count="4">
+<div id="544a8b34" class="cell" data-execution_count="4">
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Find top 5 cities</span></span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>top_5_cities <span class="op">=</span> (</span>
 <span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>    df_wa.groupby(<span class="st">'city'</span>)</span>
@@ -365,7 +368,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="electric-range-by-brand" class="level3" data-number="4.1.4">
 <h3 data-number="4.1.4" class="anchored" data-anchor-id="electric-range-by-brand"><span class="header-section-number">4.1.4</span> Electric Range by Brand</h3>
 <p>Tesla pulls far ahead in driving distance.</p>
-<div id="cd0ed12a" class="cell" data-execution_count="5">
+<div id="c7470126" class="cell" data-execution_count="5">
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>top_brands <span class="op">=</span> [<span class="st">'TESLA'</span>,<span class="st">'CHEVROLET'</span>,<span class="st">'NISSAN'</span>,<span class="st">'FORD'</span>,<span class="st">'KIA'</span>,<span class="st">'TOYOTA'</span>,<span class="st">'BMW'</span>,<span class="st">'HYUNDAI'</span>,<span class="st">'JEEP'</span>,<span class="st">'VOLKSWAGEN'</span>]</span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>df_elec_range <span class="op">=</span> df_wa[df_wa[<span class="st">'make'</span>].isin(top_brands)]</span>
@@ -381,9 +384,20 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb5-14"><a href="#cb5-14" aria-hidden="true" tabindex="-1"></a>fig_box.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<p><img src="../images/projects/ev-adoption/box_h_2.png" class="img-fluid"> # Design Choices That Made It Work</p>
-<p>Simplicity first: clean labels, clear axis titles, minimal clutter Color with purpose: Seattle, 2023, Tesla highlighted in green; others in gray Consistent type: Spectral (serif) for titles, Poppins (sans-serif) for data Layout flow: charts align vertically for a smooth flow Color Palette:</p>
-<div id="9084c5af" class="cell" data-execution_count="6">
+<p><img src="../images/projects/ev-adoption/box_h_2.png" class="img-fluid"></p>
+</section>
+</section>
+</section>
+<section id="design-choices-that-made-it-work" class="level1" data-number="5">
+<h1 data-number="5"><span class="header-section-number">5</span> Design Choices That Made It Work</h1>
+<ul>
+<li>Simplicity first: clean labels, clear axis titles, minimal clutter</li>
+<li>Color with purpose: Seattle, 2023, Tesla highlighted in green; others in gray</li>
+<li>Consistent type: Spectral (serif) for titles, Poppins (sans-serif) for data</li>
+<li>Layout flow: charts align vertically for a smooth flow</li>
+<li>Color Palette:</li>
+</ul>
+<div id="3c5a6890" class="cell" data-execution_count="6">
 <div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>color_palette <span class="op">=</span> {</span>
 <span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>    <span class="st">"black"</span>: <span class="st">"#000000"</span>, </span>
 <span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>    <span class="st">"green"</span>: <span class="st">"#27AE60"</span>, </span>
@@ -392,10 +406,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
-</section>
-</section>
-<section id="final-thoughts" class="level1" data-number="5">
-<h1 data-number="5"><span class="header-section-number">5</span> Final Thoughts</h1>
+<section id="final-thoughts" class="level1" data-number="6">
+<h1 data-number="6"><span class="header-section-number">6</span> Final Thoughts</h1>
 <p>Originally, I planned to include a geographic heatmap, but simplifying to four strong visuals made for a clearer and more engaging story. This project helped me practice transforming raw data into something accessible and hopefully insightful.</p>
 <p>Whether you’re a fellow data nerd or just curious about EVs, I hope this piece gives you something to think about the next time you see a Tesla on the road.</p>
 
@@ -489,6 +501,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           if (link.dataset.originalHref !== undefined) {
             link.href = link.dataset.originalHref;
           }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
         }
       }
     function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
@@ -807,4 +824,5 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 
 
+<script src="../site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>
