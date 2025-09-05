@@ -1,0 +1,9 @@
+:root { --brand-color:#2C3E50; }
+.btn-primary{
+  background-color:var(--brand-color) !important;
+  border-color:var(--brand-color) !important;
+}
+.btn-primary:hover, .btn-primary:focus{
+  background-color:#22313F !important;
+  border-color:#22313F !important;
+}

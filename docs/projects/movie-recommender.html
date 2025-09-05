@@ -1,0 +1,935 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.7.33">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Movie Recommender System – Hien Bui</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-ea385d0e468b0dd5ea5bf0780b1290d9.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-950fb53b3922a3f7ce53f108ebb10a5d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<style>html{ scroll-behavior: smooth; }</style>
+
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">Hien Bui</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../index.html"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../resume.html"> 
+<span class="menu-text">Resume</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-projects" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Projects</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-projects">    
+        <li>
+    <a class="dropdown-item" href="../projects/ev-adoption.html">
+ <span class="dropdown-text">EV Adoption in WA</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../projects/movie-recommender.html">
+ <span class="dropdown-text">Movie Recommender</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../projects/book-ratings.html">
+ <span class="dropdown-text">Book Ratings</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../projects/manga-sentiment.html">
+ <span class="dropdown-text">Manga Sentiment</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../projects/luxury-car-price.html">
+ <span class="dropdown-text">Luxury Car Price</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="../contact.html"> 
+<span class="menu-text">Contact</span></a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://krisauw.github.io/website/"> <i class="bi bi-github" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://www.linkedin.com/in/hien-bui-emi-6273b010a/"> <i class="bi bi-linkedin" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#project-overview" id="toc-project-overview" class="nav-link active" data-scroll-target="#project-overview"><span class="header-section-number">1</span> Project Overview</a></li>
+  <li><a href="#movie-recommendation-methods" id="toc-movie-recommendation-methods" class="nav-link" data-scroll-target="#movie-recommendation-methods"><span class="header-section-number">2</span> Movie Recommendation Methods</a></li>
+  <li><a href="#results-and-visualizations" id="toc-results-and-visualizations" class="nav-link" data-scroll-target="#results-and-visualizations"><span class="header-section-number">3</span> Results and Visualizations</a></li>
+  <li><a href="#ethics-privacy-considerations" id="toc-ethics-privacy-considerations" class="nav-link" data-scroll-target="#ethics-privacy-considerations"><span class="header-section-number">4</span> Ethics &amp; Privacy Considerations</a></li>
+  <li><a href="#future-improvements" id="toc-future-improvements" class="nav-link" data-scroll-target="#future-improvements"><span class="header-section-number">5</span> Future Improvements</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Movie Recommender System</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="project-overview" class="level1" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> Project Overview</h1>
+<p>This project is a Chinese movie recommendation system that suggests movies based on genres, famous actors, endings, voting, and ratings.<br>
+The dataset consists of 90 Chinese movies from IMDb, and multiple machine learning techniques are used to analyze and predict movie popularity.</p>
+<section id="technologies-and-methods-used" class="level2" data-number="1.1">
+<h2 data-number="1.1" class="anchored" data-anchor-id="technologies-and-methods-used"><span class="header-section-number">1.1</span> Technologies and Methods Used</h2>
+<section id="technologies" class="level3" data-number="1.1.1">
+<h3 data-number="1.1.1" class="anchored" data-anchor-id="technologies"><span class="header-section-number">1.1.1</span> Technologies</h3>
+<ul>
+<li>Python (for data cleaning)</li>
+<li>Pandas (for data processing)</li>
+<li>Plotly (for interactive visualizations)</li>
+<li>R (for modeling and evaluation)</li>
+</ul>
+</section>
+<section id="methods" class="level3" data-number="1.1.2">
+<h3 data-number="1.1.2" class="anchored" data-anchor-id="methods"><span class="header-section-number">1.1.2</span> Methods</h3>
+<ul>
+<li>Calculate similarity using Euclidean and Manhattan distances to recommend the top 5 movies based on a list of 5 watched titles.</li>
+<li>Classify movie groups using k-means with different feature sets and k values.</li>
+<li>Use KNN to predict popular movies based on selected features with train/test splits.</li>
+<li>Apply a Decision Tree to predict high-rating movies using selected features.</li>
+<li>Fit a Logistic Regression to estimate the probability of high rating.</li>
+</ul>
+</section>
+</section>
+<section id="key-findings" class="level2" data-number="1.2">
+<h2 data-number="1.2" class="anchored" data-anchor-id="key-findings"><span class="header-section-number">1.2</span> Key Findings</h2>
+<p>For recommendations, both Euclidean and Manhattan distances work effectively.<br>
+For unsupervised methods like K-Means, groupings can be inconsistent on this small dataset.<br>
+Famous leads may influence ratings, but the sample size limits strong conclusions.<br>
+For supervised methods (KNN, Decision Tree, Logistic Regression), accuracy rates are relatively high and similar; Decision Tree achieved the best accuracy in this study.</p>
+<p><img src="../images/projects/movie-recommender/accuracy.png" class="img-fluid"></p>
+</section>
+</section>
+<section id="movie-recommendation-methods" class="level1" data-number="2">
+<h1 data-number="2"><span class="header-section-number">2</span> Movie Recommendation Methods</h1>
+<section id="based-on-euclidean-and-manhattan-distance-5-similar-movies" class="level2" data-number="2.1">
+<h2 data-number="2.1" class="anchored" data-anchor-id="based-on-euclidean-and-manhattan-distance-5-similar-movies"><span class="header-section-number">2.1</span> Based on Euclidean and Manhattan distance: 5 similar movies</h2>
+<p>Example recommendations: - Kill Me Love Me - Love Me, Love My Voice - Here We Meet Again - The Imperial Coroner - Bohe zhi xia</p>
+</section>
+<section id="best-predictive-model" class="level2" data-number="2.2">
+<h2 data-number="2.2" class="anchored" data-anchor-id="best-predictive-model"><span class="header-section-number">2.2</span> Best Predictive Model</h2>
+<ul>
+<li>Decision Tree achieved the highest accuracy (about 80% in this run).</li>
+<li>High voting count was the most important factor in predicting high-rated movies.</li>
+</ul>
+</section>
+<section id="clustering-insights" class="level2" data-number="2.3">
+<h2 data-number="2.3" class="anchored" data-anchor-id="clustering-insights"><span class="header-section-number">2.3</span> Clustering Insights</h2>
+<ul>
+<li>Movies with high voting tend to have higher ratings.</li>
+<li>Happy-ending movies generally receive lower ratings than sad or open-ended movies.</li>
+</ul>
+</section>
+<section id="dataset" class="level2" data-number="2.4">
+<h2 data-number="2.4" class="anchored" data-anchor-id="dataset"><span class="header-section-number">2.4</span> Dataset</h2>
+<section id="key-features" class="level3" data-number="2.4.1">
+<h3 data-number="2.4.1" class="anchored" data-anchor-id="key-features"><span class="header-section-number">2.4.1</span> Key Features</h3>
+<ul>
+<li>Movies: 90 Chinese series (1998–2024)</li>
+<li>Genres: Comedy, Drama, Crime, Romance, Action, Adventure, Mystery, Fantasy</li>
+<li>Runtime: 40–90 minutes</li>
+<li>IMDb Ratings: 6.4–8.6</li>
+<li>Famous actors present in many titles</li>
+<li>Ending types: Happy, Sad, Open</li>
+<li>Voting data: 14–5,669 votes</li>
+</ul>
+</section>
+<section id="dataset-variables" class="level3" data-number="2.4.2">
+<h3 data-number="2.4.2" class="anchored" data-anchor-id="dataset-variables"><span class="header-section-number">2.4.2</span> Dataset Variables</h3>
+<p>This dataset contains information on 90 Chinese movie series (1998–2024). Below is a detailed breakdown of variables:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>#</th>
+<th>Variable Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td>ID</td>
+<td>Index number.</td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td>Title</td>
+<td>English title.</td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td>Original_Title</td>
+<td>Chinese title.</td>
+</tr>
+<tr class="even">
+<td>4</td>
+<td>Runtime</td>
+<td>Minutes per episode.</td>
+</tr>
+<tr class="odd">
+<td>5</td>
+<td>Ending</td>
+<td><code>happy</code>, <code>sad</code>, or <code>open</code>.</td>
+</tr>
+<tr class="even">
+<td>6</td>
+<td>Ending_Happy</td>
+<td>1 if Ending is happy, else 0.</td>
+</tr>
+<tr class="odd">
+<td>7</td>
+<td>Ending_Sad</td>
+<td>1 if Ending is sad, else 0.</td>
+</tr>
+<tr class="even">
+<td>8</td>
+<td>Ending_Open</td>
+<td>1 if Ending is open, else 0.</td>
+</tr>
+<tr class="odd">
+<td>9</td>
+<td>Genres</td>
+<td>Main genre.</td>
+</tr>
+<tr class="even">
+<td>10</td>
+<td>Genre_Comedy</td>
+<td>One-hot for Comedy.</td>
+</tr>
+<tr class="odd">
+<td>11</td>
+<td>Genre_Drama</td>
+<td>One-hot for Drama.</td>
+</tr>
+<tr class="even">
+<td>12</td>
+<td>Genre_Crime</td>
+<td>One-hot for Crime.</td>
+</tr>
+<tr class="odd">
+<td>13</td>
+<td>Genre_Romance</td>
+<td>One-hot for Romance.</td>
+</tr>
+<tr class="even">
+<td>14</td>
+<td>Genre_Action</td>
+<td>One-hot for Action.</td>
+</tr>
+<tr class="odd">
+<td>15</td>
+<td>Genre_Adventure</td>
+<td>One-hot for Adventure.</td>
+</tr>
+<tr class="even">
+<td>16</td>
+<td>Genre_Mystery</td>
+<td>One-hot for Mystery.</td>
+</tr>
+<tr class="odd">
+<td>17</td>
+<td>Genre_Fantasy</td>
+<td>One-hot for Fantasy.</td>
+</tr>
+<tr class="even">
+<td>18</td>
+<td>Male_Lead</td>
+<td>Name of male lead.</td>
+</tr>
+<tr class="odd">
+<td>19</td>
+<td>Male_Famous</td>
+<td>1 if male lead is famous, else 0.</td>
+</tr>
+<tr class="even">
+<td>20</td>
+<td>Female_Lead</td>
+<td>Name of female lead.</td>
+</tr>
+<tr class="odd">
+<td>21</td>
+<td>Female_Famous</td>
+<td>1 if female lead is famous, else 0.</td>
+</tr>
+<tr class="even">
+<td>22</td>
+<td>Main_Famous</td>
+<td>1 if any main lead is famous.</td>
+</tr>
+<tr class="odd">
+<td>23</td>
+<td>Release_Date</td>
+<td>Date of release.</td>
+</tr>
+<tr class="even">
+<td>24</td>
+<td>Is_Summer</td>
+<td>1 if released in Jul–Sep.</td>
+</tr>
+<tr class="odd">
+<td>25</td>
+<td>Year</td>
+<td>Release year.</td>
+</tr>
+<tr class="even">
+<td>26</td>
+<td>Num_Votes</td>
+<td>Number of votes.</td>
+</tr>
+<tr class="odd">
+<td>27</td>
+<td>High_Voting</td>
+<td>1 if Num_Votes ≥ 1000.</td>
+</tr>
+<tr class="even">
+<td>28</td>
+<td>IMDB_Rating</td>
+<td>IMDb rating.</td>
+</tr>
+<tr class="odd">
+<td>29</td>
+<td>High_Rating</td>
+<td>1 if IMDb_Rating ≥ 8.</td>
+</tr>
+<tr class="even">
+<td>30</td>
+<td>Viet_Title</td>
+<td>Vietnamese title (personal reference).</td>
+</tr>
+</tbody>
+</table>
+<p>Notes:</p>
+<ul>
+<li>Ending_* are derived from Ending.</li>
+<li>Genre_* are one-hot encodings of Genres.</li>
+<li>*Famous indicators are based on a predefined list.</li>
+<li>High_Voting and High_Rating are binary thresholds.</li>
+</ul>
+</section>
+</section>
+</section>
+<section id="results-and-visualizations" class="level1" data-number="3">
+<h1 data-number="3"><span class="header-section-number">3</span> Results and Visualizations</h1>
+<section id="general-data-distribution" class="level2" data-number="3.1">
+<h2 data-number="3.1" class="anchored" data-anchor-id="general-data-distribution"><span class="header-section-number">3.1</span> General Data Distribution</h2>
+<p>Treemap summary of top-rated movies:</p>
+<p><img src="../images/projects/movie-recommender/image7.png" class="img-fluid"></p>
+<p>Pie chart of genre distribution (Drama is most dominant):</p>
+<p><img src="../images/projects/movie-recommender/image27.png" class="img-fluid"></p>
+</section>
+<section id="movie-recommendation-via-distance-metrics---euclidean-manhattan-distance" class="level2" data-number="3.2">
+<h2 data-number="3.2" class="anchored" data-anchor-id="movie-recommendation-via-distance-metrics---euclidean-manhattan-distance"><span class="header-section-number">3.2</span> Movie Recommendation via Distance Metrics - Euclidean &amp; Manhattan distance</h2>
+<p>Firstly, 5 titles which are ‘Yuan lai wo hen ai ni’, ‘Lost You Forever’, ‘Mischievous Kiss’, ‘Amidst a Snowstorm of Love’, and ‘My Fair Princess’ are selected randomly in R from the list of 90 movie dataset as a list of watched movies.</p>
+<p>Secondly, distances of all movies are calculated including 5 watched movies using Euclidean and Manhattan. There are 15 features to find similarities between movies, which are ‘Title’, ‘Ending_Happy’, ‘Ending_Sad’, ‘Ending_Open’, ‘Genre_Comedy’, ‘Genre_Drama’, ‘Genre_Crime’, ‘Genre_Romance’, ‘Genre_Action’, ‘Genre_Adventure’, ‘Genre_Mystery’, ‘Genre_Fantasy’, ‘Female_Famous’, ‘Male_Famous’, ‘Main_Famous’, ‘Is_Summer’, ‘High_Voting’, and ‘High_Rating’. Except for Title, others are binary variables.</p>
+<p>Thirdly, there are 5 sub steps to get the list of 5 movie recommendations: - Step 1: Find distances for 5 watched movies - ‘’Yuan lai wo hen ai ni’, ‘Lost You Forever’, ‘Mischievous Kiss’, ‘Amidst a Snowstorm of Love’, and ‘My Fair Princess’ to every other movies from the calculated distance matric results. - Step 2: Average the distances of 5 watched movies to every other movies - Step 3: Order the distances to find the closest movies - Step 4: Get the top 5 recommendations excluding 5 watched movies</p>
+<p>Finally, the list of 5 movie suggestions is: - “Kill Me Love Me”<br>
+- “Love Me, Love My Voice” - “Here We Meet Again”<br>
+- “The Imperial Coroner”<br>
+- “Bohe zhi xia”</p>
+</section>
+<section id="k-means-clustering-for-classification" class="level2" data-number="3.3">
+<h2 data-number="3.3" class="anchored" data-anchor-id="k-means-clustering-for-classification"><span class="header-section-number">3.3</span> K-Means Clustering for Classification</h2>
+<p>The genre grouping uses features as Genre_Comedy, Genre_Drama, Genre_Crime, Genre_Romance, Genre_Action, Genre_Adventure, Genre_Mystery, Genre_Fantasy, and High_Rating, with k = 12. The cluster sometimes does not make sense, for example, Cluster 3 - Genre_Romance has both high and not high ratings.</p>
+<p><img src="../images/projects/movie-recommender/k12.png" class="img-fluid"></p>
+<section id="group-movies-according-to-main_famous-high_rating" class="level3" data-number="3.3.1">
+<h3 data-number="3.3.1" class="anchored" data-anchor-id="group-movies-according-to-main_famous-high_rating"><span class="header-section-number">3.3.1</span> Group movies according to Main_Famous, High_Rating</h3>
+<p>The genre grouping uses features such as Main_Famous and High_Rating, with k = 4. Movies with famous leads tend to influence ratings more than those without. However, in this small dataset, the percentage of high-rated and not-high-rated movies is almost equal. Therefore, it is unclear whether movies with famous actors or actresses are highly rated.</p>
+<p><img src="../images/projects/movie-recommender/k4.png" class="img-fluid"></p>
+</section>
+<section id="group-movies-according-to-ending-high_rating" class="level3" data-number="3.3.2">
+<h3 data-number="3.3.2" class="anchored" data-anchor-id="group-movies-according-to-ending-high_rating"><span class="header-section-number">3.3.2</span> Group movies according to Ending, High_Rating</h3>
+<p>The genre grouping uses features such as Ending_Happy, Ending_Sad, Ending_Open, and High_Rating, with k = 6. It is evident that movies with happy endings tend to have lower ratings. However, sad and open endings show no significant difference in their high-rating percentages.</p>
+<p><img src="../images/projects/movie-recommender/k6.png" class="img-fluid"></p>
+</section>
+<section id="group-movies-according-to-high_voting-high_rating" class="level3" data-number="3.3.3">
+<h3 data-number="3.3.3" class="anchored" data-anchor-id="group-movies-according-to-high_voting-high_rating"><span class="header-section-number">3.3.3</span> Group movies according to High_Voting, High_Rating*</h3>
+<p>The genre grouping uses features such as High_Voting, High_Rating, with k = 4. There is consistent evidence that movies with high voting tend to have high ratings and vice versa. However, low voting seems to impact ratings more than high voting.</p>
+<p><img src="../images/projects/movie-recommender/k4_2.png" class="img-fluid"></p>
+</section>
+</section>
+<section id="machine-learning-models-for-popularity-prediction" class="level2" data-number="3.4">
+<h2 data-number="3.4" class="anchored" data-anchor-id="machine-learning-models-for-popularity-prediction"><span class="header-section-number">3.4</span> Machine Learning Models for Popularity Prediction</h2>
+<section id="decision-tree" class="level3" data-number="3.4.1">
+<h3 data-number="3.4.1" class="anchored" data-anchor-id="decision-tree"><span class="header-section-number">3.4.1</span> Decision Tree</h3>
+<p>This algorithm has features as Ending_Happy, Ending_Sad, Ending_Open, Main_Famous, and High_Voting to predict High_Rating. At first, the dataset is labeled as train and test dataset, which is done in KNN. Using R to run the tree model, we have the image as below:</p>
+<p><img src="../images/projects/movie-recommender/image3.png" class="img-fluid"></p>
+<p>The prediction result</p>
+<p><img src="../images/projects/movie-recommender/image21.png" class="img-fluid"></p>
+<p><img src="../images/projects/movie-recommender/image11.png" class="img-fluid"></p>
+<p>Accuracy: 80% | Misclassification: 20%</p>
+</section>
+<section id="logistic-regression" class="level3" data-number="3.4.2">
+<h3 data-number="3.4.2" class="anchored" data-anchor-id="logistic-regression"><span class="header-section-number">3.4.2</span> Logistic Regression</h3>
+<p>This algorithm has features as Ending_Happy, Ending_Open, Ending_Sad, Male_Famous, Female_Famous, and High_Voting to predict High_Rating. The model is built in R and the result is as below:</p>
+<p><img src="../images/projects/movie-recommender/image8.png" class="img-fluid"></p>
+<p>log( p̂ / (1 - p̂) ) = -1.1550 - 0.5719 × Ending_Happy + 0.5185 × Ending_Open + 0.5650 × Male_Famous - 0.1104 × Female_Famous + 2.2302 × High_Voting</p>
+</section>
+</section>
+<section id="notes" class="level2" data-number="3.5">
+<h2 data-number="3.5" class="anchored" data-anchor-id="notes"><span class="header-section-number">3.5</span> Notes:</h2>
+<p>p̂ / (1 - p̂): the predicted probability of High_Rating = 1</p>
+<p>Interpretation table</p>
+<p><img src="../images/projects/movie-recommender/image8_2.png" class="img-fluid"></p>
+<p>The confusion matrix</p>
+<p><img src="../images/projects/movie-recommender/image13.png" class="img-fluid"></p>
+<p>Based on the confusion matrix, the accuracy and misclassification rates are described as below:</p>
+<p><img src="../images/projects/movie-recommender/image13_2.png" class="img-fluid"></p>
+<p>Out of 61 not High_Rating movies, there are 52 correct predictions (true negatives) and 9 misclassifications (false positives). Out of 29 High_Rating movies, there are 17 correct predictions (true positives) and 12 misclassifications (false negatives). The accuracy rate is 76.7%, and the misclassification rate is 23.3%.</p>
+<p>Accuracy: 76.7% | Misclassification: 23.3%</p>
+</section>
+</section>
+<section id="ethics-privacy-considerations" class="level1" data-number="4">
+<h1 data-number="4"><span class="header-section-number">4</span> Ethics &amp; Privacy Considerations</h1>
+<ul>
+<li>The dataset is limited to 90 movies, which may introduce biases.</li>
+<li>Cultural bias exists as only Chinese movies are considered.</li>
+<li>The “Famous Actor” category is subjective and may change over time.</li>
+<li>Ratings are sourced from IMDb, but additional sources could strengthen the analysis.</li>
+</ul>
+</section>
+<section id="future-improvements" class="level1" data-number="5">
+<h1 data-number="5"><span class="header-section-number">5</span> Future Improvements</h1>
+<ul>
+<li>Expanding the dataset for better clustering results.</li>
+<li>Analyzing additional factors like critic reviews, audience comments, and streaming data.</li>
+<li>Exploring budget, revenue, and profit analysis to predict a movie’s success.</li>
+<li>Investigating seasonal movie trends and how audience preferences shift over time.</li>
+</ul>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
+        }
+        return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/krisauw\.github\.io\/website\/");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+<script src="../site_libs/quarto-html/zenscroll-min.js"></script>
+</body></html>
