@@ -236,5 +236,12 @@
     "title": "Movie Recommender System",
     "section": "3.5 Notes:",
     "text": "3.5 Notes:\np̂ / (1 - p̂): the predicted probability of High_Rating = 1\nInterpretation table\n\nThe confusion matrix\n\nBased on the confusion matrix, the accuracy and misclassification rates are described as below:\n\nOut of 61 not High_Rating movies, there are 52 correct predictions (true negatives) and 9 misclassifications (false positives). Out of 29 High_Rating movies, there are 17 correct predictions (true positives) and 12 misclassifications (false negatives). The accuracy rate is 76.7%, and the misclassification rate is 23.3%.\nAccuracy: 76.7% | Misclassification: 23.3%"
+  },
+  {
+    "objectID": "projects/piece-of-advice-app.html",
+    "href": "projects/piece-of-advice-app.html",
+    "title": "A Piece of Advice App",
+    "section": "",
+    "text": "Overview\nA tiny feel-good app: click to receive a short piece of advice to brighten your day. Built with Streamlit for a fast, simple web UI.\n\nStack: Python · Streamlit\n\nLive demo: Open the App\n\n\n\nLive Embed"
   }
 ]
