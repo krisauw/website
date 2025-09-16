@@ -33,6 +33,10 @@ website:
             href: projects/manga-sentiment.qmd
           - text: Luxury Car Price
             href: projects/luxury-car-price.qmd
+          - text: A Piece of Advice App
+            href: projects/piece-of-advice-app.qmd
+          - text: Object Detection
+            href: projects/object-detection.qmd
       - text: Contact
         href: contact.qmd
     right:

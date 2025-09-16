@@ -1,0 +1,36 @@
+---
+title: "Untitled"
+format: pdf
+editor: visual
+---
+
+## Install
+
+```{powershell}
+
+.\.venv_face\Scripts\activate.bat
+pip install opencv-contrib-python ultralytics numpy
+
+.\.venv_face\Scripts\activate.bat
+pip install ultralytics insightface onnxruntime opencv-python numpy
+
+```
+
+## Running Code
+
+When you click the **Render** button a document will be generated that includes both content and the output of embedded code. You can embed code like this:
+
+```{r}
+1 + 1
+```
+
+# Next time (daily workflow)
+
+```{powershell}
+cd C:\Users\emily\DATA_SCIENCE\PROJECT\COMPUTER_VISION\face
+.\.venv_face\Scripts\activate.bat
+python detect_faces_yolo.py
+
+```
+
+The `echo: false` option disables the printing of code (only output is displayed).
