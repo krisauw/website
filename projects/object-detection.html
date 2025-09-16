@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Resume – Hien Bui</title>
+<title>Object Detection App (YOLOv11) – Hien Bui</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,26 +20,61 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-ea385d0e468b0dd5ea5bf0780b1290d9.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-950fb53b3922a3f7ce53f108ebb10a5d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-ea385d0e468b0dd5ea5bf0780b1290d9.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-950fb53b3922a3f7ce53f108ebb10a5d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -80,7 +115,7 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">Hien Bui</span>
     </a>
   </div>
@@ -91,11 +126,11 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./index.html"> 
+    <a class="nav-link" href="../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./resume.html" aria-current="page"> 
+    <a class="nav-link" href="../resume.html"> 
 <span class="menu-text">Resume</span></a>
   </li>  
   <li class="nav-item dropdown ">
@@ -104,37 +139,37 @@ ul.task-list li input[type="checkbox"] {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-projects">    
         <li>
-    <a class="dropdown-item" href="./projects/ev-adoption.html">
+    <a class="dropdown-item" href="../projects/ev-adoption.html">
  <span class="dropdown-text">EV Adoption in WA</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./projects/movie-recommender.html">
+    <a class="dropdown-item" href="../projects/movie-recommender.html">
  <span class="dropdown-text">Movie Recommender</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./projects/book-ratings.html">
+    <a class="dropdown-item" href="../projects/book-ratings.html">
  <span class="dropdown-text">Book Ratings</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./projects/manga-sentiment.html">
+    <a class="dropdown-item" href="../projects/manga-sentiment.html">
  <span class="dropdown-text">Manga Sentiment</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./projects/luxury-car-price.html">
+    <a class="dropdown-item" href="../projects/luxury-car-price.html">
  <span class="dropdown-text">Luxury Car Price</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./projects/piece-of-advice-app.html">
+    <a class="dropdown-item" href="../projects/piece-of-advice-app.html">
  <span class="dropdown-text">A Piece of Advice App</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./projects/object-detection.html">
+    <a class="dropdown-item" href="../projects/object-detection.html">
  <span class="dropdown-text">Object Detection</span></a>
   </li>  
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="./contact.html"> 
+    <a class="nav-link" href="../contact.html"> 
 <span class="menu-text">Contact</span></a>
   </li>  
 </ul>
@@ -157,23 +192,33 @@ ul.task-list li input[type="checkbox"] {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#project-overview" id="toc-project-overview" class="nav-link active" data-scroll-target="#project-overview"><span class="header-section-number">1</span> Project Overview</a></li>
+  <li><a href="#visual-results" id="toc-visual-results" class="nav-link" data-scroll-target="#visual-results"><span class="header-section-number">2</span> Visual Results</a></li>
+  <li><a href="#quick-start-local" id="toc-quick-start-local" class="nav-link" data-scroll-target="#quick-start-local"><span class="header-section-number">3</span> Quick Start (Local)</a></li>
+  <li><a href="#technologies-used" id="toc-technologies-used" class="nav-link" data-scroll-target="#technologies-used"><span class="header-section-number">4</span> Technologies Used</a></li>
+  <li><a href="#future-improvements" id="toc-future-improvements" class="nav-link" data-scroll-target="#future-improvements"><span class="header-section-number">5</span> Future Improvements</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
-<main class="content column-page" id="quarto-document-content">
+<main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Resume</h1>
+<h1 class="title">Object Detection App (YOLOv11)</h1>
 </div>
 
 
 
-<div class="quarto-title-meta column-page">
+<div class="quarto-title-meta">
 
     
   
@@ -185,17 +230,92 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<div style="margin:1rem 0;">
-<p><a class="btn btn-primary" href="resume/Resume_HienBui.pdf" target="_blank" rel="noopener" download=""> Download PDF Resume </a></p>
-</div>
-<!-- Inline PDF viewer -->
-<object data="resume/Resume_HienBui.pdf" type="application/pdf" width="100%" height="1000px">
-<p>
-Your browser can’t display PDFs here. <a href="resume/Resume_HienBui.pdf" target="_blank" rel="noopener">Open the resume in a new tab</a>.
-</p>
-</object>
+<section id="project-overview" class="level1" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> Project Overview</h1>
+<p>This project demonstrates <strong>real-time object detection</strong> using <strong>Ultralytics YOLOv11</strong>.<br>
+It includes a <strong>desktop GUI (Tkinter)</strong>, suitable for local GPU/CPU use.</p>
+<section id="key-features" class="level2" data-number="1.1">
+<h2 data-number="1.1" class="anchored" data-anchor-id="key-features"><span class="header-section-number">1.1</span> Key Features</h2>
+<ul>
+<li>Detects objects in <strong>images, videos, and live camera feeds</strong>. <em>(This report only showcases image results for clarity and simplicity.)</em><br>
+</li>
+<li>Side-by-side <strong>Original vs Detected</strong> views for easy comparison.<br>
+</li>
+<li>Counts selected classes such as <em>person, car, truck, bicycle</em>.</li>
+</ul>
+</section>
+</section>
+<section id="visual-results" class="level1" data-number="2">
+<h1 data-number="2"><span class="header-section-number">2</span> Visual Results</h1>
+<section id="before-and-after-image-detection" class="level2" data-number="2.1">
+<h2 data-number="2.1" class="anchored" data-anchor-id="before-and-after-image-detection"><span class="header-section-number">2.1</span> Before and After: Image Detection</h2>
+<p>The model identifies objects and overlays bounding boxes with class labels and confidence scores.</p>
+<section id="example-1" class="level3" data-number="2.1.1">
+<h3 data-number="2.1.1" class="anchored" data-anchor-id="example-1"><span class="header-section-number">2.1.1</span> Example 1</h3>
+<ul>
+<li><strong>Before:</strong> Original uploaded image.<br>
+</li>
+<li><strong>After:</strong> Detected objects highlighted with bounding boxes.</li>
+</ul>
+<p><img src="../images/projects/object-detection/test_01.png" class="img-fluid"><br>
+<img src="../images/projects/object-detection/output_test_01.jpg" class="img-fluid"></p>
+</section>
+<section id="example-2" class="level3" data-number="2.1.2">
+<h3 data-number="2.1.2" class="anchored" data-anchor-id="example-2"><span class="header-section-number">2.1.2</span> Example 2</h3>
+<ul>
+<li><strong>Before:</strong> Original frame from video.<br>
+</li>
+<li><strong>After:</strong> Detected vehicles and pedestrians annotated.</li>
+</ul>
+<p><img src="../images/projects/object-detection/test_02.jpg" class="img-fluid"><br>
+<img src="../images/projects/object-detection/output_test_02.jpg" class="img-fluid"><br>
+### Example 3 - <strong>Before:</strong> Original frame from video.<br>
+- <strong>After:</strong> Detected vehicles and pedestrians annotated.</p>
+<p><img src="../images/projects/object-detection/test_03.png" class="img-fluid"><br>
+<img src="../images/projects/object-detection/output_test_03.jpg" class="img-fluid"></p>
+</section>
+</section>
+</section>
+<section id="quick-start-local" class="level1" data-number="3">
+<h1 data-number="3"><span class="header-section-number">3</span> Quick Start (Local)</h1>
+<section id="tkinter-desktop-app" class="level2" data-number="3.1">
+<h2 data-number="3.1" class="anchored" data-anchor-id="tkinter-desktop-app"><span class="header-section-number">3.1</span> Tkinter Desktop App</h2>
+<div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 1) Create &amp; activate a virtual environment</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="ex">python</span> <span class="at">-m</span> venv .venv</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Windows</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="ex">.venv\Scripts\activate</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="co"># macOS/Linux</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="co"># source .venv/bin/activate</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="co"># 2) Install requirements</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="ex">pip</span> install <span class="at">-r</span> requirements.txt</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="co"># 3) Run desktop GUI</span></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="ex">python</span> main.py</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+</section>
+<section id="technologies-used" class="level1" data-number="4">
+<h1 data-number="4"><span class="header-section-number">4</span> Technologies Used</h1>
+<ul>
+<li>Python (app logic)</li>
+<li>Torch &amp; NumPy (deep learning computations)</li>
+<li>Ultralytics YOLOv11 (object detection model)</li>
+<li>OpenCV (video/image handling)</li>
+<li>Pillow (image processing)</li>
+<li>Tkinter (desktop GUI)</li>
+</ul>
+</section>
+<section id="future-improvements" class="level1" data-number="5">
+<h1 data-number="5"><span class="header-section-number">5</span> Future Improvements</h1>
+<ul>
+<li>Add real-time detection dashboard in Streamlit.</li>
+<li>Introduce custom class training for specific use cases.</li>
+<li>Optimize inference speed for low-power devices.</li>
+<li>Add export to Excel/CSV for detection logs.</li>
+</ul>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -607,5 +727,5 @@ Your browser can’t display PDFs here. <a href="resume/Resume_HienBui.pdf" targ
 
 
 
-<script src="site_libs/quarto-html/zenscroll-min.js"></script>
+<script src="../site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>

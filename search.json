@@ -7,6 +7,34 @@
     "text": "Download PDF Resume \n\n\n\n\nYour browser can’t display PDFs here. Open the resume in a new tab."
   },
   {
+    "objectID": "projects/object-detection.html",
+    "href": "projects/object-detection.html",
+    "title": "Object Detection App (YOLOv11)",
+    "section": "",
+    "text": "This project demonstrates real-time object detection using Ultralytics YOLOv11.\nIt includes a desktop GUI (Tkinter), suitable for local GPU/CPU use.\n\n\n\nDetects objects in images, videos, and live camera feeds. (This report only showcases image results for clarity and simplicity.)\n\nSide-by-side Original vs Detected views for easy comparison.\n\nCounts selected classes such as person, car, truck, bicycle."
+  },
+  {
+    "objectID": "projects/object-detection.html#key-features",
+    "href": "projects/object-detection.html#key-features",
+    "title": "Object Detection App (YOLOv11)",
+    "section": "",
+    "text": "Detects objects in images, videos, and live camera feeds. (This report only showcases image results for clarity and simplicity.)\n\nSide-by-side Original vs Detected views for easy comparison.\n\nCounts selected classes such as person, car, truck, bicycle."
+  },
+  {
+    "objectID": "projects/object-detection.html#before-and-after-image-detection",
+    "href": "projects/object-detection.html#before-and-after-image-detection",
+    "title": "Object Detection App (YOLOv11)",
+    "section": "2.1 Before and After: Image Detection",
+    "text": "2.1 Before and After: Image Detection\nThe model identifies objects and overlays bounding boxes with class labels and confidence scores.\n\n2.1.1 Example 1\n\nBefore: Original uploaded image.\n\nAfter: Detected objects highlighted with bounding boxes.\n\n\n\n\n\n2.1.2 Example 2\n\nBefore: Original frame from video.\n\nAfter: Detected vehicles and pedestrians annotated.\n\n\n\n### Example 3 - Before: Original frame from video.\n- After: Detected vehicles and pedestrians annotated."
+  },
+  {
+    "objectID": "projects/object-detection.html#tkinter-desktop-app",
+    "href": "projects/object-detection.html#tkinter-desktop-app",
+    "title": "Object Detection App (YOLOv11)",
+    "section": "3.1 Tkinter Desktop App",
+    "text": "3.1 Tkinter Desktop App\n# 1) Create & activate a virtual environment\npython -m venv .venv\n# Windows\n.venv\\Scripts\\activate\n# macOS/Linux\n# source .venv/bin/activate\n\n# 2) Install requirements\npip install -r requirements.txt\n\n# 3) Run desktop GUI\npython main.py"
+  },
+  {
     "objectID": "projects/manga-sentiment.html",
     "href": "projects/manga-sentiment.html",
     "title": "Manga Sentiment Analysis",
@@ -18,21 +46,21 @@
     "href": "projects/index.html",
     "title": "Hi, I’m Hien (Emi) Bui",
     "section": "",
-    "text": "I’m a Data Science master’s student (Drew University, expected 2026) with a background in Economics (B.A.) and minors in Mathematics & Asian Studies.\nBefore transitioning into data, I spent 6+ years managing projects in VFX/animation and client services—leading cross-functional teams, delivering for global clients, and honing communication and leadership skills.\nToday, I combine that creative and organizational background with data science, machine learning, and analytics to solve real-world problems. My work spans ML model development, coding experiments, and interactive dashboards.\n\n\n\n\nProgramming & Tools: Python · R · SQL · Jupyter Notebook · VSCode\n\nVisualization & BI: Tableau · Power BI · Plotly · Data Wrangling\n\n3D & Creative: Maya · Blender · Substance Painter\n\nOther: Google Suite · Microsoft Office\n\n\n\n\nProject Management · Data Analysis · Data Visualization · Communication\nProblem Solving · Teamwork · Critical Thinking · Research\n\n👉 Check out my Projects, view my Resume, or connect via LinkedIn / GitHub."
+    "text": "I’m a Master’s student in Data Science at Drew University (GPA 4.0, expected 2026) with a B.A. in Economics and minors in Mathematics & Asian Studies.\nBefore transitioning into data, I spent 6+ years in project management and VFX/animation, leading cross-functional teams and delivering results for global clients.\nNow, I bring that creative and organizational background into data science, machine learning, and analytics to solve real-world problems and create actionable insights.\n\n\n\n\nProgramming & Tools: Python · R · SQL · Jupyter Notebook · Quarto · VSCode · GitHub · MySQL · Scikit-learn\n\nVisualization & BI: Tableau · Power BI · Plotly · Excel · Data Wrangling\n\nMachine Learning & Analytics: ML Modeling · Statistical Analysis · Computer Vision\n\n3D & Creative: Maya · Blender · Substance Painter\n\nOthers: Google Suite · Microsoft Office\n\n\n\n\n\nData Analysis · Data Visualization · Machine Learning · Statistical Modeling\n\nProject Management · Communication · Problem Solving · Teamwork · Research\n\n\nView my Resume or connect on LinkedIn"
   },
   {
     "objectID": "projects/index.html#technical-skills",
     "href": "projects/index.html#technical-skills",
     "title": "Hi, I’m Hien (Emi) Bui",
     "section": "",
-    "text": "Programming & Tools: Python · R · SQL · Jupyter Notebook · VSCode\n\nVisualization & BI: Tableau · Power BI · Plotly · Data Wrangling\n\n3D & Creative: Maya · Blender · Substance Painter\n\nOther: Google Suite · Microsoft Office"
+    "text": "Programming & Tools: Python · R · SQL · Jupyter Notebook · Quarto · VSCode · GitHub · MySQL · Scikit-learn\n\nVisualization & BI: Tableau · Power BI · Plotly · Excel · Data Wrangling\n\nMachine Learning & Analytics: ML Modeling · Statistical Analysis · Computer Vision\n\n3D & Creative: Maya · Blender · Substance Painter\n\nOthers: Google Suite · Microsoft Office"
   },
   {
     "objectID": "projects/index.html#professional-strengths",
     "href": "projects/index.html#professional-strengths",
     "title": "Hi, I’m Hien (Emi) Bui",
     "section": "",
-    "text": "Project Management · Data Analysis · Data Visualization · Communication\nProblem Solving · Teamwork · Critical Thinking · Research\n\n👉 Check out my Projects, view my Resume, or connect via LinkedIn / GitHub."
+    "text": "Data Analysis · Data Visualization · Machine Learning · Statistical Modeling\n\nProject Management · Communication · Problem Solving · Teamwork · Research\n\n\nView my Resume or connect on LinkedIn"
   },
   {
     "objectID": "projects/book-ratings.html",
@@ -236,5 +264,12 @@
     "title": "Movie Recommender System",
     "section": "3.5 Notes:",
     "text": "3.5 Notes:\np̂ / (1 - p̂): the predicted probability of High_Rating = 1\nInterpretation table\n\nThe confusion matrix\n\nBased on the confusion matrix, the accuracy and misclassification rates are described as below:\n\nOut of 61 not High_Rating movies, there are 52 correct predictions (true negatives) and 9 misclassifications (false positives). Out of 29 High_Rating movies, there are 17 correct predictions (true positives) and 12 misclassifications (false negatives). The accuracy rate is 76.7%, and the misclassification rate is 23.3%.\nAccuracy: 76.7% | Misclassification: 23.3%"
+  },
+  {
+    "objectID": "projects/piece-of-advice-app.html",
+    "href": "projects/piece-of-advice-app.html",
+    "title": "A Piece of Advice App",
+    "section": "",
+    "text": "Overview\nA tiny feel-good app: click to receive a short piece of advice to brighten your day. Built with Streamlit for a fast, simple web UI.\n\nStack: Python · Streamlit\n\nLive demo: Open the App\n\n\n\nLive Embed"
   }
 ]
