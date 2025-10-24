@@ -49,6 +49,13 @@
     "text": "I’m a Data Science M.S. student (Drew, ’26) who builds practical analytics and ML. Recent work: EV adoption analysis on 235k+ Washington State records, a movie recommender that reaches ~80% accuracy, a desktop YOLOv11n detection app (images/video/webcam), and a manga sentiment pipeline (Selenium → NLTK/TextBlob → Tableau/Power BI). Before grad school, I spent 6+ years leading cross functional VFX/animation teams—experience I now apply to scoping data problems, shipping on time, and communicating results clearly.\nInterests: Data storytelling, recommender systems, computer vision, and launching small tools that make decisions faster.\n\n\n\n\nObject Detection App (YOLOv11n) - Python, Tkinter, Torch, OpenCV: Built a real-time image/video/camera detection app using the YOLOv11n model, achieving mAP@0.5 &gt; 85% and ~30 FPS; added object & people counting and before-after visualization. Link\nManga Sentiment (Mashle, 90+ reviews) - Python, Selenium, TextBlob, NLTK, Power BI/Tableau: Scraped and analyzed audience reviews for Mashle; achieved 83% sentiment classification accuracy, visualizing polarity trends and reader emotions across platforms. Link\n\nEV Adoption (WA, 235k+ records) - Python (Polars, Plotly): Engineered brand- and city-level cohorts; surfaced Tesla’s &gt;250 mi range (+20% vs next brand) and Seattle’s 3× lead, enabling a 4-chart narrative on EV range and adoption concentration. Link\nMovie Recommender (90 titles) - Python, R (KNN, DT, LR): Developed models to predict top-rated movies with ~80% accuracy; compared Euclidean vs. Manhattan similarity for top-5 recommendations. Link\n\n\n\n\n\nProgramming & Tools: Python · R · SQL · Jupyter Notebook · Quarto · VSCode · GitHub · MySQL · Scikit-learn\n\nVisualization & BI: Tableau · Power BI · Plotly · Excel · Data Wrangling\n\nMachine Learning & Analytics: ML Modeling · Statistical Analysis · Computer Vision\n\n3D & Creative: Maya · Blender · Substance Painter\n\nOthers: Google Suite · Microsoft Office\n\n\n\n\n\nData Analysis · Data Visualization · Machine Learning · Statistical Modeling\n\nProject Management · Communication · Problem Solving · Teamwork · Research\n\n\nView my Resume or connect on LinkedIn"
   },
   {
+    "objectID": "projects/index.html#projects",
+    "href": "projects/index.html#projects",
+    "title": "Hi, I’m Hien (Emi) Bui",
+    "section": "",
+    "text": "Object Detection App (YOLOv11n) - Python, Tkinter, Torch, OpenCV: Built a real-time image/video/camera detection app using the YOLOv11n model, achieving mAP@0.5 &gt; 85% and ~30 FPS; added object & people counting and before-after visualization. Link\nManga Sentiment (Mashle, 90+ reviews) - Python, Selenium, TextBlob, NLTK, Power BI/Tableau: Scraped and analyzed audience reviews for Mashle; achieved 83% sentiment classification accuracy, visualizing polarity trends and reader emotions across platforms. Link\n\nEV Adoption (WA, 235k+ records) - Python (Polars, Plotly): Engineered brand- and city-level cohorts; surfaced Tesla’s &gt;250 mi range (+20% vs next brand) and Seattle’s 3× lead, enabling a 4-chart narrative on EV range and adoption concentration. Link\nMovie Recommender (90 titles) - Python, R (KNN, DT, LR): Developed models to predict top-rated movies with ~80% accuracy; compared Euclidean vs. Manhattan similarity for top-5 recommendations. Link"
+  },
+  {
     "objectID": "projects/index.html#technical-skills",
     "href": "projects/index.html#technical-skills",
     "title": "Hi, I’m Hien (Emi) Bui",
@@ -271,12 +278,5 @@
     "title": "A Piece of Advice App",
     "section": "",
     "text": "Overview\nA tiny feel-good app: click to receive a short piece of advice to brighten your day. Built with Streamlit for a fast, simple web UI.\n\nStack: Python · Streamlit\n\nLive demo: Open the App\n\n\n\nLive Embed"
-  },
-  {
-    "objectID": "projects/index.html#projects",
-    "href": "projects/index.html#projects",
-    "title": "Hi, I’m Hien (Emi) Bui",
-    "section": "",
-    "text": "Object Detection App (YOLOv11n) - Python, Tkinter, Torch, OpenCV: Built a real-time image/video/camera detection app using the YOLOv11n model, achieving mAP@0.5 &gt; 85% and ~30 FPS; added object & people counting and before-after visualization. Link\nManga Sentiment (Mashle, 90+ reviews) - Python, Selenium, TextBlob, NLTK, Power BI/Tableau: Scraped and analyzed audience reviews for Mashle; achieved 83% sentiment classification accuracy, visualizing polarity trends and reader emotions across platforms. Link\n\nEV Adoption (WA, 235k+ records) - Python (Polars, Plotly): Engineered brand- and city-level cohorts; surfaced Tesla’s &gt;250 mi range (+20% vs next brand) and Seattle’s 3× lead, enabling a 4-chart narrative on EV range and adoption concentration. Link\nMovie Recommender (90 titles) - Python, R (KNN, DT, LR): Developed models to predict top-rated movies with ~80% accuracy; compared Euclidean vs. Manhattan similarity for top-5 recommendations. Link"
   }
 ]
