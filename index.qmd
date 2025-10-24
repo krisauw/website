@@ -4,10 +4,10 @@ title: "Hi, I'm Hien (Emi) Bui"
 
 # Welcome 
 
-I’m a **Data Science** master’s student (Drew University, expected 2026) with a background in **Economics (B.A.)** and minors in **Mathematics & Asian Studies**.  
-Before transitioning into data, I spent 6+ years managing projects in VFX/animation and client services—leading cross-functional teams, delivering for global clients, and honing communication and leadership skills.  
+I’m a Data Science M.S. student (Drew, ’26) who builds practical analytics and ML. Recent work: EV adoption analysis on 235k+ Washington State records, a movie recommender that reaches ~80% accuracy, a desktop YOLOv11n detection app (images/video/webcam), and a manga sentiment pipeline (Selenium → NLTK/TextBlob → Tableau/Power BI). Before grad school, I spent 6+ years leading cross functional VFX/animation teams—experience I now apply to scoping data problems, shipping on time, and communicating results clearly.
 
-Today, I combine that creative and organizational background with **data science, machine learning, and analytics** to solve real-world problems. My work spans **ML model development, coding experiments, and interactive dashboards**.  
+Interests: Data storytelling, recommender systems, computer vision, and launching small tools that make decisions faster.
+ 
 
 ## Technical Skills
 - **Programming & Tools:** Python · R · SQL · Jupyter Notebook · Quarto · VSCode · GitHub  
