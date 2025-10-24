@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Contact – Hien Bui</title>
+<title>Resume – Hien Bui</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -39,7 +39,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-ea385d0e468b0dd5ea5bf0780b1290d9.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-dfb324f25d9b1687192fa8be62ac8f9c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-950fb53b3922a3f7ce53f108ebb10a5d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -67,8 +67,10 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<style>html{ scroll-behavior: smooth; }</style>
 
 
+<link rel="stylesheet" href="styles.css">
 </head>
 
 <body class="nav-fixed quarto-light">
@@ -93,7 +95,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./resume.html"> 
+    <a class="nav-link active" href="./resume.html" aria-current="page"> 
 <span class="menu-text">Resume</span></a>
   </li>  
   <li class="nav-item dropdown ">
@@ -121,10 +123,18 @@ ul.task-list li input[type="checkbox"] {
     <a class="dropdown-item" href="./projects/luxury-car-price.html">
  <span class="dropdown-text">Luxury Car Price</span></a>
   </li>  
+        <li>
+    <a class="dropdown-item" href="./projects/piece-of-advice-app.html">
+ <span class="dropdown-text">A Piece of Advice App</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./projects/object-detection.html">
+ <span class="dropdown-text">Object Detection</span></a>
+  </li>  
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link active" href="./contact.html" aria-current="page"> 
+    <a class="nav-link" href="./contact.html"> 
 <span class="menu-text">Contact</span></a>
   </li>  
 </ul>
@@ -147,23 +157,23 @@ ul.task-list li input[type="checkbox"] {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
         
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content column-page" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Contact</h1>
+<h1 class="title">Resume</h1>
 </div>
 
 
 
-<div class="quarto-title-meta">
+<div class="quarto-title-meta column-page">
 
     
   
@@ -175,14 +185,15 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>I’m open to internships and collaborations.</p>
-<ul>
-<li><a href="mailto:hien.bui0393@gmail.com">Email</a><br>
-</li>
-<li><a href="https://www.linkedin.com/in/hien-bui-emi-6273b010a/">LinkedIn</a><br>
-</li>
-<li><a href="https://krisauw.github.io/website/">GitHub</a></li>
-</ul>
+<div style="margin:1rem 0;">
+<p><a class="btn btn-primary" href="resume/Hien_Emi_Bui_Resume.pdf" target="_blank" rel="noopener" download=""> Download PDF Resume </a></p>
+</div>
+<!-- Inline PDF viewer -->
+<object data="resume/Hien_Emi_Bui_Resume.pdf" type="application/pdf" width="100%" height="1000px">
+<p>
+Your browser can’t display PDFs here. <a href="resume/Hien_Emi_Bui_Resume.pdf" target="_blank" rel="noopener">Open the resume in a new tab</a>.
+</p>
+</object>
 
 
 
@@ -273,6 +284,11 @@ ul.task-list li input[type="checkbox"] {
           if (link.dataset.originalHref !== undefined) {
             link.href = link.dataset.originalHref;
           }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
         }
       }
     function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
@@ -591,4 +607,5 @@ ul.task-list li input[type="checkbox"] {
 
 
 
+<script src="site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>

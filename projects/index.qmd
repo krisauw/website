@@ -4,12 +4,17 @@ title: "Hi, I'm Hien (Emi) Bui"
 
 # Welcome  
 
-I’m a **Master’s student in Data Science at Drew University (GPA 4.0, expected 2026)** with a **B.A. in Economics** and minors in **Mathematics & Asian Studies**.  
-Before transitioning into data, I spent **6+ years in project management and VFX/animation**, leading cross-functional teams and delivering results for global clients.  
+I’m a Data Science M.S. student (Drew, ’26) who builds practical analytics and ML. Recent work: EV adoption analysis on 235k+ Washington State records, a movie recommender that reaches ~80% accuracy, a desktop YOLOv11n detection app (images/video/webcam), and a manga sentiment pipeline (Selenium → NLTK/TextBlob → Tableau/Power BI). Before grad school, I spent 6+ years leading cross functional VFX/animation teams—experience I now apply to scoping data problems, shipping on time, and communicating results clearly.
 
-Now, I bring that creative and organizational background into **data science, machine learning, and analytics** to solve real-world problems and create actionable insights.  
+Interests: Data storytelling, recommender systems, computer vision, and launching small tools that make decisions faster.
 
 ---
+
+## Projects
+- Object Detection App (YOLOv11n) - Python, Tkinter, Torch, OpenCV: Built a real-time image/video/camera detection app using the YOLOv11n model, achieving mAP@0.5 > 85% and ~30 FPS; added object & people counting and before-after visualization. [Link](https://krisauw.github.io/website/projects/object-detection.html)
+- Manga Sentiment (Mashle, 90+ reviews) - Python, Selenium, TextBlob, NLTK, Power BI/Tableau: Scraped and analyzed audience reviews for Mashle; achieved 83% sentiment classification accuracy, visualizing polarity trends and reader emotions across platforms. [Link](https://krisauw.github.io/website/projects/manga-sentiment.html)				
+- EV Adoption (WA, 235k+ records) - Python (Polars, Plotly): Engineered brand- and city-level cohorts; surfaced Tesla’s >250 mi range (+20% vs next brand) and Seattle’s 3× lead, enabling a 4-chart narrative on EV range and adoption concentration. [Link](https://krisauw.github.io/website/projects/ev-adoption.html)
+- Movie Recommender (90 titles) - Python, R (KNN, DT, LR): Developed models to predict top-rated movies with ~80% accuracy; compared Euclidean vs. Manhattan similarity for top-5 recommendations. [Link](https://krisauw.github.io/website/projects/movie-recommender.html)
 
 ## Technical Skills
 - **Programming & Tools:** Python · R · SQL · Jupyter Notebook · Quarto · VSCode · GitHub · MySQL · Scikit-learn  

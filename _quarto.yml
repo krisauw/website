@@ -40,10 +40,11 @@ website:
       - text: Contact
         href: contact.qmd
     right:
-      - icon: github
-        href: https://krisauw.github.io/website/
+      - icon: envelope
+        href: "mailto:hien.bui0393@gmail.com"
+        aria-label: "Email"
       - icon: linkedin
-        href: https://www.linkedin.com/in/hien-bui-emi-6273b010a/
+        href: https://www.linkedin.com/in/hien-emi-bui-6273b010a/
 
 format:
   html:

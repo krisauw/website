@@ -4,5 +4,7 @@ title: "Contact"
 
 I’m open to internships and collaborations.
 
-- [Email](mailto:hien.bui0393@gmail.com){target="_blank" rel="noopener"}  
-- [LinkedIn](https://www.linkedin.com/in/hien-bui-emi-6273b010a/){target="_blank" rel="noopener"}
+<p>
+  <a href="mailto:hien.bui0393@gmail.com" class="btn btn-primary">Email</a>
+  <a href="https://www.linkedin.com/in/hien-emi-bui-6273b010a/" target="_blank" rel="noopener" class="btn btn-outline-secondary">LinkedIn</a>
+</p>
